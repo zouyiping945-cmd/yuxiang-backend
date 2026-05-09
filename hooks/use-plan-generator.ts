@@ -70,6 +70,27 @@ function findVillageById(id: string): Village | undefined {
   return villages.find((item) => item.id === id);
 }
 
+function normalizeMatchScore(value: unknown, fallback = 88): number {
+  return typeof value === "number" && Number.isFinite(value) ? value : fallback;
+}
+
+function normalizeAlternatives(alternatives: PlanResult["alternatives"]): PlanResult["alternatives"] {
+  return alternatives.map((item) => ({
+    ...item,
+    matchScore: normalizeMatchScore(item.matchScore, 88)
+  }));
+}
+
+function normalizePlanResult(plan: PlanResult, fallback = 88): PlanResult {
+  const matchScore = normalizeMatchScore(plan.matchScore, fallback);
+
+  return {
+    ...plan,
+    matchScore,
+    alternatives: normalizeAlternatives(plan.alternatives)
+  };
+}
+
 export function usePlanGenerator() {
   const [status, setStatus] = useState<PlanStatus>("idle");
   const [result, setResult] = useState<PlanResult | null>(null);
@@ -145,7 +166,7 @@ export function usePlanGenerator() {
         return;
       }
 
-      setResult(payload.data);
+      setResult(normalizePlanResult(payload.data));
       setStatus("success");
       setRegeneratingHint("");
     } catch (error) {
@@ -193,14 +214,15 @@ export function usePlanGenerator() {
           }
 
           const mergedReasons = [next.reasonSummary, ...prev.reasons].filter(Boolean).slice(0, 4);
+          const fallbackMatchScore = normalizeMatchScore(prev.matchScore, 88);
 
           return {
             ...prev,
             recommended: village,
-            matchScore: next.matchScore,
+            matchScore: normalizeMatchScore(next.matchScore, fallbackMatchScore),
             summary: `已切换到备选推荐：${village.city}·${village.name}`,
             reasons: mergedReasons,
-            alternatives: alternatives.slice(1)
+            alternatives: normalizeAlternatives(alternatives.slice(1))
           };
         });
         setStatus("success");
