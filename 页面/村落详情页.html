@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豫见乡旅 - 超级详情页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> .no-scrollbar::-webkit-scrollbar { display: none; } .tab-content { animation: fadeIn 0.3s ease forwards; } @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } } </style>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen font-sans">
+    <div class="w-full max-w-[400px] h-[850px] bg-gray-50 relative overflow-hidden shadow-2xl sm:rounded-[2.5rem] sm:border-8 border-gray-800 flex flex-col">
+        
+        <div class="flex-1 overflow-y-auto no-scrollbar pb-24 relative" id="scrollArea">
+            <!-- 头部 Hero 区 -->
+            <div class="relative h-64 w-full">
+                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60"></div>
+                <div class="absolute top-10 left-4 right-4 flex justify-between items-center z-20">
+                    <button class="w-9 h-9 bg-black/30 backdrop-blur-md rounded-full text-white"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="flex gap-3"><button class="w-9 h-9 bg-black/30 backdrop-blur-md rounded-full text-white"><i class="fa-regular fa-heart"></i></button></div>
+                </div>
+                <div class="absolute bottom-6 left-5 right-5 text-white z-20">
+                    <h1 class="text-2xl font-bold tracking-wider mb-1">樱桃沟风景区</h1>
+                    <div class="text-sm text-white/90"><i class="fa-solid fa-star text-orange-400 mr-1 text-xs"></i> 4.8 | <i class="fa-solid fa-location-dot mr-1 text-xs"></i> 郑州市二七区</div>
+                </div>
+            </div>
+
+            <!-- AI 村况卡片 -->
+            <div class="relative z-20 px-4 -mt-4">
+                <div class="bg-white rounded-2xl shadow-lg p-4 border border-emerald-50">
+                    <div class="flex justify-between items-center mb-4 border-b border-gray-100 pb-3">
+                        <div class="text-center"><span class="text-gray-400 text-[10px]">今日天气</span><div class="text-gray-700 font-bold text-sm"><i class="fa-solid fa-sun text-yellow-400"></i> 26°C</div></div>
+                        <div class="w-px h-6 bg-gray-100"></div>
+                        <div class="text-center"><span class="text-gray-400 text-[10px]">停车指数</span><div class="text-emerald-500 font-bold text-sm"><i class="fa-solid fa-square-parking"></i> 充足</div></div>
+                        <div class="w-px h-6 bg-gray-100"></div>
+                        <div class="text-center"><span class="text-gray-400 text-[10px]">实时客流</span><div class="text-orange-500 font-bold text-sm"><i class="fa-solid fa-users"></i> 适中</div></div>
+                    </div>
+                    <div class="bg-gradient-to-r from-emerald-50 to-white rounded-xl p-3 flex gap-3 relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400"></div>
+                        <i class="fa-solid fa-wand-magic-sparkles text-emerald-500 mt-0.5"></i>
+                        <div><h4 class="text-[12px] font-bold text-emerald-700 mb-1">AI 村况速递</h4><p class="text-[11px] text-gray-600">周末天气极佳，2号停车场空位多。建议穿平底鞋游览木栈道。</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 导航 -->
+            <div class="sticky top-0 z-30 bg-gray-50/90 backdrop-blur-md pt-5 pb-3 px-4 mt-2">
+                <div class="flex justify-between bg-white rounded-full p-1 shadow-sm border border-gray-100">
+                    <button class="tab-btn flex-1 py-2 rounded-full text-[13px] font-bold bg-emerald-500 text-white" onclick="switchTab('t1', this)">查路线</button>
+                    <button class="tab-btn flex-1 py-2 rounded-full text-[13px] font-medium text-gray-500" onclick="switchTab('t2', this)">觅美食</button>
+                    <button class="tab-btn flex-1 py-2 rounded-full text-[13px] font-medium text-gray-500" onclick="switchTab('t3', this)">寻住处</button>
+                </div>
+            </div>
+
+            <!-- Tab 内容区 -->
+            <div class="px-4 mt-2">
+                <div id="t1" class="tab-content space-y-4">
+                    <div class="flex gap-3">
+                        <div class="flex-1 bg-emerald-50 border border-emerald-500/20 rounded-xl p-3 text-center"><i class="fa-solid fa-car text-emerald-500 text-lg mb-1"></i><div class="text-emerald-700 text-xs font-bold">自驾约45分</div></div>
+                        <div class="flex-1 bg-white border border-gray-100 rounded-xl p-3 text-center"><i class="fa-solid fa-bus text-gray-400 text-lg mb-1"></i><div class="text-gray-600 text-xs">公交约1.5时</div></div>
+                    </div>
+                    <div class="w-full h-40 bg-gray-200 rounded-2xl overflow-hidden relative flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-60">
+                        <div class="absolute bg-white/90 px-4 py-2 rounded-full text-sm font-bold shadow-md"><i class="fa-solid fa-map-location-dot text-emerald-500 mr-2"></i>查看高清地图</div>
+                    </div>
+                </div>
+
+                <div id="t2" class="tab-content hidden space-y-3">
+                    <div class="bg-white rounded-2xl p-3 flex gap-3 shadow-sm border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=300" class="w-24 h-24 rounded-xl object-cover">
+                        <div class="flex-1 py-1"><h4 class="font-bold text-[15px]">老槐树地锅鸡</h4><p class="text-[10px] text-gray-400 my-1">4.9分 | 人均 ¥55</p><span class="bg-orange-50 text-orange-600 text-[10px] px-1.5 py-0.5 rounded">招牌推荐</span></div>
+                    </div>
+                </div>
+
+                <div id="t3" class="tab-content hidden space-y-3">
+                    <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&q=80&w=600" class="w-full h-32 object-cover">
+                        <div class="p-3"><h4 class="font-bold text-[15px]">星空民宿</h4><p class="text-[11px] text-gray-400">独立庭院 / 落地窗</p><div class="text-right text-red-500 font-bold">¥288起</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 bg-white px-4 py-3 flex gap-3 z-40 pb-6 border-t border-gray-100">
+            <button class="flex-[1.5] bg-emerald-50 text-emerald-600 py-2.5 rounded-xl font-bold text-[13px] border border-emerald-200"><i class="fa-solid fa-ear-listen mr-1.5"></i> AI伴游</button>
+            <button class="flex-[2] bg-gradient-to-r from-emerald-500 to-emerald-400 text-white py-2.5 rounded-xl font-bold text-[13px] shadow-lg"><i class="fa-solid fa-location-arrow mr-1.5"></i> 去这里</button>
+        </div>
+    </div>
+    <script>
+        function switchTab(id, btn) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+            document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('bg-emerald-500', 'text-white', 'font-bold'); b.classList.add('text-gray-500', 'font-medium'); });
+            btn.classList.remove('text-gray-500', 'font-medium'); btn.classList.add('bg-emerald-500', 'text-white', 'font-bold');
+        }
+    </script>
+</body>
+</html>

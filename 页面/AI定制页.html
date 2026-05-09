@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豫见乡旅 - AI智能定制流</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .fade-in-up { animation: fadeInUp 0.5s ease forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .ai-thinking span { animation: bounce 1.4s infinite ease-in-out both; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background-color: #10b981; margin: 0 2px; }
+        .ai-thinking span:nth-child(1) { animation-delay: -0.32s; }
+        .ai-thinking span:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+    </style>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen font-sans">
+    <div class="w-full max-w-[400px] h-[850px] bg-gray-50 relative overflow-hidden shadow-2xl sm:rounded-[2.5rem] sm:border-8 border-gray-800 flex flex-col">
+        
+        <div class="bg-white/80 backdrop-blur-md px-4 pt-12 pb-3 flex items-center justify-between shadow-sm z-30 sticky top-0">
+            <button class="p-2 -ml-2 text-gray-600"><i class="fa-solid fa-chevron-left text-lg"></i></button>
+            <div class="flex items-center"><div class="bg-emerald-100 text-emerald-500 w-6 h-6 rounded-full flex items-center justify-center mr-2"><i class="fa-solid fa-wand-magic-sparkles text-xs"></i></div><h2 class="font-bold text-gray-800 text-[16px]">AI 乡旅智选</h2></div>
+            <button class="p-2 -mr-2 text-gray-400"><i class="fa-solid fa-clock-rotate-left text-[16px]"></i></button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-4 space-y-6 no-scrollbar pb-28" id="chatContainer">
+            
+            <div class="flex items-start gap-2.5 mt-2 fade-in-up">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=10b981" class="w-8 h-8 rounded-full shadow-sm bg-emerald-500">
+                <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm max-w-[88%] border border-gray-100">
+                    <p class="text-[14px] text-gray-700 leading-relaxed">你好！我是专属规划师。直接点选偏好，我为你生成完美方案。👇</p>
+                </div>
+            </div>
+
+            <!-- 向导表单 -->
+            <div class="flex items-start gap-2.5 fade-in-up">
+                <div class="w-8 shrink-0"></div>
+                <div class="bg-white rounded-2xl shadow-sm w-full border border-emerald-100/60 overflow-hidden">
+                    <div class="bg-emerald-50/50 px-4 py-3 border-b border-emerald-50"><h3 class="text-[13px] font-bold text-emerald-700"><i class="fa-solid fa-sliders mr-1.5"></i> 定制专属行程</h3></div>
+                    <div class="p-4 space-y-4">
+                        <div>
+                            <p class="text-xs font-bold text-gray-500 mb-2">同行人员</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-emerald-500 text-white text-[12px] px-3 py-1.5 rounded-full border border-emerald-500 cursor-pointer transition-all" onclick="toggleTag(this)">👨‍👩‍👧‍👦 带父母</span>
+                                <span class="bg-gray-50 text-gray-600 text-[12px] px-3 py-1.5 rounded-full border border-gray-200 cursor-pointer" onclick="toggleTag(this)">👶 亲子遛娃</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-500 mb-2">核心诉求 (可多选)</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-emerald-500 text-white text-[12px] px-3 py-1.5 rounded-full border border-emerald-500 cursor-pointer" onclick="toggleTag(this)">🍲 吃农家菜</span>
+                                <span class="bg-emerald-500 text-white text-[12px] px-3 py-1.5 rounded-full border border-emerald-500 cursor-pointer" onclick="toggleTag(this)">🌳 不爬山</span>
+                            </div>
+                        </div>
+                        <button id="generateBtn" onclick="startGeneration()" class="w-full mt-2 bg-gradient-to-r from-emerald-500 to-emerald-400 text-white py-3 rounded-xl font-bold text-[14px] shadow-lg flex justify-center items-center"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i> 一键生成方案</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 动态生成区 -->
+            <div id="userMessage" class="hidden flex justify-end mt-4 fade-in-up"><div class="bg-emerald-500 text-white px-4 py-3 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%]"><p class="text-[14px] leading-relaxed">带父母，吃农家菜、不爬山要凉爽。帮我推荐并规划！</p></div></div>
+            <div id="aiThinking" class="hidden flex items-start gap-2.5 mt-4 fade-in-up"><img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=10b981" class="w-8 h-8 rounded-full bg-emerald-500"><div class="bg-white px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm border border-gray-100 flex items-center h-10"><div class="ai-thinking text-emerald-500 flex items-center"><span></span><span></span><span></span></div><span class="text-xs text-emerald-600 ml-2 font-medium">检索数据库...</span></div></div>
+            
+            <div id="aiResult" class="hidden flex items-start gap-2.5 mt-4 fade-in-up pb-6">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=10b981" class="w-8 h-8 rounded-full shadow-sm bg-emerald-500 shrink-0">
+                <div class="w-full relative">
+                    <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm border border-emerald-100 mb-3"><p class="text-[13px] text-gray-700">匹配成功！为您甄选了 <strong class="text-emerald-600">郑州·樱桃沟</strong>：</p></div>
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                        <div class="relative h-44">
+                            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            <div class="absolute top-3 right-3 bg-black/40 backdrop-blur-md rounded-lg px-2 py-1 text-white text-center border border-white/20"><div class="text-[16px] font-bold text-orange-400">98%</div><div class="text-[8px]">AI 匹配度</div></div>
+                            <div class="absolute bottom-3 left-4 right-4 text-white"><h3 class="text-xl font-bold mb-1 shadow-sm">樱桃沟风景区</h3><div class="flex gap-1.5"><span class="bg-emerald-500/80 text-[10px] px-2 py-0.5 rounded">天然氧吧</span><span class="bg-white/20 text-[10px] px-2 py-0.5 rounded">平缓木栈道</span></div></div>
+                        </div>
+                        <div class="p-4 bg-gray-50/50">
+                            <h4 class="text-[14px] font-bold text-gray-800 border-l-4 border-emerald-500 pl-2 mb-4">专属行程推荐</h4>
+                            <div class="space-y-5 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-[2px] before:bg-emerald-100">
+                                <div class="relative flex items-start gap-3"><div class="bg-emerald-500 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 z-10 shadow-sm mt-0.5 ring-4 ring-white"><i class="fa-solid fa-car text-[10px]"></i></div><div class="flex-1 bg-white p-3 rounded-xl border border-gray-100 shadow-sm"><h5 class="text-[13px] font-bold text-gray-800">10:00 | 栈道漫步</h5><p class="text-[11px] text-gray-500 mt-1">走林间木栈道，地势平缓不费膝盖。</p></div></div>
+                                <div class="relative flex items-start gap-3"><div class="bg-orange-400 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 z-10 shadow-sm mt-0.5 ring-4 ring-white"><i class="fa-solid fa-fire-burner text-[10px]"></i></div><div class="flex-1 bg-white p-3 rounded-xl border border-gray-100 shadow-sm"><h5 class="text-[13px] font-bold text-gray-800">12:30 | 特色地锅鸡</h5><p class="text-[11px] text-gray-500 mt-1">推荐【老槐树农庄】软糯易消化。</p></div></div>
+                            </div>
+                            <div class="mt-6 flex gap-3">
+                                <button class="flex-1 bg-white text-gray-700 py-2.5 rounded-xl text-[13px] border border-gray-200">收藏方案</button>
+                                <button class="flex-[2] bg-emerald-500 text-white py-2.5 rounded-xl font-bold text-[13px] shadow-lg"><i class="fa-solid fa-location-arrow mr-1.5"></i> 开启伴游</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 bg-white px-4 py-3 flex items-center gap-3 z-30 pb-6 shadow-2xl">
+            <button class="bg-gray-100 w-9 h-9 rounded-full text-gray-500"><i class="fa-solid fa-microphone"></i></button>
+            <input type="text" placeholder="对结果不满意？直接告诉我..." class="flex-1 bg-gray-100 rounded-full px-4 py-2 text-[13px] outline-none">
+            <button class="bg-emerald-500 text-white w-9 h-9 rounded-full"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </div>
+    <script>
+        function toggleTag(el) { el.classList.toggle('bg-emerald-500'); el.classList.toggle('text-white'); el.classList.toggle('bg-gray-50'); el.classList.toggle('text-gray-600'); }
+        function startGeneration() {
+            document.getElementById('generateBtn').innerHTML = '生成中...';
+            document.getElementById('userMessage').classList.remove('hidden');
+            setTimeout(() => { document.getElementById('aiThinking').classList.remove('hidden'); }, 600);
+            setTimeout(() => { document.getElementById('aiThinking').classList.add('hidden'); document.getElementById('aiResult').classList.remove('hidden'); document.getElementById('generateBtn').innerHTML = '已生成'; }, 2000);
+        }
+    </script>
+</body>
+</html>
