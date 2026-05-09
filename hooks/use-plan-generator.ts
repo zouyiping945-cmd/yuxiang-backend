@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { villages } from "@/lib/mock-villages";
-import type { PlanResult, PlanStatus, TravelPreference, Village } from "@/lib/types";
+import type { PlanAlternative, PlanResult, PlanStatus, TravelPreference, Village } from "@/lib/types";
 
 type PlanApiSuccess = {
   ok: true;
@@ -70,25 +70,131 @@ function findVillageById(id: string): Village | undefined {
   return villages.find((item) => item.id === id);
 }
 
-function normalizeMatchScore(value: unknown, fallback = 88): number {
+const fallbackVillage: Village = villages[0] ?? {
+  id: "fallback-village",
+  name: "推荐目的地",
+  city: "郑州",
+  tags: [],
+  driveTimeMinutes: 0,
+  suitableForElders: false,
+  easyWalk: false,
+  hasFarmFood: false,
+  hasStay: false,
+  coverImage: "",
+  description: "",
+  rating: "4.8",
+  distanceText: ""
+};
+
+function normalizeString(value: unknown, fallback = ""): string {
+  return typeof value === "string" ? value : fallback;
+}
+
+function normalizeNumber(value: unknown, fallback = 88): number {
   return typeof value === "number" && Number.isFinite(value) ? value : fallback;
 }
 
-function normalizeAlternatives(alternatives: PlanResult["alternatives"]): PlanResult["alternatives"] {
-  return alternatives.map((item) => ({
+function normalizeArray<T>(value: unknown, fallback: T[] = []): T[] {
+  return Array.isArray(value) ? (value as T[]) : fallback;
+}
+
+function normalizeBoolean(value: unknown, fallback = false): boolean {
+  return typeof value === "boolean" ? value : fallback;
+}
+
+function normalizeStringArray(value: unknown, fallback: string[] = []): string[] {
+  const source = normalizeArray<unknown>(value, fallback);
+  return source.filter((item): item is string => typeof item === "string");
+}
+
+function normalizeProviderUsed(value: unknown, fallback: PlanResult["providerUsed"] = "mock"): PlanResult["providerUsed"] {
+  return value === "mock" || value === "deepseek" || value === "doubao" ? value : fallback;
+}
+
+function normalizePreference(value: unknown): TravelPreference {
+  const source = value && typeof value === "object" ? (value as Partial<TravelPreference>) : {};
+
+  return {
+    companions: normalizeStringArray(source.companions),
+    demands: normalizeStringArray(source.demands),
+    travelWithElders: normalizeBoolean(source.travelWithElders),
+    travelWithKids: normalizeBoolean(source.travelWithKids),
+    easyWalkRequired: normalizeBoolean(source.easyWalkRequired),
+    farmFoodPreferred: normalizeBoolean(source.farmFoodPreferred),
+    needStay: normalizeBoolean(source.needStay)
+  };
+}
+
+function normalizeVillage(value: unknown, fallback: Village = fallbackVillage): Village {
+  const source = value && typeof value === "object" ? (value as Partial<Village>) : {};
+
+  return {
+    ...fallback,
+    id: normalizeString(source.id, fallback.id),
+    name: normalizeString(source.name, fallback.name),
+    city: normalizeString(source.city, fallback.city),
+    tags: normalizeStringArray(source.tags, fallback.tags),
+    driveTimeMinutes: normalizeNumber(source.driveTimeMinutes, fallback.driveTimeMinutes),
+    suitableForElders: normalizeBoolean(source.suitableForElders, fallback.suitableForElders),
+    easyWalk: normalizeBoolean(source.easyWalk, fallback.easyWalk),
+    hasFarmFood: normalizeBoolean(source.hasFarmFood, fallback.hasFarmFood),
+    hasStay: normalizeBoolean(source.hasStay, fallback.hasStay),
+    coverImage: normalizeString(source.coverImage, fallback.coverImage),
+    description: normalizeString(source.description, fallback.description),
+    rating: normalizeString(source.rating, fallback.rating),
+    distanceText: normalizeString(source.distanceText, fallback.distanceText)
+  };
+}
+
+function normalizeAlternatives(alternatives: unknown, fallback: PlanAlternative[] = []): PlanAlternative[] {
+  const source = normalizeArray<PlanAlternative>(alternatives, fallback);
+
+  return source.map((item) => ({
     ...item,
-    matchScore: normalizeMatchScore(item.matchScore, 88)
+    id: normalizeString(item.id),
+    name: normalizeString(item.name),
+    city: normalizeString(item.city),
+    rating: normalizeString(item.rating, "4.8"),
+    tags: normalizeStringArray(item.tags),
+    description: normalizeString(item.description),
+    distanceText: normalizeString(item.distanceText),
+    summary: normalizeString(item.summary),
+    reasonSummary: normalizeString(item.reasonSummary),
+    matchScore: normalizeNumber(item.matchScore, 88)
   }));
 }
 
+function normalizeMatchScore(value: unknown, fallback = 88): number {
+  return normalizeNumber(value, fallback);
+}
+
 function normalizePlanResult(plan: PlanResult, fallback = 88): PlanResult {
-  const matchScore = normalizeMatchScore(plan.matchScore, fallback);
+  const source = plan as Partial<PlanResult>;
+  const matchScore = normalizeNumber(source.matchScore, fallback);
 
   return {
-    ...plan,
+    requestId: normalizeString(source.requestId, `plan_${Date.now()}`),
+    generatedAt: normalizeString(source.generatedAt, new Date().toISOString()),
+    preference: normalizePreference(source.preference),
+    inputText: normalizeString(source.inputText),
+    providerUsed: normalizeProviderUsed(source.providerUsed),
+    fallbackUsed: normalizeBoolean(source.fallbackUsed),
+    recommended: normalizeVillage(source.recommended),
+    alternatives: normalizeAlternatives(source.alternatives),
+    routeOptions: normalizeArray<PlanResult["routeOptions"][number]>(source.routeOptions),
+    foods: normalizeArray<PlanResult["foods"][number]>(source.foods),
+    stays: normalizeArray<PlanResult["stays"][number]>(source.stays),
     matchScore,
-    alternatives: normalizeAlternatives(plan.alternatives)
+    reasons: normalizeStringArray(source.reasons),
+    reasonTags: normalizeStringArray(source.reasonTags),
+    reasonSummary: normalizeString(source.reasonSummary),
+    steps: normalizeArray<PlanResult["steps"][number]>(source.steps),
+    summary: normalizeString(source.summary)
   };
+}
+
+function normalizeResultUpdate(plan: PlanResult, fallback = 88): PlanResult {
+  return normalizePlanResult(plan, fallback);
 }
 
 export function usePlanGenerator() {
@@ -213,17 +319,20 @@ export function usePlanGenerator() {
             return prev;
           }
 
-          const mergedReasons = [next.reasonSummary, ...prev.reasons].filter(Boolean).slice(0, 4);
+          const mergedReasons = normalizeStringArray([
+            next.reasonSummary,
+            ...normalizeStringArray(prev.reasons)
+          ]).slice(0, 4);
           const fallbackMatchScore = normalizeMatchScore(prev.matchScore, 88);
 
-          return {
+          return normalizeResultUpdate({
             ...prev,
             recommended: village,
             matchScore: normalizeMatchScore(next.matchScore, fallbackMatchScore),
             summary: `已切换到备选推荐：${village.city}·${village.name}`,
             reasons: mergedReasons,
             alternatives: normalizeAlternatives(alternatives.slice(1))
-          };
+          }, fallbackMatchScore);
         });
         setStatus("success");
         setRegeneratingHint("");

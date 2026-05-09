@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { AlertCircle } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { AiChatHeader } from "@/components/ai/ai-chat-header";
@@ -14,7 +14,7 @@ import { usePlanGenerator } from "@/hooks/use-plan-generator";
 const peopleTags = ["👨‍👩‍👧‍👦 带父母", "👶 亲子遛娃"];
 const demandTags = ["🍲 吃农家菜", "🌳 不爬山"];
 
-export default function AiPage() {
+function AiPageContent() {
   const searchParams = useSearchParams();
   const [selectedPeople, setSelectedPeople] = useState<string[]>([peopleTags[0]]);
   const [selectedDemands, setSelectedDemands] = useState<string[]>(demandTags);
@@ -171,5 +171,21 @@ export default function AiPage() {
         disabled={isBusy}
       />
     </MobileFrame>
+  );
+}
+
+export default function AiPage() {
+  return (
+    <Suspense
+      fallback={
+        <MobileFrame>
+          <div className="flex flex-1 items-center justify-center p-4 text-[13px] text-gray-500">
+            加载中...
+          </div>
+        </MobileFrame>
+      }
+    >
+      <AiPageContent />
+    </Suspense>
   );
 }
