@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { normalizePreference } from "@/lib/ai/normalize-preference";
 import { rankVillages } from "@/lib/ai/rank-villages";
 import { buildPlanFromMock } from "@/lib/ai/build-plan-from-mock";
-import { getPlanProvider } from "@/lib/ai/providers";
 import { villages as fallbackVillages } from "@/lib/mock-villages";
 import type { PlanApiError, PlanApiSuccess, RankedVillage } from "@/lib/ai/types";
 import type { PlanRequestPayload, PlanResult } from "@/lib/types";
@@ -89,58 +88,18 @@ export async function POST(request: Request) {
       return errorResponse("NO_VILLAGE_FOUND", "暂时未找到可推荐的村庄", 404);
     }
 
-    let finalResult: PlanResult;
-    const provider = getPlanProvider();
-    let providerUsed: "mock" | "deepseek" | "doubao" = "mock";
-
-    if (provider) {
-      providerUsed = provider.name;
-      try {
-        const providerOutput = await provider.generate({
-          preference,
-          topCandidates: rankedVillages.slice(0, 3)
-        });
-
-        finalResult = await buildPlanFromMock(
-          {
-            preference,
-            rankedVillages
-          },
-          providerOutput,
-          {
-            inputText,
-            providerUsed,
-            fallbackUsed: false
-          }
-        );
-      } catch {
-        finalResult = await buildPlanFromMock(
-          {
-            preference,
-            rankedVillages
-          },
-          undefined,
-          {
-            inputText,
-            providerUsed: "mock",
-            fallbackUsed: true
-          }
-        );
+    const finalResult: PlanResult = await buildPlanFromMock(
+      {
+        preference,
+        rankedVillages
+      },
+      undefined,
+      {
+        inputText,
+        providerUsed: "mock",
+        fallbackUsed: false
       }
-    } else {
-      finalResult = await buildPlanFromMock(
-        {
-          preference,
-          rankedVillages
-        },
-        undefined,
-        {
-          inputText,
-          providerUsed: "mock",
-          fallbackUsed: false
-        }
-      );
-    }
+    );
 
     const response: PlanApiSuccess = {
       ok: true,

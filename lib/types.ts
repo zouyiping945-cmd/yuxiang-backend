@@ -143,6 +143,7 @@ export type PlanResult = {
   reasons: string[];
   reasonTags?: string[];
   reasonSummary?: string;
+  travelTips?: string[];
   steps: PlanStep[];
   summary?: string;
 };

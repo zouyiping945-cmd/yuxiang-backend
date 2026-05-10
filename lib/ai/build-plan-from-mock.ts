@@ -1,4 +1,5 @@
 import type { BuildPlanInput, ProviderPlanOutput } from "@/lib/ai/types";
+import { generateDeepSeekPlanEnhancement } from "@/lib/ai/deepseek-provider";
 import { getSupabaseVillages } from "@/lib/data/supabase-villages";
 import { villages as fallbackVillages } from "@/lib/mock-villages";
 import { REAL_VILLAGES } from "@/lib/real-villages";
@@ -603,6 +604,27 @@ async function getPlanSeedVillages(): Promise<RealVillageData[]> {
   return REAL_VILLAGES;
 }
 
+function isDeepSeekRequested(): boolean {
+  return (process.env.AI_PROVIDER ?? "mock").trim().toLowerCase() === "deepseek";
+}
+
+async function enhancePlanWithDeepSeek(input: BuildPlanInput, plan: PlanResult): Promise<PlanResult> {
+  const enhancement = await generateDeepSeekPlanEnhancement(input, plan);
+  if (!enhancement) {
+    return isDeepSeekRequested() ? { ...plan, fallbackUsed: true } : plan;
+  }
+
+  return {
+    ...plan,
+    providerUsed: "deepseek",
+    fallbackUsed: false,
+    summary: enhancement.summary,
+    reasonTags: enhancement.reasonTags,
+    reasonSummary: enhancement.reasonSummary,
+    travelTips: enhancement.travelTips
+  };
+}
+
 async function buildPlanFromRealVillages(
   input: BuildPlanInput,
   metadata?: {
@@ -639,12 +661,12 @@ async function buildPlanFromRealVillages(
   const reasonSummary = buildReasonSummary(hits, reasonTags);
   const alternatives = ranked.slice(1, 4).map((item) => toRealAlternative(item.village, item.score, item.reasons, hits));
 
-  return {
+  const rulePlan: PlanResult = {
     requestId: `plan_${Date.now()}`,
     generatedAt: new Date().toISOString(),
     preference: input.preference,
     inputText,
-    providerUsed: metadata?.providerUsed ?? "mock",
+    providerUsed: "mock",
     fallbackUsed: Boolean(metadata?.fallbackUsed),
     recommended: toSafeVillage(recommended),
     alternatives,
@@ -658,6 +680,8 @@ async function buildPlanFromRealVillages(
     steps: sanitizeSteps(undefined, fallbackSteps),
     summary: buildRealSummary(top.village, hits, reasonTags)
   };
+
+  return enhancePlanWithDeepSeek(input, rulePlan);
 }
 
 export async function buildPlanFromMock(
@@ -696,12 +720,12 @@ export async function buildPlanFromMock(
     });
   const alternatives = Array.from(alternativeMap.values()).slice(0, 3);
 
-  return {
+  const rulePlan: PlanResult = {
     requestId: `plan_${Date.now()}`,
     generatedAt: new Date().toISOString(),
     preference: input.preference,
     inputText,
-    providerUsed: metadata?.providerUsed ?? "mock",
+    providerUsed: "mock",
     fallbackUsed: Boolean(metadata?.fallbackUsed),
     recommended: toSafeVillage(top.village),
     alternatives,
@@ -713,4 +737,6 @@ export async function buildPlanFromMock(
     steps: sanitizeSteps(providerOutput?.steps, fallbackSteps),
     summary: providerOutput?.summary ?? buildSummary(top.village, input, inputText)
   };
+
+  return enhancePlanWithDeepSeek(input, rulePlan);
 }
