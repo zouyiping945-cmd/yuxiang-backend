@@ -123,8 +123,40 @@ export type RealVillageData = {
   publicTransportFriendly?: boolean;
   dataReviewStatus?: "seed" | "needs_review" | "verified";
   reviewNotes?: string[];
+  address?: string;
+  latitude?: number;
+  longitude?: number;
+  adcode?: string;
+  amapPoiId?: string;
+  geoSource?: string;
+  geoReviewStatus?: "needs_review" | "verified" | "rejected";
+  geoReviewNotes?: string[];
   sourceConfidence: "高" | "中" | "低";
   dataStatus: "seed" | "enriched" | "verified";
+};
+
+export type AmapPoiCategory = "food" | "stay" | "parking" | "activity";
+
+export type VillagePoi = {
+  id?: string;
+  villageId: string;
+  poiId: string;
+  source: "amap" | "manual" | "seed";
+  category: AmapPoiCategory;
+  name: string;
+  address?: string;
+  latitude?: number;
+  longitude?: number;
+  distanceMeters?: number;
+  distanceText?: string;
+  typeText?: string;
+  tel?: string;
+  rating?: string;
+  priceText?: string;
+  raw?: unknown;
+  isRecommended?: boolean;
+  dataReviewStatus?: "needs_review" | "verified" | "rejected";
+  reviewNotes?: string[];
 };
 
 export type PlanResult = {
