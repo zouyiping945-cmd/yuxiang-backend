@@ -1,9 +1,10 @@
 import type { BuildPlanInput, ProviderPlanOutput } from "@/lib/ai/types";
 import { generateDeepSeekPlanEnhancement } from "@/lib/ai/deepseek-provider";
+import { getAmapPlayPoisForVillage } from "@/lib/data/amap-play-pois";
 import { getSupabaseVillages } from "@/lib/data/supabase-villages";
 import { villages as fallbackVillages } from "@/lib/mock-villages";
 import { REAL_VILLAGES } from "@/lib/real-villages";
-import type { FoodOption, PlanAlternative, PlanResult, PlanStep, RealVillageData, RouteOption, StayOption, Village } from "@/lib/types";
+import type { FoodOption, PlanAlternative, PlanResult, PlanStep, PlayHighlight, PlayPlace, RealVillageData, RouteOption, StayOption, Village } from "@/lib/types";
 
 const ALLOWED_STEP_KINDS = new Set([
   "walk",
@@ -356,6 +357,253 @@ function buildReasonSummary(hits: DemandHits, reasonTags: string[]): string {
   return `匹配你提出的${demandText}需求，对应${reasonTags.join("、")}等推荐理由。`;
 }
 
+function pushHighlight(highlights: PlayHighlight[], next: PlayHighlight) {
+  if (!next.title.trim() || !next.desc.trim()) {
+    return;
+  }
+
+  if (highlights.some((item) => item.title === next.title)) {
+    return;
+  }
+
+  highlights.push(next);
+}
+
+function buildPlayHighlightsFromReal(real: RealVillageData, hits: DemandHits): PlayHighlight[] {
+  const highlights: PlayHighlight[] = [];
+  const tagText = real.tags.slice(0, 2).join("、") || "乡村慢游";
+  const foodNames = real.foods.map((food) => food.name).filter(Boolean).slice(0, 2);
+  const stayNames = real.stays.map((stay) => stay.name).filter(Boolean).slice(0, 2);
+  const routeText = real.routeOptions[0]?.title || real.visitDuration || real.distanceText;
+
+  if (hits.hitEasy || real.elderFriendly || real.tags.some((tag) => tag.includes("轻松") || tag.includes("慢游") || tag.includes("康养"))) {
+    pushHighlight(highlights, {
+      title: "轻松慢游",
+      desc: `按${tagText}节奏安排，适合把重点放在散步、休息和低强度停留。`,
+      source: "profile"
+    });
+  }
+
+  if (hits.hitFood || real.foodFriendly || foodNames.length > 0 || real.tags.some((tag) => tag.includes("农家菜"))) {
+    pushHighlight(highlights, {
+      title: "农家菜用餐",
+      desc: foodNames.length > 0
+        ? `可优先参考已有餐饮候选：${foodNames.join("、")}，出发前建议再确认营业情况。`
+        : "适合安排一顿本地家常风味或农家菜，具体店铺建议出发前用地图确认。",
+      source: "food"
+    });
+  }
+
+  if (hits.hitPhoto || real.photoFriendly || real.tags.some((tag) => tag.includes("拍照") || tag.includes("风光"))) {
+    pushHighlight(highlights, {
+      title: "田园拍照",
+      desc: "结合村庄风光和慢步行节奏，适合上午或下午光线柔和时拍照停留。",
+      source: "profile"
+    });
+  }
+
+  if (hits.hitCulture || real.cultureFriendly || real.designations.length > 0) {
+    const designationText = real.designations.map((item) => item.type).slice(0, 2).join("、") || "乡村文化";
+    pushHighlight(highlights, {
+      title: "乡村文化走看",
+      desc: `可围绕${designationText}做轻量走看，不额外虚构景点名称。`,
+      source: "profile"
+    });
+  }
+
+  if (routeText) {
+    pushHighlight(highlights, {
+      title: "近郊路线",
+      desc: `当前路线数据提示${routeText}，适合做半日到一日的周末近郊安排。`,
+      source: "route"
+    });
+  }
+
+  if (hits.hitWellness || real.wellnessFriendly) {
+    pushHighlight(highlights, {
+      title: "放松休息",
+      desc: "适合把行程安排得松一点，减少赶场，把休息、散心和自然停留放在前面。",
+      source: "profile"
+    });
+  }
+
+  if (stayNames.length > 0 || real.stays.length > 0) {
+    pushHighlight(highlights, {
+      title: "住一晚慢游",
+      desc: stayNames.length > 0
+        ? `可参考已有住宿候选：${stayNames.join("、")}，预订前建议核验房态和位置。`
+        : "可以把节奏拉长到一晚，住宿信息建议预订前再次确认。",
+      source: "stay"
+    });
+  }
+
+  if (highlights.length < 3) {
+    real.tags.slice(0, 3).forEach((tag) => {
+      pushHighlight(highlights, {
+        title: tag,
+        desc: `围绕“${tag}”安排轻量体验，具体点位和服务建议出发前再次确认。`,
+        source: "profile"
+      });
+    });
+  }
+
+  return highlights.slice(0, 5);
+}
+
+function buildPlayHighlightsFromVillage(village: Village, input: BuildPlanInput, inputText?: string): PlayHighlight[] {
+  const highlights: PlayHighlight[] = [];
+  const text = buildPreferenceText(input, inputText);
+
+  if (input.preference.easyWalkRequired || hasText(text, ["轻松", "不累", "慢游"])) {
+    pushHighlight(highlights, {
+      title: "轻松散步",
+      desc: "把节奏放慢，适合先散步看村庄环境，再安排午餐和短暂停留。",
+      source: "profile"
+    });
+  }
+
+  if (village.hasFarmFood || input.preference.farmFoodPreferred || hasText(text, ["农家菜", "美食", "吃饭"])) {
+    pushHighlight(highlights, {
+      title: "农家菜用餐",
+      desc: "可安排一顿本地家常风味或农家菜，具体店铺建议出发前结合地图确认。",
+      source: "food"
+    });
+  }
+
+  if (village.tags.some((tag) => tag.includes("拍照") || tag.includes("风光")) || hasText(text, ["拍照", "出片"])) {
+    pushHighlight(highlights, {
+      title: "田园拍照",
+      desc: "适合预留一段不赶时间的拍照停留，优先选择光线柔和的时段。",
+      source: "profile"
+    });
+  }
+
+  if (village.hasStay || input.preference.needStay || hasText(text, ["住", "一晚"])) {
+    pushHighlight(highlights, {
+      title: "住一晚慢游",
+      desc: "如果想放松一些，可以把行程延展为一晚，住宿需在出发前再次确认。",
+      source: "stay"
+    });
+  }
+
+  village.tags.slice(0, 3).forEach((tag) => {
+    pushHighlight(highlights, {
+      title: tag,
+      desc: `围绕“${tag}”安排轻量体验，不额外虚构具体景点或商家。`,
+      source: "profile"
+    });
+  });
+
+  return highlights.slice(0, 5);
+}
+
+function normalizePlaceName(name: string): string {
+  return name.trim().replace(/\s+/g, "");
+}
+
+function buildPlayPlaceReason(place: PlayPlace, hits: DemandHits): string {
+  const category = place.category ?? "周边游玩";
+
+  if (hits.hitKid && category.includes("亲子")) {
+    return "适合亲子停留和互动体验，能让行程比单纯散步更有参与感。";
+  }
+
+  if (hits.hitFood && category.includes("餐饮")) {
+    return "适合安排农家风味或地方餐饮，和用户想吃农家菜的需求匹配。";
+  }
+
+  if (hits.hitPhoto && (category.includes("艺术") || category.includes("景区") || category.includes("公园") || category.includes("文化"))) {
+    return "适合拍照和轻松走看，建议选择上午或下午光线柔和时段。";
+  }
+
+  if (hits.hitEasy || hits.hitElder) {
+    return "适合作为轻量停留点，行程节奏不用太赶，出发前建议确认营业状态。";
+  }
+
+  if (category.includes("采摘")) {
+    return "适合做乡村采摘体验，季节性较强，建议出发前确认是否开放。";
+  }
+
+  if (category.includes("垂钓")) {
+    return "适合慢节奏休闲停留，适合不赶时间的乡村游安排。";
+  }
+
+  if (category.includes("文化")) {
+    return "适合补充乡村文化和老街区走看体验，行程强度相对可控。";
+  }
+
+  return "可作为村庄周边的真实候选游玩点，建议出发前再次确认营业和开放情况。";
+}
+
+function buildRulePlayPlaces(candidates: PlayPlace[], hits: DemandHits): PlayPlace[] {
+  return candidates.slice(0, 6).map((place) => ({
+    ...place,
+    reason: buildPlayPlaceReason(place, hits)
+  }));
+}
+
+function validateDeepSeekPlayPlaces(candidates: PlayPlace[], aiPlaces: PlayPlace[]): PlayPlace[] {
+  if (candidates.length === 0) {
+    return [];
+  }
+
+  const allowedByName = new Map<string, PlayPlace>();
+  candidates.forEach((place) => {
+    allowedByName.set(normalizePlaceName(place.name), place);
+  });
+
+  const merged: PlayPlace[] = [];
+  const seen = new Set<string>();
+
+  aiPlaces.forEach((place) => {
+    const key = normalizePlaceName(place.name);
+    const original = allowedByName.get(key);
+    if (!original || seen.has(key)) {
+      return;
+    }
+
+    seen.add(key);
+    merged.push({
+      ...original,
+      category: original.category || place.category,
+      address: original.address ?? null,
+      distanceText: original.distanceText ?? null,
+      reason: place.reason || original.reason
+    });
+  });
+
+  if (merged.length === 0) {
+    return candidates.slice(0, 6);
+  }
+
+  candidates.forEach((place) => {
+    const key = normalizePlaceName(place.name);
+    if (merged.length >= 6 || seen.has(key)) {
+      return;
+    }
+
+    seen.add(key);
+    merged.push(place);
+  });
+
+  return merged.slice(0, 6);
+}
+
+async function getPlayPlaceCandidatesForVillage(real: RealVillageData): Promise<PlayPlace[]> {
+  if (typeof real.longitude !== "number" || typeof real.latitude !== "number") {
+    return [];
+  }
+
+  const pois = await getAmapPlayPoisForVillage({
+    villageName: real.name,
+    longitude: real.longitude,
+    latitude: real.latitude,
+    city: real.city
+  });
+
+  return pois;
+}
+
 function parseDriveMinutes(routeTitle: string | undefined): number {
   if (!routeTitle) {
     return 45;
@@ -388,7 +636,11 @@ function realToVillage(real: RealVillageData): Village {
     coverImage: "",
     description: real.description,
     rating: real.rating,
-    distanceText: real.distanceText
+    distanceText: real.distanceText,
+    address: real.address,
+    fullName: real.fullName,
+    latitude: real.latitude,
+    longitude: real.longitude
   };
 }
 
@@ -608,11 +860,18 @@ function isDeepSeekRequested(): boolean {
   return (process.env.AI_PROVIDER ?? "mock").trim().toLowerCase() === "deepseek";
 }
 
-async function enhancePlanWithDeepSeek(input: BuildPlanInput, plan: PlanResult): Promise<PlanResult> {
-  const enhancement = await generateDeepSeekPlanEnhancement(input, plan);
+async function enhancePlanWithDeepSeek(
+  input: BuildPlanInput,
+  plan: PlanResult,
+  knowledgeContext?: RealVillageData,
+  playPlaceCandidates: PlayPlace[] = []
+): Promise<PlanResult> {
+  const enhancement = await generateDeepSeekPlanEnhancement(input, plan, knowledgeContext, playPlaceCandidates);
   if (!enhancement) {
     return isDeepSeekRequested() ? { ...plan, fallbackUsed: true } : plan;
   }
+
+  const validatedPlayPlaces = validateDeepSeekPlayPlaces(playPlaceCandidates, enhancement.playPlaces);
 
   return {
     ...plan,
@@ -621,7 +880,9 @@ async function enhancePlanWithDeepSeek(input: BuildPlanInput, plan: PlanResult):
     summary: enhancement.summary,
     reasonTags: enhancement.reasonTags,
     reasonSummary: enhancement.reasonSummary,
-    travelTips: enhancement.travelTips
+    travelTips: enhancement.travelTips,
+    playPlaces: validatedPlayPlaces.length > 0 ? validatedPlayPlaces : plan.playPlaces,
+    playHighlights: enhancement.playHighlights.length > 0 ? enhancement.playHighlights : plan.playHighlights
   };
 }
 
@@ -659,6 +920,9 @@ async function buildPlanFromRealVillages(
   const matchScore = scoreToMatchScore(top.score);
   const reasonTags = buildReasonTags(top.village, hits);
   const reasonSummary = buildReasonSummary(hits, reasonTags);
+  const playHighlights = buildPlayHighlightsFromReal(top.village, hits);
+  const playPlaceCandidates = await getPlayPlaceCandidatesForVillage(top.village);
+  const playPlaces = buildRulePlayPlaces(playPlaceCandidates, hits);
   const alternatives = ranked.slice(1, 4).map((item) => toRealAlternative(item.village, item.score, item.reasons, hits));
 
   const rulePlan: PlanResult = {
@@ -677,11 +941,13 @@ async function buildPlanFromRealVillages(
     reasons: top.reasons,
     reasonTags,
     reasonSummary,
+    playPlaces,
+    playHighlights,
     steps: sanitizeSteps(undefined, fallbackSteps),
     summary: buildRealSummary(top.village, hits, reasonTags)
   };
 
-  return enhancePlanWithDeepSeek(input, rulePlan);
+  return enhancePlanWithDeepSeek(input, rulePlan, top.village, playPlaceCandidates);
 }
 
 export async function buildPlanFromMock(
@@ -707,6 +973,7 @@ export async function buildPlanFromMock(
   const reasons = (providerOutput?.reasons?.length ? providerOutput.reasons : top.reasons).slice(0, 4);
   const inputText = metadata?.inputText ?? "";
   const normalizedMatchScore = clampMatchScore(top.matchScore);
+  const playHighlights = buildPlayHighlightsFromVillage(top.village, input, inputText);
   const alternativeMap = new Map<string, ReturnType<typeof toAlternative>>();
   input.rankedVillages.slice(1).forEach((item) => {
     alternativeMap.set(item.village.id, toAlternative(item.village, item.matchScore, item.reasonSummary));
@@ -734,6 +1001,8 @@ export async function buildPlanFromMock(
     stays: buildStays(top.village),
     matchScore: normalizedMatchScore,
     reasons,
+    playPlaces: [],
+    playHighlights,
     steps: sanitizeSteps(providerOutput?.steps, fallbackSteps),
     summary: providerOutput?.summary ?? buildSummary(top.village, input, inputText)
   };

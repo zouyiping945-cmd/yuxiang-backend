@@ -35,6 +35,10 @@ export type Village = {
   description: string;
   rating: string;
   distanceText: string;
+  address?: string;
+  fullName?: string;
+  latitude?: number;
+  longitude?: number;
 };
 
 export type PlanStep = {
@@ -75,6 +79,21 @@ export type StayOption = {
   desc: string;
   priceText: string;
   tag?: string;
+};
+
+export type PlayHighlight = {
+  title: string;
+  desc: string;
+  source?: "profile" | "route" | "food" | "stay" | "ai";
+};
+
+export type PlayPlace = {
+  name: string;
+  category?: string;
+  address?: string | null;
+  distanceText?: string | null;
+  reason: string;
+  source: "amap" | "supabase" | "fallback";
 };
 
 export type DesignationType =
@@ -176,6 +195,8 @@ export type PlanResult = {
   reasonTags?: string[];
   reasonSummary?: string;
   travelTips?: string[];
+  playPlaces?: PlayPlace[];
+  playHighlights?: PlayHighlight[];
   steps: PlanStep[];
   summary?: string;
 };
