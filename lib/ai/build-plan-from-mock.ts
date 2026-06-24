@@ -1,10 +1,13 @@
 import type { BuildPlanInput, ProviderPlanOutput } from "@/lib/ai/types";
 import { generateDeepSeekPlanEnhancement } from "@/lib/ai/deepseek-provider";
 import { getAmapPlayPoisForVillage } from "@/lib/data/amap-play-pois";
+import { getRecommendedPoisForVillage } from "@/lib/data/village-recommended-pois";
+import { findExplicitVillageMatch } from "@/lib/data/village-name-match";
 import { getSupabaseVillages } from "@/lib/data/supabase-villages";
+import { getVillagePoiCoverage } from "@/lib/data/village-poi-coverage";
 import { villages as fallbackVillages } from "@/lib/mock-villages";
 import { REAL_VILLAGES } from "@/lib/real-villages";
-import type { FoodOption, PlanAlternative, PlanResult, PlanStep, PlayHighlight, PlayPlace, RealVillageData, RouteOption, StayOption, Village } from "@/lib/types";
+import type { FoodOption, PlanAlternative, PlanDataQuality, PlanResult, PlanStep, PlayHighlight, PlayPlace, RealVillageData, RecommendedPoi, RecommendedPoisByCategory, RouteOption, StayOption, Village, VillagePoiCoverage } from "@/lib/types";
 
 const ALLOWED_STEP_KINDS = new Set([
   "walk",
@@ -542,6 +545,123 @@ function buildRulePlayPlaces(candidates: PlayPlace[], hits: DemandHits): PlayPla
   }));
 }
 
+function toPlayPlaceSource(source: string | null | undefined): PlayPlace["source"] {
+  if (source === "amap" || source === "manual" || source === "seed") {
+    return source;
+  }
+
+  return "supabase";
+}
+
+function buildRecommendedPoiReason(poi: RecommendedPoi, hits: DemandHits): string {
+  const reviewPrefix = poi.dataReviewStatus === "verified"
+    ? "这是已核验的周边地点"
+    : "这是自动预筛出的周边候选点，建议出发前确认开放和营业情况";
+
+  if (hits.hitElder || hits.hitEasy) {
+    return `${reviewPrefix}，可作为轻松停留点，适合放慢节奏安排。`;
+  }
+
+  if (hits.hitKid) {
+    return `${reviewPrefix}，可补充亲子互动或短暂停留体验。`;
+  }
+
+  if (hits.hitFood && poi.category === "activity") {
+    return `${reviewPrefix}，可和附近餐饮一起安排成半日到一日乡村游。`;
+  }
+
+  const typeText = poi.typeText ? `，类型为${poi.typeText}` : "";
+  return `${reviewPrefix}${typeText}。`;
+}
+
+function mapActivityPoisToPlayPlaces(pois: RecommendedPoi[], hits: DemandHits): PlayPlace[] {
+  return pois.slice(0, 6).map((poi) => ({
+    name: poi.name,
+    category: poi.typeText || "乡村体验",
+    address: poi.address ?? null,
+    distanceText: poi.distanceText ?? null,
+    reason: buildRecommendedPoiReason(poi, hits),
+    source: toPlayPlaceSource(poi.source)
+  }));
+}
+
+function mapFoodPoisToOptions(pois: RecommendedPoi[]): FoodOption[] {
+  return pois.slice(0, 5).map((poi) => ({
+    name: poi.name,
+    desc: poi.typeText || poi.address || "周边餐饮候选",
+    priceText: poi.priceText || "价格请出发前确认",
+    tag: poi.dataReviewStatus === "verified" ? "已核验" : "自动预筛"
+  }));
+}
+
+function mapStayPoisToOptions(pois: RecommendedPoi[]): StayOption[] {
+  return pois.slice(0, 4).map((poi) => ({
+    name: poi.name,
+    desc: poi.typeText || poi.address || "周边住宿候选",
+    priceText: poi.priceText || "价格请出发前确认",
+    tag: poi.dataReviewStatus === "verified" ? "已核验" : "自动预筛"
+  }));
+}
+
+function buildParkingTravelTips(parkingPois: RecommendedPoi[]): string[] {
+  if (parkingPois.length === 0) {
+    return [];
+  }
+
+  const names = parkingPois.slice(0, 2).map((poi) => poi.name).join("、");
+  return [`附近有停车候选点：${names}，建议出发前再次确认车位和开放情况。`];
+}
+
+function hasAnyRecommendedPois(recommendedPois: RecommendedPoisByCategory): boolean {
+  return recommendedPois.activity.length > 0 ||
+    recommendedPois.food.length > 0 ||
+    recommendedPois.stay.length > 0 ||
+    recommendedPois.parking.length > 0;
+}
+
+function resolvePoiSource(recommendedPois: RecommendedPoisByCategory): NonNullable<PlanDataQuality["poiSource"]> {
+  const allPois = [
+    ...recommendedPois.activity,
+    ...recommendedPois.food,
+    ...recommendedPois.stay,
+    ...recommendedPois.parking
+  ];
+
+  if (allPois.some((poi) => poi.dataReviewStatus === "verified")) {
+    return "verified";
+  }
+
+  if (allPois.some((poi) => poi.isRecommended)) {
+    return "auto_ranked";
+  }
+
+  return allPois.length > 0 ? "candidate" : "fallback";
+}
+
+function countRecommendedPois(recommendedPois: RecommendedPoisByCategory): NonNullable<PlanDataQuality["recommendedPoiCounts"]> {
+  return {
+    activity: recommendedPois.activity.length,
+    food: recommendedPois.food.length,
+    stay: recommendedPois.stay.length,
+    parking: recommendedPois.parking.length
+  };
+}
+
+function mergeTravelTips(primary: string[] = [], secondary: string[] = []): string[] {
+  const merged: string[] = [];
+
+  [...primary, ...secondary].forEach((tip) => {
+    const normalized = tip.trim();
+    if (!normalized || merged.includes(normalized)) {
+      return;
+    }
+
+    merged.push(normalized);
+  });
+
+  return merged.slice(0, 5);
+}
+
 function validateDeepSeekPlayPlaces(candidates: PlayPlace[], aiPlaces: PlayPlace[]): PlayPlace[] {
   if (candidates.length === 0) {
     return [];
@@ -811,6 +931,111 @@ function scoreRealVillage(real: RealVillageData, input: BuildPlanInput, text: st
   };
 }
 
+type ScoredRealVillage = ReturnType<typeof scoreRealVillage>;
+type CoveragePrioritizedResult = {
+  ranked: ScoredRealVillage[];
+  coverageMap: Map<string, VillagePoiCoverage> | null;
+  coverageApplied: boolean;
+};
+
+async function getPoiCoverageMapSafe(): Promise<Map<string, VillagePoiCoverage> | null> {
+  try {
+    const coverage = await getVillagePoiCoverage();
+    if (coverage.length === 0) {
+      return null;
+    }
+
+    return new Map(coverage.map((item) => [item.villageId, item]));
+  } catch (error) {
+    console.warn("[plan-poi-coverage] fallback to original ranking.", error);
+    return null;
+  }
+}
+
+function prioritizeRankedVillagesByCoverage(
+  ranked: ScoredRealVillage[],
+  coverageMap: Map<string, VillagePoiCoverage> | null
+): CoveragePrioritizedResult {
+  if (!coverageMap || coverageMap.size === 0) {
+    return {
+      ranked,
+      coverageMap,
+      coverageApplied: false
+    };
+  }
+
+  const strong = ranked.filter((item) => coverageMap.get(item.village.id)?.coverageLevel === "strong");
+  const usable = ranked.filter((item) => coverageMap.get(item.village.id)?.coverageLevel === "usable");
+
+  if (strong.length > 0) {
+    return {
+      ranked: [...strong, ...usable],
+      coverageMap,
+      coverageApplied: true
+    };
+  }
+
+  if (usable.length > 0) {
+    return {
+      ranked: usable,
+      coverageMap,
+      coverageApplied: true
+    };
+  }
+
+  return {
+    ranked,
+    coverageMap,
+    coverageApplied: false
+  };
+}
+
+function buildDataQuality(
+  coverage: VillagePoiCoverage | undefined,
+  coverageApplied: boolean,
+  poiSource: NonNullable<PlanDataQuality["poiSource"]> = "fallback",
+  recommendedPoiCounts?: NonNullable<PlanDataQuality["recommendedPoiCounts"]>,
+  poiLookup?: {
+    keys?: string[];
+    queryVillageIds?: string[];
+    resolvedVillageId?: string;
+    matchedKey?: string;
+    debug?: NonNullable<PlanDataQuality["poiLookupDebug"]>;
+  },
+  explicitMatch?: {
+    matched: boolean;
+    name?: string;
+  }
+): PlanDataQuality {
+  const base = {
+    poiSource,
+    recommendedPoiCounts,
+    poiLookupKeys: poiLookup?.keys,
+    poiQueryVillageIds: poiLookup?.queryVillageIds,
+    poiResolvedVillageId: poiLookup?.resolvedVillageId,
+    poiLookupMatchedKey: poiLookup?.matchedKey,
+    poiLookupDebug: poiLookup?.debug,
+    explicitVillageMatched: explicitMatch?.matched,
+    explicitVillageMatchName: explicitMatch?.name
+  };
+
+  if (!coverageApplied || !coverage || coverage.coverageLevel === "excluded") {
+    return {
+      poiCoverageLevel: "fallback",
+      ...base
+    };
+  }
+
+  return {
+    poiCoverageLevel: coverage.coverageLevel,
+    ...base,
+    activityCount: coverage.activityCount,
+    foodCount: coverage.foodCount,
+    stayCount: coverage.stayCount,
+    parkingCount: coverage.parkingCount
+  };
+}
+
 function scoreToMatchScore(score: number): number {
   return clampMatchScore(88 + Math.min(8, Math.floor(score / 15)));
 }
@@ -864,9 +1089,10 @@ async function enhancePlanWithDeepSeek(
   input: BuildPlanInput,
   plan: PlanResult,
   knowledgeContext?: RealVillageData,
-  playPlaceCandidates: PlayPlace[] = []
+  playPlaceCandidates: PlayPlace[] = [],
+  recommendedPois?: RecommendedPoisByCategory
 ): Promise<PlanResult> {
-  const enhancement = await generateDeepSeekPlanEnhancement(input, plan, knowledgeContext, playPlaceCandidates);
+  const enhancement = await generateDeepSeekPlanEnhancement(input, plan, knowledgeContext, playPlaceCandidates, recommendedPois);
   if (!enhancement) {
     return isDeepSeekRequested() ? { ...plan, fallbackUsed: true } : plan;
   }
@@ -880,7 +1106,7 @@ async function enhancePlanWithDeepSeek(
     summary: enhancement.summary,
     reasonTags: enhancement.reasonTags,
     reasonSummary: enhancement.reasonSummary,
-    travelTips: enhancement.travelTips,
+    travelTips: mergeTravelTips(enhancement.travelTips, plan.travelTips),
     playPlaces: validatedPlayPlaces.length > 0 ? validatedPlayPlaces : plan.playPlaces,
     playHighlights: enhancement.playHighlights.length > 0 ? enhancement.playHighlights : plan.playHighlights
   };
@@ -892,6 +1118,9 @@ async function buildPlanFromRealVillages(
     inputText?: string;
     providerUsed?: "mock" | "deepseek" | "doubao";
     fallbackUsed?: boolean;
+    preferredVillageId?: string;
+    preferredVillageName?: string;
+    preferredVillageCode?: string;
   }
 ): Promise<PlanResult | null> {
   const seedVillages = await getPlanSeedVillages();
@@ -913,17 +1142,104 @@ async function buildPlanFromRealVillages(
 
     return a.index - b.index;
   });
+  const preferredKeys = [
+    metadata?.preferredVillageId,
+    metadata?.preferredVillageName,
+    metadata?.preferredVillageCode
+  ].filter((item): item is string => Boolean(item?.trim()));
+  const preferredScoredVillage = preferredKeys.length > 0
+    ? ranked.find((item) => preferredKeys.some((key) => {
+        const normalizedKey = key.trim();
+        return item.village.id === normalizedKey ||
+          item.village.name === normalizedKey ||
+          item.village.fullName === normalizedKey ||
+          item.village.village === normalizedKey;
+      }))
+    : undefined;
+  const explicitVillageMatch = findExplicitVillageMatch(inputText, seedVillages);
+  const explicitScoredVillage = explicitVillageMatch
+    ? ranked.find((item) => item.village.id === explicitVillageMatch.village.id)
+    : undefined;
+  const lockedScoredVillage = preferredScoredVillage ?? explicitScoredVillage;
 
-  const top = ranked[0];
+  const coverageMap = await getPoiCoverageMapSafe();
+  const coveragePrioritized = prioritizeRankedVillagesByCoverage(ranked, coverageMap);
+  const coverageRanked = coveragePrioritized.ranked.length > 0 ? coveragePrioritized.ranked : ranked;
+  const candidateRanked = lockedScoredVillage
+    ? [
+        lockedScoredVillage,
+        ...coverageRanked.filter((item) => item.village.id !== lockedScoredVillage.village.id)
+      ]
+    : coverageRanked;
+
+  const top = candidateRanked[0];
   const recommended = realToVillage(top.village);
   const fallbackSteps = buildDefaultSteps(recommended.name, recommended.hasFarmFood, recommended.hasStay);
   const matchScore = scoreToMatchScore(top.score);
   const reasonTags = buildReasonTags(top.village, hits);
   const reasonSummary = buildReasonSummary(hits, reasonTags);
   const playHighlights = buildPlayHighlightsFromReal(top.village, hits);
-  const playPlaceCandidates = await getPlayPlaceCandidatesForVillage(top.village);
-  const playPlaces = buildRulePlayPlaces(playPlaceCandidates, hits);
-  const alternatives = ranked.slice(1, 4).map((item) => toRealAlternative(item.village, item.score, item.reasons, hits));
+  const recommendedPois = await getRecommendedPoisForVillage({
+    villageId: top.village.id,
+    villageCode: top.village.id,
+    villageName: top.village.name,
+    fullName: top.village.fullName,
+    lookupKeys: [
+      top.village.id,
+      top.village.name,
+      top.village.fullName,
+      top.village.village
+    ]
+  });
+  const hasRecommendedPois = hasAnyRecommendedPois(recommendedPois);
+  const recommendedPlayPlaces = mapActivityPoisToPlayPlaces(recommendedPois.activity, hits);
+  const amapPlayPlaceCandidates = hasRecommendedPois
+    ? []
+    : await getPlayPlaceCandidatesForVillage(top.village);
+  const playPlaceCandidates = recommendedPlayPlaces.length > 0
+    ? recommendedPlayPlaces
+    : amapPlayPlaceCandidates;
+  const playPlaces = recommendedPlayPlaces.length > 0
+    ? recommendedPlayPlaces
+    : buildRulePlayPlaces(playPlaceCandidates, hits);
+  const foods = hasRecommendedPois
+    ? mapFoodPoisToOptions(recommendedPois.food).map((food, index) => ({
+        ...food,
+        latitude: recommendedPois.food[index]?.latitude ?? null,
+        longitude: recommendedPois.food[index]?.longitude ?? null,
+        address: recommendedPois.food[index]?.address ?? null,
+        poiId: recommendedPois.food[index]?.poiId ?? null
+      }))
+    : top.village.foods;
+  const stays = hasRecommendedPois
+    ? mapStayPoisToOptions(recommendedPois.stay).map((stay, index) => ({
+        ...stay,
+        latitude: recommendedPois.stay[index]?.latitude ?? null,
+        longitude: recommendedPois.stay[index]?.longitude ?? null,
+        address: recommendedPois.stay[index]?.address ?? null,
+        poiId: recommendedPois.stay[index]?.poiId ?? null
+      }))
+    : top.village.stays;
+  const parkingTips = buildParkingTravelTips(recommendedPois.parking);
+  const alternatives = candidateRanked.slice(1, 4).map((item) => toRealAlternative(item.village, item.score, item.reasons, hits));
+  const topCoverage = coveragePrioritized.coverageMap?.get(top.village.id);
+  const dataQuality = buildDataQuality(
+    topCoverage,
+    coveragePrioritized.coverageApplied,
+    hasRecommendedPois ? resolvePoiSource(recommendedPois) : "fallback",
+    countRecommendedPois(recommendedPois),
+    {
+      keys: recommendedPois.lookupKeys,
+      queryVillageIds: recommendedPois.queryVillageIds,
+      resolvedVillageId: recommendedPois.resolvedVillageId,
+      matchedKey: recommendedPois.matchedKey,
+      debug: recommendedPois.lookupDebug
+    },
+    {
+      matched: Boolean(explicitVillageMatch),
+      name: explicitVillageMatch?.village.name
+    }
+  );
 
   const rulePlan: PlanResult = {
     requestId: `plan_${Date.now()}`,
@@ -935,19 +1251,21 @@ async function buildPlanFromRealVillages(
     recommended: toSafeVillage(recommended),
     alternatives,
     routeOptions: top.village.routeOptions,
-    foods: top.village.foods,
-    stays: top.village.stays,
+    foods,
+    stays,
     matchScore,
+    dataQuality,
     reasons: top.reasons,
     reasonTags,
     reasonSummary,
+    travelTips: parkingTips,
     playPlaces,
     playHighlights,
     steps: sanitizeSteps(undefined, fallbackSteps),
     summary: buildRealSummary(top.village, hits, reasonTags)
   };
 
-  return enhancePlanWithDeepSeek(input, rulePlan, top.village, playPlaceCandidates);
+  return enhancePlanWithDeepSeek(input, rulePlan, top.village, playPlaceCandidates, recommendedPois);
 }
 
 export async function buildPlanFromMock(
@@ -957,6 +1275,9 @@ export async function buildPlanFromMock(
     inputText?: string;
     providerUsed?: "mock" | "deepseek" | "doubao";
     fallbackUsed?: boolean;
+    preferredVillageId?: string;
+    preferredVillageName?: string;
+    preferredVillageCode?: string;
   }
 ): Promise<PlanResult> {
   const realPlan = await buildPlanFromRealVillages(input, metadata);
@@ -1000,6 +1321,10 @@ export async function buildPlanFromMock(
     foods: buildFoods(input, inputText),
     stays: buildStays(top.village),
     matchScore: normalizedMatchScore,
+    dataQuality: {
+      poiCoverageLevel: "fallback",
+      poiSource: "fallback"
+    },
     reasons,
     playPlaces: [],
     playHighlights,

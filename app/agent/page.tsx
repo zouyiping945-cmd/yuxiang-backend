@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   BedDouble,
   Bookmark,
@@ -19,7 +19,14 @@ import {
   Utensils,
   WandSparkles
 } from "lucide-react";
-import type { PlanResult, PlayHighlight, PlayPlace } from "@/lib/types";
+import type { FoodOption, PlanAlternative, PlanResult, PlayHighlight, PlayPlace, StayOption } from "@/lib/types";
+import {
+  fetchCurrentUser,
+  getStoredAccessToken,
+  getStoredSession,
+  signOut,
+  type SupabaseAuthUser
+} from "@/lib/supabase/client";
 import styles from "./page.module.css";
 
 type ExtendedVillage = PlanResult["recommended"] & {
@@ -133,6 +140,46 @@ function getMapPoint(plan: WebPlanResult | null, routePlan: RoutePlanResult | nu
   return null;
 }
 
+function buildMapPreviewUrl(mapPoint: ReturnType<typeof getMapPoint>): string {
+  if (!mapPoint) {
+    return "";
+  }
+
+  const params = new URLSearchParams();
+  params.set("lng", String(mapPoint.longitude));
+  params.set("lat", String(mapPoint.latitude));
+  params.set("name", mapPoint.name);
+  return `/api/map-preview?${params.toString()}`;
+}
+
+function buildAmapPoiUrl(item: FoodOption | StayOption): string {
+  if (item.poiId) {
+    const params = new URLSearchParams();
+    params.set("poiid", item.poiId);
+    params.set("name", item.name);
+    params.set("callnative", "1");
+    return `https://uri.amap.com/marker?${params.toString()}`;
+  }
+
+  if (typeof item.longitude === "number" && typeof item.latitude === "number") {
+    const params = new URLSearchParams();
+    params.set("position", `${item.longitude},${item.latitude}`);
+    params.set("name", item.name);
+    params.set("coordinate", "gaode");
+    params.set("callnative", "1");
+    return `https://uri.amap.com/marker?${params.toString()}`;
+  }
+
+  if (item.name) {
+    const params = new URLSearchParams();
+    params.set("keyword", `${item.name} ${item.address || ""}`.trim());
+    params.set("callnative", "1");
+    return `https://uri.amap.com/search?${params.toString()}`;
+  }
+
+  return "";
+}
+
 function pushHighlight(highlights: PlayHighlight[], next: PlayHighlight) {
   if (!next.title.trim() || !next.desc.trim()) {
     return;
@@ -220,12 +267,15 @@ export default function AgentPage() {
   const [planning, setPlanning] = useState(false);
   const [polishing, setPolishing] = useState(false);
   const [routeLoading, setRouteLoading] = useState(false);
+  const [switchingVillageId, setSwitchingVillageId] = useState("");
+  const [mapPreviewFailed, setMapPreviewFailed] = useState(false);
   const [error, setError] = useState("");
   const [routeError, setRouteError] = useState("");
   const [notice, setNotice] = useState("");
+  const [authUser, setAuthUser] = useState<SupabaseAuthUser | null>(null);
+  const [authLoading, setAuthLoading] = useState(true);
   const inspirationIndex = useRef(0);
 
-  const reasonText = plan?.reasonSummary || plan?.summary || plan?.recommended.description;
   const playPlaces = useMemo(() => (plan?.playPlaces ?? []).slice(0, 6), [plan]);
   const playHighlights = useMemo(() => {
     if (plan?.playHighlights?.length) {
@@ -234,29 +284,39 @@ export default function AgentPage() {
 
     return buildFallbackHighlights(plan);
   }, [plan]);
-  const reasonPoints = useMemo(() => {
-    if (!plan) {
-      return [];
-    }
-
-    const candidates = [
-      ...(plan.travelTips ?? []),
-      ...(plan.reasons ?? [])
-    ];
-    const seen = new Set<string>();
-
-    return candidates
-      .map((item) => item.trim())
-      .filter((item) => {
-        if (!item || seen.has(item)) {
-          return false;
-        }
-        seen.add(item);
-        return true;
-      })
-      .slice(0, 4);
-  }, [plan]);
   const mapPoint = useMemo(() => getMapPoint(plan, routePlan), [plan, routePlan]);
+  const mapPreviewUrl = useMemo(() => buildMapPreviewUrl(mapPoint), [mapPoint]);
+
+  useEffect(() => {
+    setMapPreviewFailed(false);
+  }, [mapPreviewUrl]);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadUser = async () => {
+      const session = getStoredSession();
+      if (!session?.access_token) {
+        if (mounted) {
+          setAuthUser(null);
+          setAuthLoading(false);
+        }
+        return;
+      }
+
+      const user = await fetchCurrentUser();
+      if (mounted) {
+        setAuthUser(user);
+        setAuthLoading(false);
+      }
+    };
+
+    loadUser();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const showNotice = (message: string) => {
     setNotice(message);
@@ -267,6 +327,123 @@ export default function AgentPage() {
 
   const placeholderAction = () => {
     showNotice("该功能将在后续版本开放。");
+  };
+
+  const requireLogin = (redirect = "/agent") => {
+    window.location.href = `/login?redirect=${encodeURIComponent(redirect)}`;
+  };
+
+  const getAuthHeaders = () => {
+    const token = getStoredAccessToken();
+    return token ? { Authorization: `Bearer ${token}` } : null;
+  };
+
+  const openUserPage = (path: "/history" | "/favorites" | "/trips") => {
+    if (!authUser) {
+      requireLogin(path);
+      return;
+    }
+
+    window.location.href = path;
+  };
+
+  const savePlanToHistory = async (nextPlan: WebPlanResult, input: string) => {
+    const headers = getAuthHeaders();
+    if (!authUser || !headers) {
+      return null;
+    }
+
+    const response = await fetch("/api/user/plans", {
+      method: "POST",
+      headers: {
+        ...headers,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: `${nextPlan.recommended.name} AI 方案`,
+        inputText: input,
+        planPayload: nextPlan
+      })
+    }).catch(() => null);
+
+    if (!response?.ok) {
+      console.warn("save user plan failed");
+      return null;
+    }
+
+    const payload = await response.json().catch(() => null);
+    return payload?.ok ? payload.data : null;
+  };
+
+  const saveFavoriteAndTrip = async () => {
+    if (!plan) {
+      return;
+    }
+
+    const headers = getAuthHeaders();
+    if (!authUser || !headers) {
+      requireLogin("/agent");
+      return;
+    }
+
+    const payloadWithRoute = {
+      ...plan,
+      route: routePlan
+    };
+
+    const favoriteResponse = await fetch("/api/user/favorites", {
+      method: "POST",
+      headers: {
+        ...headers,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        favoriteType: "plan",
+        targetId: plan.recommended.id,
+        targetName: plan.recommended.name,
+        payload: payloadWithRoute
+      })
+    }).catch(() => null);
+
+    const tripResponse = await fetch("/api/user/trips", {
+      method: "POST",
+      headers: {
+        ...headers,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: `${plan.recommended.name} AI 行程`,
+        payload: payloadWithRoute
+      })
+    }).catch(() => null);
+
+    if (favoriteResponse?.ok && tripResponse?.ok) {
+      showNotice("已收藏并加入我的行程");
+      return;
+    }
+
+    showNotice("保存失败，请稍后再试");
+  };
+
+  const exportCurrentPlan = async () => {
+    if (!plan) {
+      showNotice("暂无可导出的方案");
+      return;
+    }
+
+    const text = JSON.stringify({ ...plan, route: routePlan }, null, 2);
+    try {
+      await navigator.clipboard.writeText(text);
+      showNotice("方案 JSON 已复制，可粘贴保存");
+    } catch {
+      showNotice("导出失败，请手动复制页面内容");
+    }
+  };
+
+  const handleLogout = async () => {
+    await signOut();
+    setAuthUser(null);
+    showNotice("已退出登录");
   };
 
   const toggleTag = (tag: string) => {
@@ -344,7 +521,17 @@ export default function AgentPage() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          inputText: original
+          inputText: original,
+          selectedTags,
+          preference: {
+            companions: getCompanions(selectedTags),
+            demands: selectedTags,
+            needStay: selectedTags.includes("住一晚"),
+            travelWithElders: selectedTags.includes("带父母"),
+            travelWithKids: selectedTags.includes("亲子短途"),
+            farmFoodPreferred: selectedTags.includes("农家菜"),
+            easyWalkRequired: selectedTags.includes("不想太累")
+          }
         })
       });
 
@@ -411,6 +598,7 @@ export default function AgentPage() {
       }
 
       setPlan(payload.data);
+      await savePlanToHistory(payload.data, finalInput);
       setPlanning(false);
       await fetchRoute(payload.data);
     } catch {
@@ -446,6 +634,64 @@ export default function AgentPage() {
     }
   };
 
+  const openAmapPoi = (item: FoodOption | StayOption) => {
+    const url = buildAmapPoiUrl(item);
+    if (!url) {
+      showNotice("暂无可跳转地址，请出发前手动搜索确认。");
+      return;
+    }
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const switchAlternative = async (alternative: PlanAlternative) => {
+    if (!plan || switchingVillageId) {
+      return;
+    }
+
+    setSwitchingVillageId(alternative.id);
+    setRouteError("");
+    showNotice("正在切换到该备选村庄…");
+
+    try {
+      const response = await fetch("/api/plan", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          inputText: plan.inputText || joinInput(inputText, selectedTags),
+          companions: getCompanions(selectedTags),
+          demands: selectedTags,
+          preferredVillageId: alternative.id,
+          preferredVillageName: alternative.name,
+          preferredVillageCode: alternative.id
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`PLAN_SWITCH_HTTP_${response.status}`);
+      }
+
+      const payload = (await response.json()) as ApiResponse<WebPlanResult>;
+      if (!payload.ok) {
+        throw new Error(payload.error?.message || "switch failed");
+      }
+
+      setPlan(payload.data);
+      await savePlanToHistory(payload.data, plan.inputText || joinInput(inputText, selectedTags));
+      setRoutePlan(null);
+      await fetchRoute(payload.data);
+      window.requestAnimationFrame(() => {
+        document.querySelector(`.${styles.resultPanel}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    } catch {
+      showNotice("切换方案失败，请稍后再试");
+    } finally {
+      setSwitchingVillageId("");
+    }
+  };
+
   return (
     <main className={styles.pageShell}>
       {notice ? <div className={styles.toast}>{notice}</div> : null}
@@ -453,9 +699,7 @@ export default function AgentPage() {
       <aside className={styles.sidebar}>
         <div className={styles.brand}>
           <div className={styles.brandMark}>
-            <span className={styles.brandSun} />
-            <span className={styles.brandHill} />
-            <span className={styles.brandField} />
+            <img className={styles.brandLogo} src="/brand/yuxiang-logo.png" alt="" aria-hidden="true" />
           </div>
           <div>
             <strong>豫见乡旅</strong>
@@ -468,20 +712,17 @@ export default function AgentPage() {
             <Sparkles size={18} />
             智能规划
           </button>
-          <button className={styles.navItem} type="button" onClick={placeholderAction}>
+          <button className={styles.navItem} type="button" onClick={() => openUserPage("/history")}>
             <History size={18} />
             历史方案
-            <span>后续</span>
           </button>
-          <button className={styles.navItem} type="button" onClick={placeholderAction}>
+          <button className={styles.navItem} type="button" onClick={() => openUserPage("/favorites")}>
             <Heart size={18} />
             我的收藏
-            <span>后续</span>
           </button>
-          <button className={styles.navItem} type="button" onClick={placeholderAction}>
+          <button className={styles.navItem} type="button" onClick={() => openUserPage("/trips")}>
             <CalendarDays size={18} />
             我的行程
-            <span>后续</span>
           </button>
         </nav>
 
@@ -489,11 +730,23 @@ export default function AgentPage() {
 
         <div className={styles.loginCard}>
           <LogIn size={20} />
-          <strong>登录 / 注册</strong>
-          <p>Web 账号与云端方案将在后续开放</p>
-          <button type="button" onClick={() => showNotice("Web 登录功能后续开放")}>
-            立即登录
-          </button>
+          {authUser ? (
+            <>
+              <strong>已登录</strong>
+              <p>{authUser.email || (authUser.phone ? `手机号尾号 ${authUser.phone.slice(-4)}` : "云端同步已开启")}</p>
+              <button type="button" onClick={handleLogout}>
+                退出登录
+              </button>
+            </>
+          ) : (
+            <>
+              <strong>登录 / 同步</strong>
+              <p>{authLoading ? "正在检查登录状态" : "登录后可保存历史方案、收藏和行程"}</p>
+              <button type="button" onClick={() => requireLogin("/agent")}>
+                立即登录
+              </button>
+            </>
+          )}
         </div>
 
         <button className={styles.aboutButton} type="button" onClick={placeholderAction}>
@@ -602,16 +855,6 @@ export default function AgentPage() {
                 <div className={styles.villageTags}>
                   {(plan.recommended.tags || []).map((tag) => <span key={tag}>{tag}</span>)}
                 </div>
-                {reasonText ? (
-                  <div className={styles.mainReasonBlock}>
-                    <p>{reasonText}</p>
-                  </div>
-                ) : null}
-                {plan.reasonTags?.length ? (
-                  <div className={styles.reasonTags}>
-                    {plan.reasonTags.map((tag) => <span key={tag}>{tag}</span>)}
-                  </div>
-                ) : null}
                 {playPlaces.length > 0 ? (
                   <div className={styles.playHighlights}>
                     <div className={styles.playHighlightTitle}>
@@ -661,13 +904,6 @@ export default function AgentPage() {
                     <p className={styles.playEmptyText}>暂未获取到可核验游玩地点，建议出发前结合地图 App 搜索周边开放信息。</p>
                   </div>
                 )}
-                {reasonPoints.length > 0 ? (
-                  <div className={styles.travelTipList}>
-                    {reasonPoints.map((point) => (
-                      <div key={point}><Check size={14} /><span>{point}</span></div>
-                    ))}
-                  </div>
-                ) : null}
               </div>
               <div className={styles.resultLandscape} aria-hidden="true">
                 <span className={styles.resultSun} />
@@ -700,20 +936,29 @@ export default function AgentPage() {
                       <div><Navigation size={18} /><span>距离</span><strong>{routePlan.distanceText}</strong></div>
                       <div><Clock3 size={18} /><span>耗时</span><strong>{routePlan.durationText}</strong></div>
                     </div>
-                    <p className={styles.routeSummary}>{routePlan.summary}</p>
-                    {routePlan.tips?.length ? (
-                      <ul className={styles.routeTips}>
-                        {routePlan.tips.map((tip) => <li key={tip}>{tip}</li>)}
-                      </ul>
-                    ) : null}
-                    {routePlan.fallbackUsed ? (
-                      <p className={styles.fallbackNote}>当前为路线兜底建议，请出发前再次确认。</p>
-                    ) : null}
+                    <div className={styles.mapPreview}>
+                      {mapPreviewUrl && !mapPreviewFailed ? (
+                        <img src={mapPreviewUrl} alt={`${plan.recommended.name}地图预览`} onError={() => setMapPreviewFailed(true)} />
+                      ) : (
+                        <div className={styles.mapFallback}>
+                          <span>⌂</span>
+                          <p>地图预览暂不可用，点击下方按钮打开高德地图。</p>
+                        </div>
+                      )}
+                    </div>
                   </>
                 ) : (
-                  <p className={styles.routeError}>
-                    {routeError || "路线信息正在等待生成"}
-                  </p>
+                  <>
+                    <p className={styles.routeError}>
+                      {routeError || "路线规划暂不可用"}
+                    </p>
+                    <div className={styles.mapPreview}>
+                      <div className={styles.mapFallback}>
+                        <span>⌂</span>
+                        <p>路线规划暂不可用，建议出发前使用地图 App 确认。</p>
+                      </div>
+                    </div>
+                  </>
                 )}
 
                 <div className={styles.routeActions}>
@@ -733,10 +978,11 @@ export default function AgentPage() {
                   <Utensils size={19} />
                   <h3>觅美食</h3>
                 </div>
+                <p className={styles.sectionHint}>点击店铺可在高德中查看位置</p>
                 {(plan.foods || []).length > 0 ? (
                   <div className={styles.compactItemList}>
                     {(plan.foods || []).slice(0, 3).map((food, index) => (
-                      <div className={styles.serviceItem} key={`${food.name}_${index}`}>
+                      <button className={styles.serviceItem} type="button" onClick={() => openAmapPoi(food)} key={`${food.name}_${index}`}>
                         <span className={styles.foodIcon}>{food.name?.slice(0, 1) || "食"}</span>
                         <div>
                           <strong>{food.name}</strong>
@@ -744,7 +990,7 @@ export default function AgentPage() {
                           <span>{food.priceText}</span>
                           {food.tag ? <em>{food.tag}</em> : null}
                         </div>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 ) : (
@@ -760,10 +1006,11 @@ export default function AgentPage() {
                   <BedDouble size={19} />
                   <h3>寻住处</h3>
                 </div>
+                <p className={styles.sectionHint}>点击店铺可在高德中查看位置</p>
                 {(plan.stays || []).length > 0 ? (
                   <div className={styles.compactItemList}>
                     {(plan.stays || []).slice(0, 3).map((stay, index) => (
-                      <div className={styles.serviceItem} key={`${stay.name}_${index}`}>
+                      <button className={styles.serviceItem} type="button" onClick={() => openAmapPoi(stay)} key={`${stay.name}_${index}`}>
                         <span className={styles.stayIcon}>⌂</span>
                         <div>
                           <strong>{stay.name}</strong>
@@ -771,7 +1018,7 @@ export default function AgentPage() {
                           <span>{stay.priceText}</span>
                           {stay.tag ? <em>{stay.tag}</em> : null}
                         </div>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 ) : (
@@ -787,11 +1034,16 @@ export default function AgentPage() {
               <div className={styles.cardTitle}>
                 <MapPin size={19} />
                 <h3>备选村庄</h3>
-                <span className={styles.placeholderLabel}>点击可查看后续能力说明</span>
+                <span className={styles.placeholderLabel}>{switchingVillageId ? "正在切换方案…" : "点击切换方案"}</span>
               </div>
               <div className={styles.alternativeGrid}>
                 {(plan.alternatives || []).map((alternative) => (
-                  <button type="button" key={alternative.id} onClick={() => showNotice("后续支持切换备选村庄生成新方案")}>
+                  <button
+                    type="button"
+                    key={alternative.id}
+                    onClick={() => switchAlternative(alternative)}
+                    disabled={Boolean(switchingVillageId)}
+                  >
                     <span className={styles.alternativeVisual}>⌂</span>
                     <div>
                       <strong>{alternative.name}</strong>
@@ -813,8 +1065,8 @@ export default function AgentPage() {
                 {plan.providerUsed !== "deepseek" ? " 当前使用规则推荐兜底生成。" : ""}
               </p>
               <div>
-                <button type="button" onClick={placeholderAction}><Bookmark size={15} />收藏行程</button>
-                <button type="button" onClick={placeholderAction}>导出行程</button>
+                <button type="button" onClick={saveFavoriteAndTrip}><Bookmark size={15} />收藏行程</button>
+                <button type="button" onClick={exportCurrentPlan}>导出行程</button>
                 <button type="button" onClick={handleSubmit}>重新生成</button>
               </div>
             </footer>

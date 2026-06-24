@@ -19,6 +19,9 @@ export type TravelPreference = {
 export type PlanRequestPayload = Partial<TravelPreference> & {
   inputText?: string;
   excludeVillageIds?: string[];
+  preferredVillageId?: string;
+  preferredVillageName?: string;
+  preferredVillageCode?: string;
 };
 
 export type Village = {
@@ -72,6 +75,10 @@ export type FoodOption = {
   desc: string;
   priceText: string;
   tag?: string;
+  latitude?: number | null;
+  longitude?: number | null;
+  address?: string | null;
+  poiId?: string | null;
 };
 
 export type StayOption = {
@@ -79,6 +86,10 @@ export type StayOption = {
   desc: string;
   priceText: string;
   tag?: string;
+  latitude?: number | null;
+  longitude?: number | null;
+  address?: string | null;
+  poiId?: string | null;
 };
 
 export type PlayHighlight = {
@@ -91,9 +102,11 @@ export type PlayPlace = {
   name: string;
   category?: string;
   address?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
   distanceText?: string | null;
   reason: string;
-  source: "amap" | "supabase" | "fallback";
+  source: "amap" | "supabase" | "manual" | "seed" | "fallback";
 };
 
 export type DesignationType =
@@ -178,6 +191,84 @@ export type VillagePoi = {
   reviewNotes?: string[];
 };
 
+export type VillagePoiCoverageLevel = "strong" | "usable" | "excluded";
+
+export type VillagePoiCoverage = {
+  villageId: string;
+  activityCount: number;
+  foodCount: number;
+  stayCount: number;
+  parkingCount: number;
+  coverageLevel: VillagePoiCoverageLevel;
+};
+
+export type RecommendedPoiReviewStatus = "needs_review" | "verified";
+
+export type RecommendedPoi = {
+  villageId: string;
+  category: AmapPoiCategory;
+  name: string;
+  address?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
+  distanceText?: string | null;
+  distanceMeters?: number | null;
+  typeText?: string | null;
+  tel?: string | null;
+  rating?: string | null;
+  priceText?: string | null;
+  source?: string | null;
+  dataReviewStatus: RecommendedPoiReviewStatus;
+  isRecommended: boolean;
+  poiId?: string | null;
+};
+
+export type RecommendedPoisByCategory = {
+  activity: RecommendedPoi[];
+  food: RecommendedPoi[];
+  stay: RecommendedPoi[];
+  parking: RecommendedPoi[];
+  lookupKeys?: string[];
+  queryVillageIds?: string[];
+  resolvedVillageId?: string;
+  matchedKey?: string;
+  lookupDebug?: {
+    totalFound: number;
+    recommendedFound: number;
+    usedRecommended: boolean;
+    usedCandidateFallback: boolean;
+    error?: string;
+  };
+};
+
+export type PlanDataQuality = {
+  poiCoverageLevel: "strong" | "usable" | "fallback";
+  poiSource?: "verified" | "auto_ranked" | "candidate" | "fallback";
+  activityCount?: number;
+  foodCount?: number;
+  stayCount?: number;
+  parkingCount?: number;
+  recommendedPoiCounts?: {
+    activity: number;
+    food: number;
+    stay: number;
+    parking: number;
+  };
+  poiLookupKeys?: string[];
+  poiQueryVillageIds?: string[];
+  poiResolvedVillageId?: string;
+  poiLookupMatchedKey?: string;
+  poiLookupDebug?: {
+    totalFound: number;
+    recommendedFound: number;
+    usedRecommended: boolean;
+    usedCandidateFallback: boolean;
+    error?: string;
+  };
+  explicitVillageMatched?: boolean;
+  explicitVillageMatchName?: string;
+};
+
 export type PlanResult = {
   requestId: string;
   generatedAt: string;
@@ -191,6 +282,7 @@ export type PlanResult = {
   foods: FoodOption[];
   stays: StayOption[];
   matchScore: number;
+  dataQuality?: PlanDataQuality;
   reasons: string[];
   reasonTags?: string[];
   reasonSummary?: string;

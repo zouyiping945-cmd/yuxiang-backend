@@ -1,0 +1,794 @@
+village_name,village_code,category,name,address,distance_text,type_text,tel,rating,price_text,data_review_status,is_recommended,review_notes,source,poi_id
+安沟村,dengfeng_angou,food,凤凰饭庄,徐庄镇安沟村退役军人服务站东侧130米,64m,餐饮服务;中餐厅;中餐厅,,3.4,人均约 ¥39.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUDXQKQU
+安沟村,dengfeng_angou,food,大雄山食府,052乡道与马汝线交叉口西北60米,1110m,餐饮服务;中餐厅;中餐厅,,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHW7W6S
+安沟村,dengfeng_angou,food,禾木居餐饮,禾木居民宿东侧80米,2188m,餐饮服务;中餐厅;中餐厅,,3.5,人均约 ¥30.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAKSF4S6
+安沟村,dengfeng_angou,food,天成磨坊,徐庄镇孙桥村11组,2247m,餐饮服务;中餐厅;中餐厅,19939912356;19939930386;19939960136,2.4,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L2JA5JOK
+安沟村,dengfeng_angou,food,登封市天福康食品厂,徐庄镇孙桥村,2291m,餐饮服务;餐饮相关场所;餐饮相关,0371-62926168,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMDQDZA
+安沟村,dengfeng_angou,food,百福居农家乐,马汝线附近,3637m,餐饮服务;中餐厅;综合酒楼,13938558206,3.2,人均约 ¥52.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJQTRXH
+安沟村,dengfeng_angou,food,老友记烧烤大排档,登徐线,4149m,餐饮服务;中餐厅;特色/地方风味餐厅,,3.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGOCVX0J
+安沟村,dengfeng_angou,food,圪垯,利达加油站东北侧230米,4230m,餐饮服务;餐饮相关场所;餐饮相关,,1.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3M1P73J
+安沟村,dengfeng_angou,food,赵记卤肉,星光KTV东北侧,4432m,餐饮服务;中餐厅;中餐厅,,2.0,人均约 ¥18.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB4C01U7
+安沟村,dengfeng_angou,food,伟峰家宴庄园,徐庄镇,4831m,餐饮服务;中餐厅;综合酒楼,13592576721,3.6,人均约 ¥69.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK4NIOH
+安沟村,dengfeng_angou,stay,源溪农家酒店(仙人谷西门店),052乡道东50米,1822m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHT0D2
+安沟村,dengfeng_angou,stay,登封源溪农家,徐庄乡杨林村下地门123号,1823m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,13938567585,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHRFGM
+安沟村,dengfeng_angou,stay,禾木居民宿,052乡道,2218m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,45530755",[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDB7UP77
+安沟村,dengfeng_angou,stay,登封大熊山假日酒店,徐庄镇杨林村,2536m,住宿服务;宾馆酒店;宾馆酒店,0371-56588888,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJE9X5V
+安沟村,dengfeng_angou,stay,大熊山景秀·山间露营地,徐庄镇大熊山摘星楼景区中州景秀度假村旁,2597m,住宿服务;住宿服务相关;住宿服务相关,13683832766,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G1PUMRFR
+安沟村,dengfeng_angou,stay,登封中州悦隐槐夏院子民宿,徐庄镇王保庄村46号,3029m,住宿服务;住宿服务相关;住宿服务相关,18736004133,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKVM07C
+安沟村,dengfeng_angou,stay,星途民宿(摘星楼景区店),徐庄镇王保庄63号,3046m,住宿服务;住宿服务相关;住宿服务相关,"15188330055;+861056320612,53565754",4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K0T5ORSU
+安沟村,dengfeng_angou,stay,陌野原舍瑞轩居民宿,徐庄镇杨林村王保庄53号,3088m,住宿服务;旅馆招待所;旅馆招待所,13838279009,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IUJYIPR0
+安沟村,dengfeng_angou,stay,星悦居,徐庄镇王保庄42号,3093m,住宿服务;旅馆招待所;青年旅舍,0371-62720666;18538033393,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMHH7U7
+安沟村,dengfeng_angou,stay,民宿,登徐线与迎宾大道交叉口东北120米,6597m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LUYCV0MV
+安沟村,dengfeng_angou,parking,登封大熊山仙人谷景区西门停车场,徐庄镇013乡道大熊山仙人谷景区,1900m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HD0U08CQ
+安沟村,dengfeng_angou,parking,大熊山仙人谷景区西售票处地上停车场,大熊山仙人谷景区西门游客服务中心西侧,1944m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDAO5LNE
+安沟村,dengfeng_angou,parking,摘星楼风景区停车场,徐庄镇摘星楼风景区(东北角),2321m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKWLZ34
+安沟村,dengfeng_angou,parking,地面停车场,052乡道东南40米,2471m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IR9SOYC4
+安沟村,dengfeng_angou,parking,大熊山仙人谷景区-东停车场,大熊山情人谷东北(013乡道南),2756m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL27XT0
+安沟村,dengfeng_angou,parking,登封大熊山仙人谷景区情人谷停车点,大熊山仙人谷景区情人谷,2762m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HUMMT322
+安沟村,dengfeng_angou,parking,登封大熊山仙人谷景区东门停车场,徐庄镇013乡道登封大熊山仙人谷景区(东北角),2781m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFIPQ169
+柏石崖村,dengfeng_baishiya,food,徐庄镇宏食坊餐饮服务店,徐庄镇徐庄村登徐线,202m,餐饮服务;中餐厅;中餐厅,15515609898,3.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JAFZBJA6
+柏石崖村,dengfeng_baishiya,food,杞县砂锅,徐庄初中东南门旁,362m,餐饮服务;中餐厅;中餐厅,,3.3,人均约 ¥13.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA3HELL8
+柏石崖村,dengfeng_baishiya,food,军帅砂锅店,徐庄初中东南门旁,418m,餐饮服务;快餐厅;快餐厅,,0.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0GUJBNCDT
+柏石崖村,dengfeng_baishiya,food,小苌营养早餐,登徐线与050乡道交叉口东北420米,476m,餐饮服务;中餐厅;中餐厅,,0.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L6Y1UFW0
+柏石崖村,dengfeng_baishiya,food,食知味小吃,徐庄初中东南门西100米,484m,餐饮服务;中餐厅;中餐厅,,2.2,人均约 ¥16.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LRYKUP0O
+柏石崖村,dengfeng_baishiya,food,吉百式蛋糕(徐庄镇),徐庄镇百业街13号,485m,餐饮服务;中餐厅;中式素菜馆,13623826169,4.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK6CD6P
+柏石崖村,dengfeng_baishiya,food,登封烧饼(登徐线店),徐庄镇登徐线徐庄初中西,506m,餐饮服务;中餐厅;中餐厅,13503853137;13613710192,3.8,人均约 ¥11.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHRANEM
+柏石崖村,dengfeng_baishiya,food,美味屋烧饼,登徐线与050乡道交叉口东北400米,516m,餐饮服务;餐饮相关场所;餐饮相关,,2.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K651JPES
+柏石崖村,dengfeng_baishiya,food,伟峰家宴庄园,徐庄镇,1098m,餐饮服务;中餐厅;综合酒楼,13592576721,3.6,人均约 ¥69.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFK4NIOH
+柏石崖村,dengfeng_baishiya,food,百福居农家乐,马汝线附近,2453m,餐饮服务;中餐厅;综合酒楼,13938558206,3.2,人均约 ¥52.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJQTRXH
+柏石崖村,dengfeng_baishiya,stay,仙人谷酒店,高坡村委会东南侧190米,1212m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK27K7W
+柏石崖村,dengfeng_baishiya,stay,源溪农家酒店(仙人谷西门店),052乡道东50米,6262m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHT0D2
+柏石崖村,dengfeng_baishiya,stay,登封源溪农家,徐庄乡杨林村下地门123号,6273m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,13938567585,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHRFGM
+柏石崖村,dengfeng_baishiya,stay,百花宾馆,告成镇,6751m,住宿服务;住宿服务相关;住宿服务相关,0371-62950175;0371-62950411,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B017319ZLP
+柏石崖村,dengfeng_baishiya,stay,禾木居民宿,052乡道,7085m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,45530755",[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDB7UP77
+柏石崖村,dengfeng_baishiya,stay,登封大熊山假日酒店,徐庄镇杨林村,7286m,住宿服务;宾馆酒店;宾馆酒店,0371-56588888,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJE9X5V
+柏石崖村,dengfeng_baishiya,stay,登封大熊山中州景秀度假村,大熊山景秀·山间露营地东侧,7510m,住宿服务;住宿服务相关;住宿服务相关,,3.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L1356CCY
+柏石崖村,dengfeng_baishiya,stay,大熊山景秀·山间露营地,徐庄镇大熊山摘星楼景区中州景秀度假村旁,7532m,住宿服务;住宿服务相关;住宿服务相关,13683832766,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G1PUMRFR
+柏石崖村,dengfeng_baishiya,stay,鑫宇宾馆,登电集团水泥公司西100米,7695m,住宿服务;宾馆酒店;宾馆酒店,0371-62955366,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B01730JT6Z
+柏石崖村,dengfeng_baishiya,stay,登封中州悦隐槐夏院子民宿,徐庄镇王保庄村46号,7966m,住宿服务;住宿服务相关;住宿服务相关,18736004133,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKVM07C
+柏石崖村,dengfeng_baishiya,parking,登徐线-路侧停车场,登徐线与050乡道交叉口东480米,393m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MU6RWEJW
+柏石崖村,dengfeng_baishiya,parking,马汝线-路侧停车场,登徐线与050乡道交叉口东340米,541m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MUSXFWRZ
+柏石崖村,dengfeng_baishiya,parking,地面停车场,登徐线与050乡道交叉口东280米,590m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I2MZB805
+柏石崖村,dengfeng_baishiya,parking,道路停车位,登徐线与050乡道交叉口东北240米,672m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I2YZS4EY
+柏石崖村,dengfeng_baishiya,parking,道路停车位,登徐线与050乡道交叉口东北240米,674m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I2D5RR54
+柏石崖村,dengfeng_baishiya,parking,家宴庄园停车场,徐庄镇伟峰家宴庄园,1102m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G0S12U90
+柏石崖村,dengfeng_baishiya,parking,登封嵩基水泥公司(登徐线)-停车场,徐庄镇郑庄村登封嵩基水泥公司(登徐线),1770m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3AOYFOZ
+北堤村,zhongmu_beidi,activity,国亮采摘园,狠城岗镇北堤村北上大堤右转300米堤南,1252m,体育休闲服务;休闲场所;采摘园,15938750893,3.7,人均约 ¥33.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0G1GANOZQ
+北堤村,zhongmu_beidi,food,味珍香农家饭庄,狼城岗镇,75m,餐饮服务;中餐厅;中餐厅,13949028530;13949046037,3.8,人均约 ¥31.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HDPRMBK3
+北堤村,zhongmu_beidi,food,北堤兔肉店,仓狼路与同福路交叉口北100米,129m,餐饮服务;中餐厅;中餐厅,15136233319,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJQ2V9I
+北堤村,zhongmu_beidi,food,午后拾芬,同强路与仓狼路交叉口西南20米,373m,餐饮服务;冷饮店;冷饮店,,2.1,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K3AZVERP
+北堤村,zhongmu_beidi,food,小巧快餐,仓狼路与同心路交叉口北40米,561m,餐饮服务;快餐厅;快餐厅,,3.4,人均约 ¥18.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J1KCBMD8
+北堤村,zhongmu_beidi,food,美味炸鸡,同心路与仓狼路交叉口东南20米,613m,餐饮服务;快餐厅;快餐厅,,1.6,人均约 ¥21.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAGSQT7G
+北堤村,zhongmu_beidi,food,瓦坡周黑鸭麻椒鸡店,仓狼路与同心路交叉口南60米,653m,餐饮服务;中餐厅;中餐厅,,3.1,人均约 ¥29.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB9MTZE6
+北堤村,zhongmu_beidi,food,申记小吃店,仓狼路与同庆路交叉口东北60米,663m,餐饮服务;餐饮相关场所;餐饮相关,,2.5,人均约 ¥13.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M6JUEMS3
+北堤村,zhongmu_beidi,food,五香油酥烧饼,仓狼路与同心路交叉口南100米,677m,餐饮服务;中餐厅;中餐厅,13215990378,2.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LRXL3460
+北堤村,zhongmu_beidi,food,小胖妞面馆,仓狼路与同庆路交叉口北40米,696m,餐饮服务;外国餐厅;韩国料理,,2.9,人均约 ¥16.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G1D7GUE3
+北堤村,zhongmu_beidi,food,大丰收农家饭,沙窝森林公园苹果采摘园,3874m,餐饮服务;中餐厅;中餐厅,15238046660;15538016770,3.8,人均约 ¥60.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H2LM4P9M
+北堤村,zhongmu_beidi,stay,浴龙湾温泉洗浴酒店,雁鸣湖镇朱固村东大街十字路口,2269m,住宿服务;住宿服务相关;住宿服务相关,13838239669,5.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKUMZE6
+北堤村,zhongmu_beidi,stay,秀园生态酒店,秀园景区内,3466m,住宿服务;宾馆酒店;三星级宾馆,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFG39Q78
+北堤村,zhongmu_beidi,stay,中牟沙窝民宿(暂停营业),雁鸣湖镇小店村沙窝,4111m,住宿服务;住宿服务相关;住宿服务相关,15713880818,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKO0XQ7
+北堤村,zhongmu_beidi,stay,龙泉阁酒店(狼城路店),狼城岗镇社区,4280m,住宿服务;宾馆酒店;宾馆酒店,0371-62222158,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JG3AVGQ2
+北堤村,zhongmu_beidi,stay,凌云温泉山庄,春晖路与未来农业路交叉口东南160米,4832m,体育休闲服务;度假疗养场所;度假村|住宿服务;住宿服务相关;住宿服务相关,0371-62322555,3.9,人均约 ¥75.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LK6ZJP1N
+北堤村,zhongmu_beidi,stay,郑州中牟雁鸣湖凌云酒店,国家农业公园内雁翔路与香漫湖路交叉口,5154m,住宿服务;宾馆酒店;宾馆酒店,0371-62322555,4.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHU2VTA
+北堤村,zhongmu_beidi,stay,叶老板的民宿(雁鸣湖镇店),纬四东路与雁月大道交叉口东南360米,5727m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K35SHT6H
+北堤村,zhongmu_beidi,stay,和居亲子民宿(中牟雁鸣湖景区),正商双湖湾碧雅苑9栋,6120m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M6TD3VWD
+北堤村,zhongmu_beidi,stay,林泊拾光民宿,大孟街道贺岗村东100米01号大自然梦想城,7069m,住宿服务;旅馆招待所;旅馆招待所,15617932357,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0HHQ9U4
+北堤村,zhongmu_beidi,stay,中牟庭元民宿,雁鸣大道郑州交通技校驾校考务中心院内住宿楼,7184m,住宿服务;住宿服务相关;住宿服务相关,13253570997,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L6TA3FSE
+北堤村,zhongmu_beidi,parking,雁鸣湖服务区停车场(暂停营业),雁鸣湖服务区与G0424京武高速出口交叉口东南100米,575m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0M6A7YOTT
+超化村,xinmi_chaohua,activity,龙湖生态庄园,超化镇湖地村,3134m,体育休闲服务;休闲场所;休闲场所,17133618888,4.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFIZGI9Y
+超化村,xinmi_chaohua,activity,新密市超化镇体育公园,超化镇黄固寺村,4356m,风景名胜;公园广场;公园,,2.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0MACNVD5G
+超化村,xinmi_chaohua,activity,新密市超化镇周岗村体育广场,超化镇周岗村,4357m,风景名胜;公园广场;公园,,3.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0HB9MD6YJ
+超化村,xinmi_chaohua,activity,潮bar,超化镇黄固寺村南苑路与文明路交叉口向南200米院内,5278m,体育休闲服务;娱乐场所;酒吧,,3.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0K10ZLHUC
+超化村,xinmi_chaohua,activity,香满园农家乐,超化镇黄路山村退役军人服务站东侧80米,6045m,体育休闲服务;休闲场所;休闲场所,,1.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0MBXUZ1CR
+超化村,xinmi_chaohua,activity,国亮田园情超市,超化镇草庙村,7310m,购物服务;便民商店/便利店;便民商店/便利店,,4.0,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFKK9NAC
+超化村,xinmi_chaohua,activity,九里山风景区,超化镇草庙村,7808m,风景名胜;风景名胜相关;旅游景点,,4.2,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFGSIWFB
+超化村,xinmi_chaohua,activity,大龙农家院,超化镇草庙村后门50号,8081m,体育休闲服务;休闲场所;休闲场所,13140153118,3.4,人均约 ¥59.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JG2UGJGG
+超化村,xinmi_chaohua,activity,雪山景区,超化镇草庙村九里山风景区,8516m,风景名胜;风景名胜相关;旅游景点,,3.7,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HKDC1R23
+超化村,xinmi_chaohua,food,涵涵家小吃,新密杜禧成诊所南侧,25m,餐饮服务;中餐厅;中餐厅,,2.6,人均约 ¥18.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L06ROI1N
+超化村,xinmi_chaohua,food,红辣椒米皮,新密杜禧成诊所东南侧,53m,餐饮服务;中餐厅;中餐厅,,3.3,人均约 ¥46.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K26GOR45
+超化村,xinmi_chaohua,food,歌家饸饹面,金花路与038县道交叉口东380米,54m,餐饮服务;中餐厅;中餐厅,,3.2,人均约 ¥14.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L0GL48JG
+超化村,xinmi_chaohua,food,福祥农家,金花路冠萍温馨制衣旁,366m,餐饮服务;中餐厅;中餐厅,13608693317,3.9,人均约 ¥35.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GK07AZEA
+超化村,xinmi_chaohua,food,新超农家,杏树岗社区东门南100米,2267m,餐饮服务;中餐厅;中餐厅,,3.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJZV7D0
+超化村,xinmi_chaohua,food,遂奇莪沟农家院,超化镇莪沟村,2445m,餐饮服务;中餐厅;中餐厅,15093291450,4.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I25CDEU3
+超化村,xinmi_chaohua,food,新密市自在人家农家院,城关镇甘寨村胡地东坡32号,3374m,餐饮服务;餐饮相关场所;餐饮相关,13526619896,3.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKRJG1E
+超化村,xinmi_chaohua,food,一家亲农庄餐馆,新化路与周甘路叉路口东北,4004m,餐饮服务;中餐厅;中式素菜馆,13938242228,1.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFLA7F6D
+超化村,xinmi_chaohua,food,味意轩农家菜,高沟加油站东北60米路西,4022m,餐饮服务;中餐厅;中餐厅,18439873931,3.7,人均约 ¥48.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LDTH7PUM
+超化村,xinmi_chaohua,food,中庚园林农庄,小南沟附近,4209m,餐饮服务;中餐厅;中餐厅,0371-69249666;15617850999,4.5,人均约 ¥40.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFZ756D
+超化村,xinmi_chaohua,stay,新密休闲宾馆,金花路双汇购物生活广场陶雅茗轩旁边,241m,住宿服务;住宿服务相关;住宿服务相关,0371-69230222,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK9GH64
+超化村,xinmi_chaohua,stay,莪沟窑洞民宿,超化镇莪沟村,2387m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDVZRO80
+超化村,xinmi_chaohua,stay,家和园饭店停车住宿,来集镇李堂村密州大道与商登高速入口往北500米路西,2975m,住宿服务;旅馆招待所;旅馆招待所,13213053558,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HGBSQWAX
+超化村,xinmi_chaohua,stay,新密市悦莱民宿,新区大道与南苑路交叉口南260米,4804m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LAYYYQT4
+超化村,xinmi_chaohua,stay,哲家小院,城关镇高沟村高沟东163号,4811m,住宿服务;住宿服务相关;住宿服务相关,,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LK0A7YDR
+超化村,xinmi_chaohua,stay,梦境民宿,超化镇黄固寺村文明路6号,5103m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K2PDF40Z
+超化村,xinmi_chaohua,stay,拾里·SHI LI(郑医店),郑州健康职业学院地下停车场负二层,5313m,住宿服务;旅馆招待所;旅馆招待所,,3.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KDU7G37H
+超化村,xinmi_chaohua,stay,千玺宿集·隐机民宿(新密溱洧水城店),洧水路雀饮云思东北20米,7091m,住宿服务;住宿服务相关;住宿服务相关,0371-60886667;13071048839,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L19HFMIV
+超化村,xinmi_chaohua,stay,峰源公寓,七里岗郷五里店村二组岳打路369号,7127m,住宿服务;旅馆招待所;旅馆招待所,0371-55605561;18939567888,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFI4LQOS
+超化村,xinmi_chaohua,stay,银杏·安之小院,老城东街与长乐路交叉口东100米,7438m,住宿服务;住宿服务相关;住宿服务相关,15639771233,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L6PUC723
+超化村,xinmi_chaohua,parking,道路停车位,金花路北侧,44m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H2G7U7BW
+超化村,xinmi_chaohua,parking,金花路-道路停车位,金花路南侧,55m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7ULNQ
+超化村,xinmi_chaohua,parking,金花路-道路停车位,038县道与豫华路交叉口东南360米,158m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7TKES
+超化村,xinmi_chaohua,parking,金花路-道路停车位,038县道与豫华路交叉口东南320米,233m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7VFH1
+超化村,xinmi_chaohua,parking,金花路-道路停车位,金花路与平安大道交叉口西500米,269m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7VU90
+超化村,xinmi_chaohua,parking,德惠苑(超化店)-停车场,德惠苑(超化店),409m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L27LKMMA
+超化村,xinmi_chaohua,parking,金花路-道路停车位,金花路与平安大道交叉口西340米,438m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7W277
+超化村,xinmi_chaohua,parking,新密市超化镇卫生院停车场,金花路与平安大道交叉口西320米,462m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L0X9LESF
+超化村,xinmi_chaohua,parking,金花路-道路停车位,金花路与平安大道交叉口西280米,490m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2G7VFGN
+超化村,xinmi_chaohua,parking,河西新区停车场,河西新区,551m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBPX31MA
+大金店老街,dengfeng_dajindian_oldstreet,activity,宏达烟酒行(S323店),大金店镇老街十字路口南,770m,购物服务;专卖店;烟酒专卖店,13598083659,4.3,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFG82PVQ
+大金店老街,dengfeng_dajindian_oldstreet,activity,登封市彤彤儿童游乐园经营部,大金店镇老十字街向北路东第9号,779m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,15937925637,2.8,人均约 ¥36.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LDUDBTA0
+大金店老街,dengfeng_dajindian_oldstreet,activity,中国邮政(大金店邮政支局),大金店金中村老街中段,802m,生活服务;邮局;邮局,0371-62766868,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B01730JXY9
+大金店老街,dengfeng_dajindian_oldstreet,food,李三卤肉店,金东村村委会东北侧,22m,餐饮服务;中餐厅;中餐厅,,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J0LPR80Z
+大金店老街,dengfeng_dajindian_oldstreet,food,金店卤肉,大金店镇金东村卫生室北侧90米,104m,餐饮服务;餐饮相关场所;餐饮相关,,3.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K2NBWWJ8
+大金店老街,dengfeng_dajindian_oldstreet,food,乡村大食堂,金东村村委会东侧240米,201m,餐饮服务;中餐厅;中餐厅,,1.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MG2N0I3Z
+大金店老街,dengfeng_dajindian_oldstreet,food,金东饭店,大金店桥向南500米,219m,餐饮服务;中餐厅;中餐厅,18737176227,3.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L3ASSHOL
+大金店老街,dengfeng_dajindian_oldstreet,food,星翔冷饮速冻批发,乌海线西北侧,717m,餐饮服务;冷饮店;冷饮店,,1.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HR0GQW6X
+大金店老街,dengfeng_dajindian_oldstreet,food,金喜婚宴主题饭店,大金店南环路中段,728m,餐饮服务;中餐厅;中餐厅,,4.0,人均约 ¥55.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JUC7A4LB
+大金店老街,dengfeng_dajindian_oldstreet,food,乐至烧烤(大金店上站),大金店镇市场监督管理所东南侧50米,746m,餐饮服务;中餐厅;特色/地方风味餐厅,13619843000,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IBM5KYHE
+大金店老街,dengfeng_dajindian_oldstreet,food,金店饭庄,大金店镇,756m,餐饮服务;中餐厅;中餐厅,0371-62760868;15838391953,3.8,人均约 ¥15.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFF4UJSV
+大金店老街,dengfeng_dajindian_oldstreet,food,开碗笑休闲小吃(大金店总店),大金店镇金西邮政储蓄银行南30米,772m,餐饮服务;快餐厅;快餐厅,15038065239;15939012348,3.9,人均约 ¥19.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGBDKIS
+大金店老街,dengfeng_dajindian_oldstreet,food,奇味轩自助小火锅(大金店镇店),中国邮政储蓄银行大金店支行旁,779m,餐饮服务;中餐厅;火锅店,16692158628,3.7,人均约 ¥21.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HKVZ7SXZ
+大金店老街,dengfeng_dajindian_oldstreet,stay,嵩阳居民宿(登封袁桥古村店),大金店镇袁桥古村001号,2325m,住宿服务;旅馆招待所;旅馆招待所,13673625938,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUP76SAG
+大金店老街,dengfeng_dajindian_oldstreet,stay,花筑·德润居民宿(登封袁桥古村店),袁桥古村039号,2480m,住宿服务;旅馆招待所;旅馆招待所,15617689359,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JROM0FWM
+大金店老街,dengfeng_dajindian_oldstreet,stay,登封嵩瓷苑民宿(登封窑陶瓷博物馆店),王村登封窑苑6号,5014m,住宿服务;住宿服务相关;住宿服务相关,16668096788,5.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MGGS3QVJ
+大金店老街,dengfeng_dajindian_oldstreet,stay,三王庄的民宿,三王庄村村委会西侧210米,7334m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LG3P2MW5
+大金店老街,dengfeng_dajindian_oldstreet,stay,登封依山小筑(御寨大道分店),御寨大道自西向东第十五户依山·小筑,7631m,住宿服务;住宿服务相关;住宿服务相关,"+861056320612,5620581;010-56320606,5620581",4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L6051VVJ
+大金店老街,dengfeng_dajindian_oldstreet,stay,登封喜玉民宿,大金店镇三王庄村新农村5排9号,7648m,住宿服务;住宿服务相关;住宿服务相关,15981931311,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDGNAGUS
+大金店老街,dengfeng_dajindian_oldstreet,stay,三王隐宿民宿(御寨大道分店),登封依山小筑(御寨大道分店)西侧70米,7656m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,6264084;010-56320606,6264084",4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAS5PK1Y
+大金店老街,dengfeng_dajindian_oldstreet,stay,登封蒸膳坊民宿馆,少林街道耿庄村北海街4号,7678m,住宿服务;住宿服务相关;住宿服务相关,13333837555,1.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J1HZ76II
+大金店老街,dengfeng_dajindian_oldstreet,stay,登封云水间民宿,大金店镇三王庄社区三巷12号,7697m,住宿服务;旅馆招待所;旅馆招待所,13593993975;15838164630;18538311962,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KGO7D1DX
+大金店老街,dengfeng_dajindian_oldstreet,stay,吾家小院77民宿,御寨大道少林德武文化武术学校西南270米,7816m,住宿服务;旅馆招待所;旅馆招待所,19913875355,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA95WE6Q
+大金店老街,dengfeng_dajindian_oldstreet,parking,道路停车位,金颍花园西侧90米,791m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I15CTZHW
+大金店老街,dengfeng_dajindian_oldstreet,parking,郑州翱翔医药科技股份有限公司停车场,大金店镇三里庄高新技术园区郑州市翱翔医药科技股份有限公司,1461m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M6HD9ERF
+大金店老街,dengfeng_dajindian_oldstreet,parking,地上停车场(207国道),207国道西50米,1534m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFY3PDB
+大金店老街,dengfeng_dajindian_oldstreet,parking,河南袁桥古村旅游景区东停车场,袁桥村,2367m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KBOS781G
+大金店老街,dengfeng_dajindian_oldstreet,parking,河南袁桥古村旅游景区东南停车场,河南袁桥古村旅游景区,2399m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HUMZTAT2
+大金店老街,dengfeng_dajindian_oldstreet,parking,大金店停车区停车场,大金店停车区北侧,2702m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGKAJZJ4
+大金店老街,dengfeng_dajindian_oldstreet,parking,大金店停车区停车场,大金店停车区南侧,2797m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGKAJTNA
+大隗村,xinmi_dawei,activity,大隗村公益电影放映点,大隗村,6m,体育休闲服务;影剧院;影剧院相关,,1.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JAZNU897
+大隗村,xinmi_dawei,activity,情缘网络会所,大隗镇大隗村服装一条街中段,554m,体育休闲服务;娱乐场所;网吧,17613430666,4.2,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B017319VG4
+大隗村,xinmi_dawei,activity,大隗村红石峡篮球场,X030(周甘路),1242m,体育休闲服务;运动场馆;篮球场馆,,3.7,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0G3B7R9GG
+大隗村,xinmi_dawei,activity,红石峡水库寻娱岛,大隗镇大隗村红石峡水库2号,1970m,风景名胜;风景名胜相关;旅游景点,15136272727,4.4,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0LAT56NYJ
+大隗村,xinmi_dawei,activity,纸坊村生活广场,大隗镇金花路(大隗镇纸坊小学北侧约250米),2185m,风景名胜;公园广场;城市广场,,4.1,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HKUCXDY1
+大隗村,xinmi_dawei,activity,新密市大隗镇和合文化大院,大隗镇和合村,3160m,科教文化服务;科教文化场所;科教文化场所,,[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B01730JOLG
+大隗村,xinmi_dawei,activity,大隗镇大路沟顺丰桃园,大隗镇大路沟新村,3710m,体育休闲服务;休闲场所;采摘园,13460352837;15038383931,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JG1CFC1O
+大隗村,xinmi_dawei,activity,四季农家乐庄园,大隗镇王沟村,4466m,体育休闲服务;休闲场所;休闲场所,,3.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKE0LIG
+大隗村,xinmi_dawei,activity,新密市大隗镇老其沟村三成生态园,周甘路,4638m,体育休闲服务;休闲场所;采摘园,,3.9,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HRVR1YM2
+大隗村,xinmi_dawei,activity,大隗镇陈庄村下沟组广场,大隗镇,5846m,风景名胜;公园广场;城市广场,,1.1,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0MULLWH3F
+大隗村,xinmi_dawei,activity,新密市悦好蟠桃采摘园,大隗镇陈庄村郑栾高速东,6504m,体育休闲服务;休闲场所;采摘园,13526859705,3.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JDJ5DM8I
+大隗村,xinmi_dawei,activity,奶油草莓采摘园,大隗镇侯庄村小侯庄,9394m,体育休闲服务;休闲场所;采摘园,,3.7,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HKFZZ923
+大隗村,xinmi_dawei,food,刘家豆腐脑,大隗镇,23m,餐饮服务;中餐厅;中餐厅,18539986526,3.4,人均约 ¥14.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL6ZOKZ
+大隗村,xinmi_dawei,food,小张摇滚炒鸡,周甘路大隗客运站南侧约160米,74m,餐饮服务;中餐厅;综合酒楼,16638213385,3.1,人均约 ¥28.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H0JHV1YR
+大隗村,xinmi_dawei,food,贝贝家蛋糕店,大隗镇菜鸟驿站对面向东50米,83m,餐饮服务;糕饼店;糕饼店,13623839326,3.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L07H1VQR
+大隗村,xinmi_dawei,food,厨流香大盘鸡,大隗镇商业街中段,90m,餐饮服务;中餐厅;西北菜,13803848222;15036100039,3.9,人均约 ¥19.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFIQ11I4
+大隗村,xinmi_dawei,food,疯狂烤翅,中共新密室大隗镇大隗村委会西侧80米,104m,餐饮服务;中餐厅;特色/地方风味餐厅,18530856526,2.6,人均约 ¥31.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFG0WTLM
+大隗村,xinmi_dawei,food,好饺道饺子馆,大隗中心卫生院西侧70米,119m,餐饮服务;中餐厅;综合酒楼,15803830516,2.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JU3LE6AS
+大隗村,xinmi_dawei,food,赵家大院,周甘路与洧水大道交叉口北440米,893m,餐饮服务;餐饮相关场所;餐饮相关,,2.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFHUWJO6
+大隗村,xinmi_dawei,food,大庙农家饭店,大隗镇大庙村大庙农家饭店,3300m,餐饮服务;中餐厅;中餐厅,,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDFASG2N
+大隗村,xinmi_dawei,food,广和缘农家院大酒店,大隗镇顾家庄,3568m,餐饮服务;中餐厅;中餐厅|体育休闲服务;休闲场所;休闲场所,,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL06PNP
+大隗村,xinmi_dawei,food,锦华农家,黄湾寨村垌口组27号,3643m,餐饮服务;餐饮相关场所;餐饮相关,0371-69281111,4.5,人均约 ¥19.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJIJBO1
+大隗村,xinmi_dawei,stay,C75太空露营民宿,刘寨镇大鸿路1号,5759m,住宿服务;住宿服务相关;住宿服务相关,13525089878;19937626579,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J2T145MA
+大隗村,xinmi_dawei,stay,朴宿·庭唐民宿(银基旅游度假区店),刘寨镇木子路湖语墅C区10号楼1楼102,6210m,住宿服务;住宿服务相关;住宿服务相关,17839997717,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L0RC69NY
+大隗村,xinmi_dawei,stay,初见·小筑(银基国际旅游度假区动物王国店),刘寨镇银基大道林里居41号楼2单元404号,6806m,住宿服务;住宿服务相关;住宿服务相关,17737115010,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IGLK0XUO
+大隗村,xinmi_dawei,stay,新密莫雅民宿(银基旅游度假区动物王国店),银基国际旅游度假区悦林居15号楼1楼,6829m,住宿服务;住宿服务相关;住宿服务相关,15225053313,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JG6GLPFB
+大隗村,xinmi_dawei,stay,妮卡亲子度假民宿(银基动物王国店),刘寨镇银基国际旅游度假区悦林居40栋2单元1103室,6886m,住宿服务;住宿服务相关;住宿服务相关,15136212193;18613711701,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUTRE5ZN
+大隗村,xinmi_dawei,stay,格林童趣民宿(银基动物王国店),刘寨镇银基悦林居12号楼2单元201室,6890m,住宿服务;旅馆招待所;旅馆招待所,17303835333,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K397INBW
+大隗村,xinmi_dawei,stay,童梦童缘主题民宿(银基动物王国店),刘寨镇银基旅游度假区悦林居12号楼2单元103室,6890m,住宿服务;住宿服务相关;住宿服务相关,19939965255,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L6HUET7J
+大隗村,xinmi_dawei,stay,林里居花间民宿(新密银基旅游度假区动物王国店),刘寨镇木子路银基国际度假区林里居四期商铺6号,6929m,住宿服务;住宿服务相关;住宿服务相关,16692020303;18003748250,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JUM4T46E
+大隗村,xinmi_dawei,stay,春风里民宿(银基动物王国店),刘寨镇银基大道悦林居24号楼3单元701,7041m,住宿服务;住宿服务相关;住宿服务相关,15136477330,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAT75E3V
+大隗村,xinmi_dawei,stay,RR·芮雪酒店(银基动物王国店),林里居四期48号楼1单元104房,7077m,住宿服务;宾馆酒店;宾馆酒店,13725427435;18595692687;18807408416,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JU79QBCP
+大隗村,xinmi_dawei,parking,新密市大隗镇中心卫生院停车场,大隗中心卫生院,204m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBT69FXL
+大隗村,xinmi_dawei,parking,大隗广场停车场,周甘路南150米大隗广场(东北角),349m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HU2DTXU9
+大隗村,xinmi_dawei,parking,郑州德润塑业有限公司停车场,699村道与058乡道交叉口西南400米,684m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDJXL77B
+大隗村,xinmi_dawei,parking,中州停车场,周甘路与洧水大道交叉口南260米,719m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFG4FVD4
+大隗村,xinmi_dawei,parking,洧水大道-路侧停车场,洧水大道与周甘路交叉口西140米,845m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MAVK5M7P
+大隗村,xinmi_dawei,parking,润龙停车场,周甘路与洧水大道交叉口北480米,915m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUD1LNQI
+大隗村,xinmi_dawei,parking,大隗镇顺达停车场,大隗丰园食品专业社南侧60米,1028m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFM6YAXN
+大隗村,xinmi_dawei,parking,河屯居民新区停车场,058乡道与699村道交叉口东120米,1030m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBFD5ZIY
+大隗村,xinmi_dawei,parking,顺达停车场,大隗镇铁匠村老官台组,1039m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J17SFJU7
+大隗村,xinmi_dawei,parking,停车场,新密市大隗镇第二初级中学西(S323旧)西北侧240米,1215m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUBR85O8
+海上桥村,gongyi_haishangqiao,activity,海上桥村乡村文化合作社文创小馆,海上桥村委会东北侧70米,813m,科教文化服务;科教文化场所;科教文化场所,,3.4,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LURO60LI
+海上桥村,gongyi_haishangqiao,activity,海上桥美术馆,海上桥村委会西北侧90米,883m,科教文化服务;科教文化场所;科教文化场所,,3.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LGV1YQAE
+海上桥村,gongyi_haishangqiao,activity,中国传统村落海上桥,海上桥村文化剧场对面,899m,风景名胜;风景名胜;风景名胜,,4.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KRT5TMR6
+海上桥村,gongyi_haishangqiao,activity,海上桥村文化剧场,大峪沟镇海上桥文化中心,948m,体育休闲服务;影剧院;剧场|地名地址信息;普通地名;村庄级地名,,4.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFFA2NTU
+海上桥村,gongyi_haishangqiao,activity,海上桥文化中心,海上桥村委会附近,978m,科教文化服务;文化宫;文化宫,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B01730JPA1
+海上桥村,gongyi_haishangqiao,activity,河南省海上桥艺术园区(建设中),大峪沟镇海上桥村,1819m,商务住宅;产业园区;产业园区,,[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0JD4CKFFO
+海上桥村,gongyi_haishangqiao,food,海上桥皂角树下餐馆,海上桥村民委员会东南侧,850m,餐饮服务;中餐厅;中餐厅,,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBXUYU3D
+海上桥村,gongyi_haishangqiao,food,善财茶馆(海上桥店),大峪沟镇海上桥,897m,餐饮服务;茶艺馆;茶艺馆,16637133304,4.5,人均约 ¥29.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KB7ALMK1
+海上桥村,gongyi_haishangqiao,food,老家饭店,海上桥村民委员会西侧60米,930m,餐饮服务;中餐厅;中餐厅,,2.7,人均约 ¥27.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LGBKZD85
+海上桥村,gongyi_haishangqiao,food,神岭寨农家特色菜,老地方烤肉(巩义市中原西路)东侧70米,1198m,餐饮服务;中餐厅;中餐厅,15136241555,4.4,人均约 ¥54.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKY8VYO
+海上桥村,gongyi_haishangqiao,food,老地方烤肉(巩义市中原西路店),站街镇山神庙村,1267m,餐饮服务;中餐厅;特色/地方风味餐厅,13733181181,3.3,人均约 ¥72.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GR6NWXJV
+海上桥村,gongyi_haishangqiao,food,诗圣杜甫庄园—非物质文化遗产传承店,站街镇山神庙村老村委东平台根1号,1461m,餐饮服务;餐饮相关场所;餐饮相关|体育休闲服务;体育休闲服务场所;体育休闲服务场所|风景名胜;风景名胜相关;旅游景点,15981878222,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K0DU8XL4
+海上桥村,gongyi_haishangqiao,food,喜发手工面皮店,豫林焊材有限公司东北侧,1622m,餐饮服务;中餐厅;中餐厅,,3.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LRDM53JP
+海上桥村,gongyi_haishangqiao,food,大峪沟镇杨饭店,,1812m,餐饮服务;中餐厅;中餐厅,,3.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L11RLXTC
+海上桥村,gongyi_haishangqiao,food,杨里粉皮,杨里小区西南门东南80米,1838m,餐饮服务;餐饮相关场所;餐饮相关,,3.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LB9UP8W2
+海上桥村,gongyi_haishangqiao,food,伴山居土菜馆,站街镇豫联南环路凤鸣社区对面东50米(鲁村村村民委员会北侧80米),3795m,餐饮服务;餐饮相关场所;餐饮相关,,3.9,人均约 ¥26.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0RO87WF
+海上桥村,gongyi_haishangqiao,stay,漫时光·观影民宿(郑州商学院紫荆东校区店),伏羲路1号巩义建业百城天地F10层,5804m,住宿服务;旅馆招待所;旅馆招待所,18538036733,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K3HCW1W1
+海上桥村,gongyi_haishangqiao,stay,芒果HOME·智能观影民宿(巩义正上豪布斯卡店),滨河路与石河路交叉口正上豪布斯卡1号楼11层,6542m,住宿服务;宾馆酒店;宾馆酒店,19339910777,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LDY6G5JA
+海上桥村,gongyi_haishangqiao,stay,栖上与酒店(正上豪布斯卡店),滨河路27号正上豪布斯卡F1层,6583m,住宿服务;宾馆酒店;宾馆酒店,15093366440;19139856001,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K2UZPI2Q
+海上桥村,gongyi_haishangqiao,stay,鹭岛Rich·Loft创意酒店(巩义正上豪布斯卡店),紫荆路街道正上豪布斯卡3号楼B座2楼235号,6657m,住宿服务;宾馆酒店;宾馆酒店,13598077502,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J0NUIX3S
+海上桥村,gongyi_haishangqiao,stay,仟客观影酒店(巩义正上豪布斯卡店),紫荆路街道滨河路正上豪布斯卡2号10楼1019室,6658m,住宿服务;住宿服务相关;住宿服务相关,18838968361,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KG0OK4C0
+海上桥村,gongyi_haishangqiao,stay,巩义泊客湾观影民宿(正上豪布斯卡店),滨河路27号正上豪布斯卡F1层,6659m,住宿服务;宾馆酒店;宾馆酒店,15225195644;18837179671,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J2HRN0Y1
+海上桥村,gongyi_haishangqiao,stay,栖心民宿(巩义正上豪布斯卡店),孝义街道石河路正上豪布斯卡2号楼1楼,6662m,住宿服务;住宿服务相关;住宿服务相关,15038035787,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDPCUOFV
+海上桥村,gongyi_haishangqiao,stay,览景民宿(巩义豪布斯卡店),紫荆路街道滨河路正上豪布斯卡2号楼,6669m,住宿服务;宾馆酒店;宾馆酒店,18625503088,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I22HDXPX
+海上桥村,gongyi_haishangqiao,stay,雅居观影民宿(巩义正上豪布斯卡店),孝义街道石河路正上豪布斯卡2号楼2120,6683m,住宿服务;住宿服务相关;住宿服务相关,19503896781,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LUNU5U80
+海上桥村,gongyi_haishangqiao,stay,正上大酒店(巩义正上豪布斯卡店),滨河路27号正上豪布斯卡F23层,6684m,住宿服务;宾馆酒店;宾馆酒店,19838052227,4.1,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JG7RWBX2
+海上桥村,gongyi_haishangqiao,parking,杨里小区西南侧停车场,杨里小区西南侧100米,1887m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKLP8DDV
+海上桥村,gongyi_haishangqiao,parking,杨里小区停车场,大峪沟镇052县道东150米杨里小区,1961m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKLP7PAK
+海上桥村,gongyi_haishangqiao,parking,停车场,连共线,2414m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H6S4WU1D
+海上桥村,gongyi_haishangqiao,parking,馨海小区停车场,馨海家园一区东北侧,2434m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LUU7N8OZ
+海上桥村,gongyi_haishangqiao,parking,机械制造园地面停车场,,2557m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JKFAUCYV
+海上桥村,gongyi_haishangqiao,parking,河南万铭机械制造有限公司停车场,河南万铭机械制造有限公司,2681m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MG0CI8TE
+海上桥村,gongyi_haishangqiao,parking,河南鸣远重工地上停车场,河南鸣远重工机械有限公司,2919m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUPOG9DO
+海上桥村,gongyi_haishangqiao,parking,宏亮建材停车场,汇丰冶金西南侧90米,2943m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBMY72TZ
+吕楼村,xinmi_lvlou,activity,吕楼葡萄采摘园,刘寨镇吕楼村五组,560m,体育休闲服务;休闲场所;采摘园,15803803345,4.1,人均约 ¥54.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFI95FPK
+吕楼村,xinmi_lvlou,food,吕楼饭店特色炒鸡,015乡道与036乡道交叉口东南80米,363m,餐饮服务;中餐厅;中餐厅,13783480160;18838215778,4.1,人均约 ¥70.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK16URW
+吕楼村,xinmi_lvlou,food,栖凤美食汇,刘寨镇第一初级中学北侧230米,1967m,餐饮服务;餐饮相关场所;餐饮相关,,2.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0LXC1RL
+吕楼村,xinmi_lvlou,food,鸿运鲜羊肉馆,24小时成人用品无人售货北侧60米,2320m,餐饮服务;中餐厅;中餐厅,,2.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L60SC8GA
+吕楼村,xinmi_lvlou,food,逍遥镇胡辣汤,郑州顺宝水泥股份有限公司东1门旁,2320m,餐饮服务;快餐厅;快餐厅,13071090176,3.3,人均约 ¥12.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G2AODFOV
+吕楼村,xinmi_lvlou,food,谷记秘制猪蹄(刘寨店),刘寨镇刘寨小区1号楼,3201m,餐饮服务;快餐厅;快餐厅,13633810444,4.2,人均约 ¥46.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFH9PWIP
+吕楼村,xinmi_lvlou,food,人民公社大食堂(刘寨店),刘寨镇刘寨小区底商563公交站对面,3221m,餐饮服务;中餐厅;湖南菜(湘菜),15136452085;18650515506,4.4,人均约 ¥30.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJIZ77B
+吕楼村,xinmi_lvlou,food,大院农家菜,321省道与028县道交叉口东北60米,3456m,餐饮服务;中餐厅;中餐厅,,2.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBFS432O
+吕楼村,xinmi_lvlou,food,农家小炒,东城美食广场,3882m,餐饮服务;中餐厅;中餐厅,15937133581,3.3,人均约 ¥20.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0M6H7BKJ6
+吕楼村,xinmi_lvlou,food,乡村渔庄(装修中),五星水库赵寨小学西南50米处,4049m,餐饮服务;中餐厅;中餐厅,18538531339,3.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HBOHM3ER
+吕楼村,xinmi_lvlou,food,广和缘农家院大酒店,大隗镇顾家庄,4661m,餐饮服务;中餐厅;中餐厅|体育休闲服务;休闲场所;休闲场所,,3.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL06PNP
+吕楼村,xinmi_lvlou,stay,C75太空露营民宿,刘寨镇大鸿路1号,4269m,住宿服务;住宿服务相关;住宿服务相关,13525089878;19937626579,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J2T145MA
+吕楼村,xinmi_lvlou,stay,新密莫雅民宿(银基旅游度假区动物王国店),银基国际旅游度假区悦林居15号楼1楼,4357m,住宿服务;住宿服务相关;住宿服务相关,15225053313,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JG6GLPFB
+吕楼村,xinmi_lvlou,stay,初见·小筑(银基国际旅游度假区动物王国店),刘寨镇银基大道林里居41号楼2单元404号,4362m,住宿服务;住宿服务相关;住宿服务相关,17737115010,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IGLK0XUO
+吕楼村,xinmi_lvlou,stay,朴宿·庭唐民宿(银基旅游度假区店),刘寨镇木子路湖语墅C区10号楼1楼102,4589m,住宿服务;住宿服务相关;住宿服务相关,17839997717,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L0RC69NY
+吕楼村,xinmi_lvlou,stay,春风里民宿(银基动物王国店),刘寨镇银基大道悦林居24号楼3单元701,4611m,住宿服务;住宿服务相关;住宿服务相关,15136477330,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAT75E3V
+吕楼村,xinmi_lvlou,stay,格林童趣民宿(银基动物王国店),刘寨镇银基悦林居12号楼2单元201室,4617m,住宿服务;旅馆招待所;旅馆招待所,17303835333,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K397INBW
+吕楼村,xinmi_lvlou,stay,林里居花间民宿(新密银基旅游度假区动物王国店),刘寨镇木子路银基国际度假区林里居四期商铺6号,4702m,住宿服务;住宿服务相关;住宿服务相关,16692020303;18003748250,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JUM4T46E
+吕楼村,xinmi_lvlou,stay,妮卡亲子度假民宿(银基动物王国店),刘寨镇银基国际旅游度假区悦林居40栋2单元1103室,4730m,住宿服务;住宿服务相关;住宿服务相关,15136212193;18613711701,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUTRE5ZN
+吕楼村,xinmi_lvlou,stay,院里树下民宿(新密银基国际旅游度假区店),银基旅游大道07号轩辕农场院内,5448m,住宿服务;旅馆招待所;旅馆招待所,13253559028,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAFRO0WA
+吕楼村,xinmi_lvlou,stay,山野听风庄园民宿,一棵墅餐饮管理有限公司东侧,5995m,住宿服务;住宿服务相关;住宿服务相关,13733179500,4.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0K7Q86C
+吕楼村,xinmi_lvlou,parking,李家寨车站停车场,015乡道与036乡道交叉口西420米,436m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MAMX8GI6
+吕楼村,xinmi_lvlou,parking,新密市来集镇王堂小学停车场,祥和路与祥林路交叉口东420米,1566m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MDT7DRSG
+吕楼村,xinmi_lvlou,parking,河南烨达新材科技股份有限公司停车场,郑州恒利达锆质材料公司东侧240米,1817m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LRC4EU9E
+吕楼村,xinmi_lvlou,parking,郑宏恒泰(新密)煤业有限公司地上停车场,刘寨镇西马庄村村西郑宏恒泰(新密)煤业有限公司,1894m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBHGHIT8
+吕楼村,xinmi_lvlou,parking,郑宏恒泰(新密)煤业有限公司地上停车场,刘寨镇西马庄村村西郑宏恒泰(新密)煤业有限公司,1938m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB5BJ9TC
+吕楼村,xinmi_lvlou,parking,郑州顺宝水泥股份有限公司停车场,刘寨镇宋砦郑州顺宝水泥股份有限公司,2276m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L1ACJ2GL
+吕楼村,xinmi_lvlou,parking,枫栖酒店(银基度假区店)-门前停车场,刘寨镇农贸批发市场东南侧,2348m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGOZVCQA
+吕楼村,xinmi_lvlou,parking,刘寨镇农贸批发市场停车场,刘寨镇农贸批发市场,2385m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M65SH2N9
+吕楼村,xinmi_lvlou,parking,新密市刘寨镇卫生院地上停车场,刘寨镇卫生院,2726m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MAKLPQKN
+吕楼村,xinmi_lvlou,parking,道路停车位,,2736m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IRPR73XN
+马渡村,zhengzhou_madu,activity,马渡乡村农家院,马渡乡村农家院11排13号,61m,体育休闲服务;休闲场所;休闲场所,13323822707,3.7,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFME0CK0
+马渡村,zhengzhou_madu,activity,马渡村史馆,马渡特色文化小镇西侧,148m,科教文化服务;科教文化场所;科教文化场所|风景名胜;风景名胜相关;旅游景点,,3.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0L6993Z4F
+马渡村,zhengzhou_madu,activity,马渡村广场,经一路与北三街交叉口西北480米,156m,风景名胜;公园广场;城市广场,,3.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0MDY6TTR2
+马渡村,zhengzhou_madu,activity,马渡五金店住宿,马渡特色文化小镇西侧100米,222m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0GK27KM2A
+马渡村,zhengzhou_madu,activity,黄河农家院,兴达路街道马渡村11排30号(农家乐私房菜土菜馆铁锅炖大鹅),312m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,13673616257,4.2,人均约 ¥45.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKV8LXX
+马渡村,zhengzhou_madu,activity,田园农庄,马渡村1-1,319m,餐饮服务;中餐厅;中餐厅,16603862218,4.4,人均约 ¥54.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0HD7MNX1G
+马渡村,zhengzhou_madu,activity,马渡钓鱼场,马渡新村2号院西侧260米,905m,体育休闲服务;休闲场所;垂钓园,15638523852,4.5,人均约 ¥78.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KD2Y0H9U
+马渡村,zhengzhou_madu,activity,马渡大物塘,,997m,体育休闲服务;休闲场所;垂钓园,,4.5,人均约 ¥53.00,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0J6D5BBFI
+马渡村,zhengzhou_madu,activity,潘多拉森林动物王国,东四环(马渡村5号院南侧约150米),1117m,风景名胜;风景名胜相关;旅游景点,16603808827,4.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0GRU56Y7U
+马渡村,zhengzhou_madu,activity,黄河马渡水利风景区,鸿苑路与S312省道交叉口向北100米,1380m,风景名胜;风景名胜;风景名胜,,4.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0KRV6ELTH
+马渡村,zhengzhou_madu,activity,马渡农家院,石桥村村委会西北侧190米,2470m,体育休闲服务;休闲场所;休闲场所,,3.0,人均约 ¥62.00,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0M6P7N6LY
+马渡村,zhengzhou_madu,activity,马渡黄河文化广场,郑州黄河记忆(马渡黄河文化广场站)东北侧,4346m,风景名胜;公园广场;城市广场,,4.2,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0IUFCUELP
+马渡村,zhengzhou_madu,food,众鑫特色烧烤,兴达路马渡村,18m,餐饮服务;中餐厅;特色/地方风味餐厅,13781677836,2.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H2LM2ZSF
+马渡村,zhengzhou_madu,food,同祥德羊肉汤馆,兴达路街道办事处马渡村民委员会东北侧110米,32m,餐饮服务;中餐厅;中餐厅,,2.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K3M7OBFY
+马渡村,zhengzhou_madu,food,沙县小吃(郑东新区店),兴达路28号,35m,餐饮服务;中餐厅;中餐厅,,3.7,人均约 ¥16.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KRF66JCS
+马渡村,zhengzhou_madu,food,名鸡卤肉凉菜,金水区马渡卫生服务站北侧100米,54m,餐饮服务;餐饮相关场所;餐饮相关,,3.2,人均约 ¥18.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IGND3A44
+马渡村,zhengzhou_madu,food,五毛串串火锅螺蛳粉,马渡18排5号,86m,餐饮服务;中餐厅;火锅店,17630630467,3.2,人均约 ¥22.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L3OLZNDO
+马渡村,zhengzhou_madu,food,农夫菜馆,经一路与北三街交叉口西北360米,167m,餐饮服务;中餐厅;中餐厅,13203736985,4.0,人均约 ¥57.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JBTOB6QI
+马渡村,zhengzhou_madu,food,季小兵信阳渔民风味饭店,马渡新村2号院北侧230米,1191m,餐饮服务;中餐厅;中餐厅,13523078030,4.6,人均约 ¥88.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IUC94WTC
+马渡村,zhengzhou_madu,food,乡土餐饮农家院,大堤南300(京港澳高速公路东),1865m,餐饮服务;餐饮相关场所;餐饮相关,15638579000,4.2,人均约 ¥34.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HUF7XJ1R
+马渡村,zhengzhou_madu,food,小宾忆锅鲜农家院,东四环与黄金线交叉口东北380米,3354m,餐饮服务;餐饮相关场所;餐饮相关,13526450888;13673379545,4.2,人均约 ¥48.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KKPS57G8
+马渡村,zhengzhou_madu,food,永红小院,北四环107号,3688m,餐饮服务;餐饮相关场所;餐饮相关,15290887646,4.3,人均约 ¥49.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JA1HMUNB
+马渡村,zhengzhou_madu,stay,放轻松影院民宿,刘江西街与明理路交叉口北360米,4816m,住宿服务;住宿服务相关;住宿服务相关,15517595557,4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K22ZD483
+马渡村,zhengzhou_madu,stay,上岸精致民宿(郑州龙子湖大学城店),姚桥路与姚夏路交叉口杨兑桥社区3号楼10楼,5963m,住宿服务;住宿服务相关;住宿服务相关,19515508281,4.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J67HRVWE
+马渡村,zhengzhou_madu,stay,郑州状元楼民宿,姚桥路时埂社区东南门8号楼4单元,6077m,住宿服务;住宿服务相关;住宿服务相关,18039282752,4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IB7AXMW5
+马渡村,zhengzhou_madu,stay,郑州相约驿站,时埂社区10号楼3单元3层,6123m,住宿服务;旅馆招待所;旅馆招待所,17737781936,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFG4704N
+马渡村,zhengzhou_madu,stay,枫尚住宿,龙子湖街道小夏街磨李社区22号楼1单元201室,6159m,住宿服务;住宿服务相关;住宿服务相关,13676923018;18538926609,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I3R112NC
+马渡村,zhengzhou_madu,stay,郑州蝶尚公寓,宝瑞路辉瑞财智广场5栋401楼,6228m,住宿服务;旅馆招待所;旅馆招待所,13203714484;15936292523,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HUPROFDA
+马渡村,zhengzhou_madu,stay,一鸣书居民宿(郑州左岸长堤别墅店),北岸祥云寺左岸长堤6号,7453m,住宿服务;住宿服务相关;住宿服务相关,13676993656,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJLJ55W
+马渡村,zhengzhou_madu,stay,郑州曼月酒店(木华广场店),明理路266正商木华广场F1层,7680m,住宿服务;住宿服务相关;住宿服务相关,19337186489,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KKFH0TXP
+马渡村,zhengzhou_madu,stay,湖景半岛酒店(郑州龙子湖木华广场店),正商木华广场2号楼7楼717,7761m,住宿服务;住宿服务相关;住宿服务相关,17700677010;17896715587,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFICTCIX
+马渡村,zhengzhou_madu,stay,青云舍酒店(郑州龙子湖高校区店),龙子湖街道明理路正商木华广场2号楼1131室,7764m,住宿服务;宾馆酒店;宾馆酒店,18595511786,4.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JD5XJ315
+马渡村,zhengzhou_madu,parking,马渡物流园地面停车场,马渡村马渡物流园,362m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KB1CBSXI
+马渡村,zhengzhou_madu,parking,地面停车场,,1163m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I325MQIE
+马渡村,zhengzhou_madu,parking,停车场,经五路与南三街交叉口南160米,1287m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMB7UUQ
+马渡村,zhengzhou_madu,parking,潘多拉森林动物王国停车场,潘多拉森林动物王国(东南角),1324m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IGYCI9WZ
+马渡村,zhengzhou_madu,parking,马渡黄河大堤停车点,鸿苑路与312省道交叉口北40米,1328m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IAGH6D2V
+马渡村,zhengzhou_madu,parking,停车场,东四环出口与金城大道交叉口北60米,2070m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUSOFGA2
+马渡村,zhengzhou_madu,parking,惠济区石桥小学停车场,花园口镇石桥村退役军人服务站南侧50米,2230m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MD0LT9YO
+马渡村,zhengzhou_madu,parking,合和家园西南侧停车场,黄古线与东四环出口交叉口北80米,2247m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MG9DOZWH
+马渡村,zhengzhou_madu,parking,花园口镇石桥村村民委员会停车场,花园口镇石桥村退役军人服务站东北侧,2257m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDTCD3SO
+马渡村,zhengzhou_madu,parking,郑州亚帮汽车科技产业园地面停车场,郑州亚帮汽车科技产业园,2274m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IG1AENSO
+民权村,gongyi_minquan,activity,青龙山慈云寺景区游客中心,大峪沟镇民权村青龙山慈云寺景区(东侧),2279m,生活服务;信息咨询中心;服务中心,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKHTLL3
+民权村,gongyi_minquan,activity,慈云寺景区扫黄打非工作站,大峪沟镇民权村(距巩义市区20余公里)青龙山生态文化旅游区内(东侧),2312m,风景名胜;风景名胜相关;旅游景点,,2.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFL7DRE4
+民权村,gongyi_minquan,activity,渐入佳境,大峪沟镇民权村青龙山慈云寺景区,2746m,风景名胜;风景名胜相关;旅游景点,,3.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0HA9D7VSL
+民权村,gongyi_minquan,activity,七叠泉瀑布,大峪沟镇民权村青龙山慈云寺景区(东侧),3006m,风景名胜;风景名胜相关;旅游景点,0371-64067333,3.2,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0H6PNL8TG
+民权村,gongyi_minquan,activity,青龙山生态文化旅游区,大峪沟镇民权村(距巩义市区20余公里),3098m,风景名胜;风景名胜;风景名胜,0371-64067333;0371-64055256,4.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFFES65J
+民权村,gongyi_minquan,activity,鳌首岩,大峪沟镇民权村(距巩义市区20余公里)青龙山生态文化旅游区内(南侧),3397m,风景名胜;风景名胜;风景名胜,,2.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0LAXZ4BJG
+民权村,gongyi_minquan,activity,捧月湖,大峪沟镇民权村青龙山慈云寺景区(东南角),3539m,风景名胜;风景名胜相关;旅游景点,0371-64067333,3.4,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0GK794KAS
+民权村,gongyi_minquan,activity,老侯农家乐,大峪沟镇民权村青龙山慈云寺景区农家乐餐饮区,3590m,体育休闲服务;休闲场所;休闲场所,15515778111,4.3,人均约 ¥21.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0G0ACVA4B
+民权村,gongyi_minquan,activity,巩义市龙泉山庄农家乐,大峪沟镇民权村青龙山慈云寺景区农家乐餐饮区,3636m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,,3.6,人均约 ¥43.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFJIDARL
+民权村,gongyi_minquan,activity,青龙山慈云寺景区-观景台,大峪沟镇民权村青龙山慈云寺景区(东南角),3769m,风景名胜;风景名胜;观景点,,3.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0G3A5DW2D
+民权村,gongyi_minquan,activity,青龙山慈云寺景区-鹿游岛,大峪沟镇民权村(距巩义市区20余公里)青龙山慈云寺景区(东南角),3834m,风景名胜;风景名胜相关;旅游景点,0371-64067333,3.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFKEA5TD
+民权村,gongyi_minquan,activity,净土变,大峪沟镇民权村(距巩义市区20余公里)青龙山生态文化旅游区(东南角),4044m,风景名胜;风景名胜相关;旅游景点,,2.1,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0G3D72P7O
+民权村,gongyi_minquan,food,见山别院,大峪沟镇民权村13组,1626m,餐饮服务;餐饮相关场所;餐饮相关,18595708878;18595748555,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K1NDBB2V
+民权村,gongyi_minquan,food,希峰礼馍店,政通西街与310国道交叉口西220米,1814m,餐饮服务;快餐厅;快餐厅,13460321999,3.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G3AHDNCK
+民权村,gongyi_minquan,food,利民小吃店,政通西街靠近巩义农村信用社,1866m,餐饮服务;快餐厅;快餐厅,15838100728,1.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFI9JC4L
+民权村,gongyi_minquan,food,乡里乡亲饭店,大峪沟镇南大路鸿福山庄楼下,1897m,餐饮服务;中餐厅;中餐厅,13523568591,4.0,人均约 ¥31.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL9A6FO
+民权村,gongyi_minquan,food,绿香源蛋糕房,政通西街与310国道交叉口西160米,1899m,餐饮服务;糕饼店;糕饼店,13633712357,2.9,人均约 ¥21.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFG4XTKJ
+民权村,gongyi_minquan,food,四川担担面,大峪沟镇人民政府北门西50米,1916m,餐饮服务;中餐厅;中餐厅,,1.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0YC7ILB
+民权村,gongyi_minquan,food,川味老火锅,G310(连共线),1923m,餐饮服务;中餐厅;火锅店,13703847489;18503848007,3.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G0D9CNMP
+民权村,gongyi_minquan,food,陶膳坊老式砂锅,310国道392号附2号,1938m,餐饮服务;中餐厅;中餐厅,13373928932,3.4,人均约 ¥21.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L16XSP9Q
+民权村,gongyi_minquan,food,奴海兰州牛肉拉面(政通西街店),大峪沟镇政通西街,1943m,餐饮服务;餐饮相关场所;餐饮相关,,3.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGVVL9V
+民权村,gongyi_minquan,food,新山58号农家乐,新山村58号农家乐,4445m,餐饮服务;餐饮相关场所;餐饮相关,13783422047;15515866738,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0GDCA776P
+民权村,gongyi_minquan,stay,王昌旅社,大峪沟镇胡家沟村37号,1833m,住宿服务;旅馆招待所;旅馆招待所,13949079840,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LGHRJLRO
+民权村,gongyi_minquan,stay,交通旅社,政通西街与310国道交叉口西220米,1841m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KB3S5LGL
+民权村,gongyi_minquan,stay,福满楼酒店(峪秀花园西),峪秀花园门面房19,1959m,住宿服务;宾馆酒店;宾馆酒店|餐饮服务;中餐厅;中餐厅,,4.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFF90N9P
+民权村,gongyi_minquan,stay,鑫福源婚宴主题酒店(大峪沟商业街店),310国道与政通西街交叉口东南160米,2057m,住宿服务;宾馆酒店;宾馆酒店,15838105070,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKXOAZS
+民权村,gongyi_minquan,stay,庆州度假酒店,竹林镇长寿山五连池东100米,3434m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKRAFRO
+民权村,gongyi_minquan,stay,慈云山居康养民宿,长寿山南大门,3802m,住宿服务;住宿服务相关;住宿服务相关,17838315888,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LBLUO85L
+民权村,gongyi_minquan,stay,黄牛寨民宿农家院,小桥人家东侧90米,4806m,住宿服务;住宿服务相关;住宿服务相关,13271560988,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J05SQIU1
+民权村,gongyi_minquan,stay,自在南山民宿,涉村镇洪河村铁佛寺41号,6348m,住宿服务;旅馆招待所;旅馆招待所,13803997855,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KD7ZVSKV
+民权村,gongyi_minquan,stay,巩义石居部落民宿,北庄村(焦桐高速公路北100米),6981m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,18538923339,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFHXA2WO
+民权村,gongyi_minquan,stay,巩义蜗居家庭公寓,新兴路紫荆路往东100米丁字口往南50米高尚锦苑院内,7667m,住宿服务;住宿服务相关;住宿服务相关,15933719680;15937196808,3.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGEKL1H
+民权村,gongyi_minquan,parking,青龙山慈云寺停车场,金博民权副食品店西南侧70米,1673m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HKD941S5
+民权村,gongyi_minquan,parking,青龙山生态文化旅游区元帅池桥西停车场,大峪沟镇民权村(距巩义市区20余公里)青龙山生态文化旅游区,1692m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GUKZBH23
+民权村,gongyi_minquan,parking,停车场,310国道与慈云路交叉口东南400米,1741m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H6ZZPHQA
+民权村,gongyi_minquan,parking,政通西街-路侧停车场,政通西街与310国道交叉口西220米,1819m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M62NU8IO
+民权村,gongyi_minquan,parking,停车场,政通西街与310国道交叉口西南20米,1999m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL779YO
+民权村,gongyi_minquan,parking,河南大峪沟煤业集团有限责任公司职工医院停车场,310国道与政通西街交叉口西北120米,2019m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUAR3VBN
+民权村,gongyi_minquan,parking,道路停车位,大峪沟镇钟岭村4组34号或附近,2173m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B017316C1P
+民权村,gongyi_minquan,parking,青龙山生态文化旅游区青龙关东停车场,大峪沟镇民权村青龙山慈云寺景区青龙关,2256m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G0AAT8GG
+民权村,gongyi_minquan,parking,青龙山停车点,慈云寺景区售票处北侧,2258m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2B5LL86
+民权村,gongyi_minquan,parking,停车场(022乡道),022乡道西100米,2342m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0173166WA
+明月村,gongyi_mingyue,activity,里山明月度假酒店,米河镇明月村,625m,住宿服务;宾馆酒店;宾馆酒店,0371-61077799;15903667310,4.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0I2V553J3
+明月村,gongyi_mingyue,activity,明月山房民宿,伏羲山风景区管委会田种湾村石岭组,5844m,住宿服务;住宿服务相关;住宿服务相关,13592555691,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JG2HB4LE
+明月村,gongyi_mingyue,food,山石舍中餐厅,山石舍中餐厅北侧,629m,餐饮服务;中餐厅;中餐厅,,2.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L397RMWF
+明月村,gongyi_mingyue,food,柒月盛世苑人家,环翠峪景区干阴潭,2096m,餐饮服务;中餐厅;综合酒楼,18595855567,4.0,人均约 ¥106.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J1CU6E2Q
+明月村,gongyi_mingyue,food,环翠峪段记卤肉坊,成泉路,2131m,餐饮服务;餐饮相关场所;餐饮相关,13523456919,4.4,人均约 ¥43.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LDB5CD57
+明月村,gongyi_mingyue,food,杏花食堂,环翠峪风景名胜区正门东80米,2867m,餐饮服务;中餐厅;中餐厅,,2.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0M69DB68A
+明月村,gongyi_mingyue,food,环翠峪清心坊,清心坊农家宾馆北侧,3125m,餐饮服务;餐饮相关场所;餐饮相关,,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I3F11MCO
+明月村,gongyi_mingyue,food,丰仙农庄,刘河镇环翠峪风景区龙溪宫对面,3525m,餐饮服务;中餐厅;中餐厅,13526420138;13938524833,3.4,人均约 ¥48.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HB5HXG1U
+明月村,gongyi_mingyue,food,瓦屋小厨,尖山乡神仙洞村沙一丁路神仙洞景区内(东侧),4335m,餐饮服务;中餐厅;中餐厅,15903666013,3.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LGFDQEBL
+明月村,gongyi_mingyue,food,新密篱下小院(伏羲山神仙洞店),伏羲山管委神仙洞村马庄组1组瓦屋小厨对面,4341m,餐饮服务;餐饮相关场所;餐饮相关,13526482231,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LDGX5NQF
+明月村,gongyi_mingyue,food,正新鸡排(伏羲山店),米村镇月寨村四组伏羲山内(西侧),4841m,餐饮服务;快餐厅;快餐厅,,3.1,人均约 ¥13.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGAHDYNW
+明月村,gongyi_mingyue,stay,新密你好山居,尖山乡尖山村后坡,4171m,住宿服务;住宿服务相关;住宿服务相关,13849073860,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKCOF9O
+明月村,gongyi_mingyue,stay,山好庭院民宿,伏羲山管委会神仙洞村30号,4440m,住宿服务;住宿服务相关;住宿服务相关,0371-69999666;15838088099,4.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KR5MRUQS
+明月村,gongyi_mingyue,stay,怀石地民宿酒店(新密伏羲山店),伏羲山风景区管委尖山村北沟村10号,4587m,住宿服务;旅馆招待所;旅馆招待所,"13283817129;17265844126;+861056320612,53334625",4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I2HU4QUN
+明月村,gongyi_mingyue,stay,云漫山居民宿(新密伏羲山神仙洞店),尖山风景区管委会神仙洞村云漫山居民宿,5392m,住宿服务;住宿服务相关;住宿服务相关,18595638555,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JGBUABYN
+明月村,gongyi_mingyue,stay,一鸣书居民宿(新密伏羲山店),尖山风景管委会黄龙庙025号,5418m,住宿服务;住宿服务相关;住宿服务相关,15038286636;18768855856;95685,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J60NBEML
+明月村,gongyi_mingyue,stay,山与不舍民宿(伏羲山云上牧场店),伏羲山管委尖山村安置区三排4号,5440m,住宿服务;旅馆招待所;旅馆招待所,19838163716,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAX5BL2N
+明月村,gongyi_mingyue,stay,北辰云舍民宿(新密伏羲山店),石尖路尖山敬老院西600米,5446m,住宿服务;住宿服务相关;住宿服务相关,18595900222,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I1PZMVFB
+明月村,gongyi_mingyue,stay,云上居森林木屋民宿(新密伏羲山店),尖山风景区伏羲大道南500米,6578m,住宿服务;住宿服务相关;住宿服务相关,15893831417;18538579866,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IKOC54FH
+明月村,gongyi_mingyue,stay,伏羲山云羲湖居度假民宿,米村镇白槐村五组,7538m,住宿服务;住宿服务相关;住宿服务相关,17516203888,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0M63S7EYV
+明月村,gongyi_mingyue,stay,古树冥想山舍(新密伏羲山店),伏羲山风景区管理委员会楼院村043号,7582m,住宿服务;旅馆招待所;旅馆招待所,0371-69898588,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L1M7I0OU
+明月村,gongyi_mingyue,parking,里山明月度假酒店停车场,山石舍中餐厅西北侧,627m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBCBO0ES
+明月村,gongyi_mingyue,parking,环翠峪风景名胜区-卧龙台停车场(暂停营业),,1008m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HBLUB9MS
+明月村,gongyi_mingyue,parking,环翠峪风景名胜区二郎庙停车场,龙溪路北50米,2137m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0173166TA
+明月村,gongyi_mingyue,parking,环翠峪风景名胜区-正门停车场,浮戏山,2836m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFG6Q2F6
+明月村,gongyi_mingyue,parking,杨树沟风景区停车场,新中镇杨树沟村杨树沟风景区内(东侧),2951m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L3L7Q7JU
+南岭新村,gongyi_nanling,activity,鑫龙山庄农家院,小关镇南岭新村4组,185m,体育休闲服务;休闲场所;休闲场所,13523070889;13839140351,2.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0HUHHL78X
+南岭新村,gongyi_nanling,activity,南岭蝴蝶山,南岭新村,809m,风景名胜;风景名胜相关;旅游景点,0371-64184999,3.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0G25SV3QG
+南岭新村,gongyi_nanling,activity,怡静休闲山居,小关镇南岭新村耍峪,924m,体育休闲服务;休闲场所;休闲场所,15137102333,4.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0I2XU0ELA
+南岭新村,gongyi_nanling,activity,南山捌佰,小关镇南岭新村耍峪13号,1205m,体育休闲服务;娱乐场所;娱乐场所,15225199369,4.4,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JG2S94VK
+南岭新村,gongyi_nanling,activity,趣野星空营地,小关镇南岭新村景家岭,1551m,体育休闲服务;休闲场所;露营地,13703715821,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JBL1T2XE
+南岭新村,gongyi_nanling,food,南岭老乔家,南岭1号,20m,餐饮服务;中餐厅;中餐厅,15225157829,4.4,人均约 ¥41.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFI5IRQS
+南岭新村,gongyi_nanling,food,如家山庄,南岭新村,219m,餐饮服务;中餐厅;中餐厅,15838014216;15890674670,3.6,人均约 ¥96.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0ID1Z9OZ6
+南岭新村,gongyi_nanling,food,蝴蝶谷观景台小吃广场,海拔800夜市北侧,730m,餐饮服务;餐饮相关场所;餐饮相关,13523718993,4.4,人均约 ¥18.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFI74ELK
+南岭新村,gongyi_nanling,food,海拔800夜市,050县道东侧附近,732m,餐饮服务;餐饮相关场所;餐饮相关,,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJ5BQE6
+南岭新村,gongyi_nanling,food,乡村别苑,小关镇南岭新村,1056m,餐饮服务;中餐厅;中餐厅,15617937239,3.9,人均约 ¥59.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GU55W7T8
+南岭新村,gongyi_nanling,food,咱家饭庄,南岭18号,1191m,餐饮服务;餐饮相关场所;餐饮相关,0371-64457215;15324970615,4.3,人均约 ¥31.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFHUF686
+南岭新村,gongyi_nanling,food,新山58号农家乐,新山村58号农家乐,2786m,餐饮服务;餐饮相关场所;餐饮相关,13783422047;15515866738,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0GDCA776P
+南岭新村,gongyi_nanling,food,洪河田园山庄,涉村镇洪河村曹地岭东2号,3305m,体育休闲服务;休闲场所;休闲场所|餐饮服务;中餐厅;中餐厅,13733801153,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H1YSV9T6
+南岭新村,gongyi_nanling,food,玉龙家常农家,016乡道与234省道交叉口东南120米,3310m,餐饮服务;中餐厅;中餐厅,13653826690,3.5,人均约 ¥35.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HA99AQJ4
+南岭新村,gongyi_nanling,food,小龙池龙泉山庄,口五路浮戏山小龙池,3781m,体育休闲服务;休闲场所;休闲场所|餐饮服务;中餐厅;中餐厅,18623710882,4.2,人均约 ¥44.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0173168P8
+南岭新村,gongyi_nanling,stay,黄牛寨民宿农家院,小桥人家东侧90米,2526m,住宿服务;住宿服务相关;住宿服务相关,13271560988,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J05SQIU1
+南岭新村,gongyi_nanling,stay,慈云山居康养民宿,长寿山南大门,3418m,住宿服务;住宿服务相关;住宿服务相关,17838315888,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LBLUO85L
+南岭新村,gongyi_nanling,stay,郑州市·巩义浮戏山逍遥谷度假民宿,浮戏山雪花洞风景区内(东侧),3614m,住宿服务;宾馆酒店;宾馆酒店,0371-64188665,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IRCM50M0
+南岭新村,gongyi_nanling,stay,自在南山民宿,涉村镇洪河村铁佛寺41号,3740m,住宿服务;旅馆招待所;旅馆招待所,13803997855,4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KD7ZVSKV
+南岭新村,gongyi_nanling,stay,隐语居民宿(巩义店),接秀山庄西北侧210米,3796m,住宿服务;旅馆招待所;旅馆招待所,13213060836,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J337VZ3S
+南岭新村,gongyi_nanling,stay,朴韵合院民宿(豫西抗日根据地纪念馆店),新兴路12号中国河南省郑州市巩义市新中镇新中村,6725m,住宿服务;旅馆招待所;旅馆招待所,15617405456;15713823655,2.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KDKZMQCA
+南岭新村,gongyi_nanling,stay,新密甲乙丙丁民宿,伏羲山风景管委会钟沟村湖畔农家西50米,7438m,住宿服务;旅馆招待所;旅馆招待所,17596551119,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LRC4F1FM
+南岭新村,gongyi_nanling,stay,天意山水民宿,县道404号(近环翠峪)龙溪宫(西北角),7484m,住宿服务;旅馆招待所;旅馆招待所,18237922388,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LRPCRPB4
+南岭新村,gongyi_nanling,stay,巩义石居部落民宿,北庄村(焦桐高速公路北100米),7525m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,18538923339,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFHXA2WO
+南岭新村,gongyi_nanling,stay,相约山顶民宿(伏羲山店),巩密关村,7777m,住宿服务;住宿服务相关;住宿服务相关,17344712288,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KD6CG1IG
+南岭新村,gongyi_nanling,parking,海拔800夜市地面停车场,,742m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IG2A4L35
+南岭新村,gongyi_nanling,parking,蝴蝶谷地上停车场,水峪沟北蝴蝶谷,1198m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MALR82BX
+南岭新村,gongyi_nanling,parking,长寿山西南门停车场,竹林镇长寿山,2906m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H2FALVDN
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞村观景广场,尖山乡神仙洞村沙一丁路神仙洞景区,2319m,体育休闲服务;休闲场所;休闲场所,,3.7,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0L3SR43JJ
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞景区,尖山乡神仙洞村沙一丁路,2509m,风景名胜;风景名胜;风景名胜,0371-69225888;0371-69225999,4.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B017306LNL
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞洞口,尖山乡神仙洞村沙一丁路神仙洞景区,2509m,风景名胜;风景名胜;风景名胜,,4.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0JDAZ7IJA
+神仙洞村,zhengzhou_shenxiandong,activity,柏青民宿·农家院,伏羲山管委神仙洞村009-1号,2602m,住宿服务;住宿服务相关;住宿服务相关,17698099953,4.2,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0J1DK0UW1
+神仙洞村,zhengzhou_shenxiandong,activity,秀菊民宿农家院,伏羲山乡神仙洞村51号,2961m,体育休闲服务;休闲场所;休闲场所,13203726817;15238096658,4.3,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KADDP7VZ
+神仙洞村,zhengzhou_shenxiandong,activity,爱春民宿(新密神仙洞店),尖山乡神仙洞村沙一丁路神仙洞景区内(西侧),3029m,住宿服务;住宿服务相关;住宿服务相关,"15981826538;+861056320612,52439863",[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0KGUCWNMZ
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞金花农家院民宿,尖山乡神仙洞村神仙洞2,3043m,住宿服务;住宿服务相关;住宿服务相关,15136177261,3.6,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0K3FRSZ6J
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞景区-售票处,尖山乡神仙洞村沙一丁路神仙洞景区内(东侧),3133m,生活服务;售票处;公园景点售票处,0371-69225888,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0173167IQ
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞游客中心,尖山乡神仙洞村沙一丁路神仙洞景区内(东侧),3148m,生活服务;信息咨询中心;服务中心,0371-69225888,[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HBTU4BJD
+神仙洞村,zhengzhou_shenxiandong,activity,云漫山居民宿(新密伏羲山神仙洞店),尖山风景区管委会神仙洞村云漫山居民宿,4087m,住宿服务;住宿服务相关;住宿服务相关,18595638555,4.9,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0JGBUABYN
+神仙洞村,zhengzhou_shenxiandong,activity,鸡公山农家院,尖山乡神仙洞村神仙洞景区-鸡山三峰附近,4168m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,15939002853,4.5,人均约 ¥33.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFIZ82O8
+神仙洞村,zhengzhou_shenxiandong,activity,神仙洞景区-鸡山三峰,尖山乡神仙洞村沙一丁路神仙洞景区内(东侧),4257m,风景名胜;风景名胜相关;旅游景点,0371-69225888,4.6,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B017304753
+神仙洞村,zhengzhou_shenxiandong,food,松林农家院,伏羲山管委会,682m,餐饮服务;中餐厅;中餐厅,0371-69215258;13283823369,4.2,人均约 ¥52.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFG7BMVO
+神仙洞村,zhengzhou_shenxiandong,food,杏花村农家院,尖山村坦爬3组(近红石林景区),1526m,餐饮服务;中餐厅;中餐厅,13213032091,4.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKHRGHH
+神仙洞村,zhengzhou_shenxiandong,food,乡情佳肴农家院,尖山乡田种湾村石岑094号,2262m,餐饮服务;中餐厅;中餐厅|体育休闲服务;休闲场所;休闲场所|住宿服务;住宿服务相关;住宿服务相关,,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL185Q2
+神仙洞村,zhengzhou_shenxiandong,food,兴旺农家,米村镇月寨村四组伏羲山内(南侧),2363m,餐饮服务;餐饮相关场所;餐饮相关,18625513826,4.5,人均约 ¥43.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFI3IL9P
+神仙洞村,zhengzhou_shenxiandong,food,金旺农家院,下寺沟村村委会东南侧210米,2528m,餐饮服务;中餐厅;中餐厅,13783486855;15036126008,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHZGVQB
+神仙洞村,zhengzhou_shenxiandong,food,杨治国农家院,下寺沟村杨家门110号,2573m,体育休闲服务;休闲场所;休闲场所|餐饮服务;餐饮相关场所;餐饮相关,13623855662,4.6,人均约 ¥40.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGJPCH6
+神仙洞村,zhengzhou_shenxiandong,food,姐弟山庄,伏羲山-红石林景区内(东侧),2575m,餐饮服务;中餐厅;中餐厅,,4.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFI9UNP5
+神仙洞村,zhengzhou_shenxiandong,food,杨国民农家院,尖山管委下寺沟村一组,2576m,体育休闲服务;休闲场所;休闲场所|餐饮服务;中餐厅;中餐厅,13598435894;18625597879,4.5,人均约 ¥59.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFIZLCK3
+神仙洞村,zhengzhou_shenxiandong,food,改玲农家大院,尖山管委下寺沟村杨家门098号,2587m,餐饮服务;中餐厅;中餐厅,15225092132;19522373008,4.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJGD76W
+神仙洞村,zhengzhou_shenxiandong,food,建峰农家院,米村镇凤凰山停车场东十米,2625m,餐饮服务;中餐厅;中餐厅,18237158562,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFH1K2DJ
+神仙洞村,zhengzhou_shenxiandong,stay,怀石地民宿酒店(新密伏羲山店),伏羲山风景区管委尖山村北沟村10号,539m,住宿服务;旅馆招待所;旅馆招待所,"13283817129;17265844126;+861056320612,53334625",4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I2HU4QUN
+神仙洞村,zhengzhou_shenxiandong,stay,新密你好山居,尖山乡尖山村后坡,563m,住宿服务;住宿服务相关;住宿服务相关,13849073860,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKCOF9O
+神仙洞村,zhengzhou_shenxiandong,stay,一鸣书居民宿(新密伏羲山店),尖山风景管委会黄龙庙025号,1523m,住宿服务;住宿服务相关;住宿服务相关,15038286636;18768855856;95685,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J60NBEML
+神仙洞村,zhengzhou_shenxiandong,stay,山与不舍民宿(伏羲山云上牧场店),伏羲山管委尖山村安置区三排4号,1635m,住宿服务;旅馆招待所;旅馆招待所,19838163716,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAX5BL2N
+神仙洞村,zhengzhou_shenxiandong,stay,北辰云舍民宿(新密伏羲山店),石尖路尖山敬老院西600米,1834m,住宿服务;住宿服务相关;住宿服务相关,18595900222,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I1PZMVFB
+神仙洞村,zhengzhou_shenxiandong,stay,山好庭院民宿,伏羲山管委会神仙洞村30号,2606m,住宿服务;住宿服务相关;住宿服务相关,0371-69999666;15838088099,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KR5MRUQS
+神仙洞村,zhengzhou_shenxiandong,stay,云上居森林木屋民宿(新密伏羲山店),尖山风景区伏羲大道南500米,3195m,住宿服务;住宿服务相关;住宿服务相关,15893831417;18538579866,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IKOC54FH
+神仙洞村,zhengzhou_shenxiandong,stay,云漫山居民宿(新密伏羲山神仙洞店),尖山风景区管委会神仙洞村云漫山居民宿,4087m,住宿服务;住宿服务相关;住宿服务相关,18595638555,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JGBUABYN
+神仙洞村,zhengzhou_shenxiandong,stay,伏羲山云羲湖居度假民宿,米村镇白槐村五组,4742m,住宿服务;住宿服务相关;住宿服务相关,17516203888,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M63S7EYV
+神仙洞村,zhengzhou_shenxiandong,stay,古树冥想山舍(新密伏羲山店),伏羲山风景区管理委员会楼院村043号,6090m,住宿服务;旅馆招待所;旅馆招待所,0371-69898588,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L1M7I0OU
+神仙洞村,zhengzhou_shenxiandong,parking,居贤特色农家停车场,020乡道与伏羲大道交叉口西80米,457m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H6ZCTFS4
+神仙洞村,zhengzhou_shenxiandong,parking,红石林画天河北门西停车场,画天河景区,1136m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MD1MS4TT
+神仙洞村,zhengzhou_shenxiandong,parking,新密响水堂民宿地面停车场,新密响水堂民宿,1175m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I0V5CDTX
+神仙洞村,zhengzhou_shenxiandong,parking,伏羲山悬崖酒店停车场,伏羲大道020乡道,1332m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KULUFBHT
+神仙洞村,zhengzhou_shenxiandong,parking,红石林景区北门东停车场,红石林景区内(北侧),1378m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HUFSVU5L
+神仙洞村,zhengzhou_shenxiandong,parking,云上牧场停车场,云上牧场,1407m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFLG3XP1
+神仙洞村,zhengzhou_shenxiandong,parking,伏羲山总游客中心停车场,米村镇月寨村四组伏羲山,1411m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2K7BD2K
+神仙洞村,zhengzhou_shenxiandong,parking,落鹤涧景区花果山北侧-路侧停车场,花果山北侧,1655m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0BLV7TA
+神仙洞村,zhengzhou_shenxiandong,parking,伏羲山凤泉湖景区北门外停车场,米村镇月寨村四组伏羲山,1704m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKH30Z5
+神仙洞村,zhengzhou_shenxiandong,parking,伏羲山兰崖湾景区-1号地上停车场,伏羲山兰崖湾景区东南侧120米,1757m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MG7XIOLM
+石洞沟村,xingyang_shidonggou,food,竹园村,竹园村民委员会西侧140米,1860m,餐饮服务;中餐厅;火锅店,,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L32U3P0R
+石洞沟村,xingyang_shidonggou,food,滔香大酒店,,2510m,餐饮服务;餐饮相关场所;餐饮相关,13838221866,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAOR5DQU
+石洞沟村,xingyang_shidonggou,food,红军饭店,030乡道与019县道交叉口东60米,2538m,餐饮服务;餐饮相关场所;餐饮相关,13653849595;18236798998,3.9,人均约 ¥45.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFT1TRN
+石洞沟村,xingyang_shidonggou,food,恒兴食府,030乡道与019县道交叉口东60米,2539m,餐饮服务;中餐厅;中餐厅,13838505252,3.4,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFFT01O1
+石洞沟村,xingyang_shidonggou,food,康乐园蛋糕店,高山镇穆沟村街上,2582m,餐饮服务;糕饼店;糕饼店,,3.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFZWY4S
+石洞沟村,xingyang_shidonggou,food,穆沟小吃店,019县道与030乡道交叉口西南20米,2585m,餐饮服务;中餐厅;中餐厅,13834097440,3.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J3VH7S55
+石洞沟村,xingyang_shidonggou,food,兰州拉面大盘鸡,朝阳路与高山路交叉口南220米,2667m,餐饮服务;中餐厅;清真菜馆,,2.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L0UYVAUW
+石洞沟村,xingyang_shidonggou,food,大众餐馆(高山路店),朝阳路与高山路交叉口南40米,2678m,餐饮服务;中餐厅;中餐厅,13613710919,3.7,人均约 ¥25.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B017316AZJ
+石洞沟村,xingyang_shidonggou,food,兰州正宗牛肉拉面,高山阀门有限公司东门旁,2687m,餐饮服务;中餐厅;清真菜馆,15639075382,3.5,人均约 ¥17.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFZX0OE
+石洞沟村,xingyang_shidonggou,food,实惠早餐店,朝阳路与高山路交叉口南180米,2697m,餐饮服务;中餐厅;中餐厅,,2.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LUO6G137
+石洞沟村,xingyang_shidonggou,stay,初心驿站,高山镇,2162m,住宿服务;住宿服务相关;住宿服务相关,13733840869;18703810918,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I6PCBV87
+石洞沟村,xingyang_shidonggou,stay,沐尘温泉酒店,源村村村民委员会西北侧,3964m,住宿服务;住宿服务相关;住宿服务相关,13523020753,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J6PU1UUF
+石洞沟村,xingyang_shidonggou,stay,泡泡屋窑洞居,源村村村民委员会北侧60米,3969m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LBCSDBEE
+石洞沟村,xingyang_shidonggou,stay,温泉窑洞小院,源村村村民委员会北侧100米,4011m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LBCS6GMI
+石洞沟村,xingyang_shidonggou,stay,河洛源村暖泉居,源村二组,4158m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J6AZXP9D
+石洞沟村,xingyang_shidonggou,stay,宽度假日酒店,汜水镇新沟村村委会1号,4635m,住宿服务;宾馆酒店;宾馆酒店,13663841744,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JG3CW292
+石洞沟村,xingyang_shidonggou,stay,黄河之上,汜水镇寥峪村000号,4977m,住宿服务;住宿服务相关;住宿服务相关,18638653066,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LACHKLJQ
+石洞沟村,xingyang_shidonggou,stay,金地快捷酒店,,6244m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHUCDF
+石洞沟村,xingyang_shidonggou,stay,方顶小院别墅民宿(德宝方顶店),峡窝镇方顶村德宝方顶别墅区方顶路1号院13栋02户,7807m,住宿服务;旅馆招待所;旅馆招待所,15093141621,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JB9DX44Y
+石洞沟村,xingyang_shidonggou,stay,方顶大宅小院别墅民宿,方顶路1号院13栋101号,7808m,体育休闲服务;娱乐场所;娱乐场所|住宿服务;住宿服务相关;住宿服务相关,0371-60252277;15136179277,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JAUHTL4L
+石洞沟村,xingyang_shidonggou,parking,高山新型社区停车场,陇海西路与026乡道交叉口东100米,2383m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MUYLRD31
+石洞沟村,xingyang_shidonggou,parking,朝阳路-路侧停车场,朝阳路与丰产路交叉口北20米,2661m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MU4LCO3G
+石鼓村,gongyi_shigu,food,会堂街烩面馆,竹林镇会堂街,86m,餐饮服务;中餐厅;中餐厅,,3.7,人均约 ¥14.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LAHDA18B
+石鼓村,gongyi_shigu,food,宏亮鲜羊肉馆,竹林镇310国道,734m,餐饮服务;中餐厅;中餐厅,13137108529,2.8,人均约 ¥14.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFF90N6I
+石鼓村,gongyi_shigu,food,东莱顺饭店,310国道南50米,755m,餐饮服务;中餐厅;老字号|餐饮服务;中餐厅;火锅店,,2.3,人均约 ¥36.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B01730JOEM
+石鼓村,gongyi_shigu,food,兵之味,310国道与智云路交叉口西420米,1139m,餐饮服务;中餐厅;中餐厅,,2.5,人均约 ¥21.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LDLXWLS1
+石鼓村,gongyi_shigu,food,竹林维东羊肉馆,竹林镇转盘中原名吃街,1234m,餐饮服务;中餐厅;中餐厅,15538393055,3.8,人均约 ¥29.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFF90RUU
+石鼓村,gongyi_shigu,food,李记鲜汤烩面,竹林镇转盘,1249m,餐饮服务;中餐厅;中餐厅,15838080211,3.1,人均约 ¥24.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L1C568DS
+石鼓村,gongyi_shigu,food,林家烧烤涮牛肚竹林店,巩义市林家烧烤涮牛肚,1284m,餐饮服务;中餐厅;特色/地方风味餐厅,15037415658;15515561196,3.8,人均约 ¥32.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKKPTD4
+石鼓村,gongyi_shigu,food,竹邻宴酒店,镇北街竹商93号,1290m,餐饮服务;中餐厅;中餐厅,15937135337,4.0,人均约 ¥69.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L1A7KD5S
+石鼓村,gongyi_shigu,food,姬三手工面皮店,竹林集贸市场北门旁,1328m,餐饮服务;中餐厅;中餐厅,13137126327,3.7,人均约 ¥18.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFK4XM7A
+石鼓村,gongyi_shigu,food,新山58号农家乐,新山村58号农家乐,3470m,餐饮服务;餐饮相关场所;餐饮相关,13783422047;15515866738,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0GDCA776P
+石鼓村,gongyi_shigu,stay,竹林宾馆(旅游路),竹林镇竹林大道南段(竹林镇政府南100米),69m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B01730IV6O
+石鼓村,gongyi_shigu,stay,竹林招待所,巩义市公安局交警三中队东侧110米,701m,住宿服务;旅馆招待所;旅馆招待所,0371-64461825;15517807707,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B01730JK91
+石鼓村,gongyi_shigu,stay,山居酒店,310国道与竹林大道交叉口东360米,791m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LKS7JKGW
+石鼓村,gongyi_shigu,stay,巩义长寿山69号农家宾馆,竹林镇南通中路28号长寿山69号,1325m,住宿服务;宾馆酒店;宾馆酒店,0371-64456236;13523018098;13523530290,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL7CMK7
+石鼓村,gongyi_shigu,stay,慈云山居康养民宿,长寿山南大门,3240m,住宿服务;住宿服务相关;住宿服务相关,17838315888,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LBLUO85L
+石鼓村,gongyi_shigu,stay,黄牛寨民宿农家院,小桥人家东侧90米,3817m,住宿服务;住宿服务相关;住宿服务相关,13271560988,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J05SQIU1
+石鼓村,gongyi_shigu,stay,自在南山民宿,涉村镇洪河村铁佛寺41号,6378m,住宿服务;旅馆招待所;旅馆招待所,13803997855,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KD7ZVSKV
+石鼓村,gongyi_shigu,stay,朴韵合院民宿(豫西抗日根据地纪念馆店),新兴路12号中国河南省郑州市巩义市新中镇新中村,6629m,住宿服务;旅馆招待所;旅馆招待所,15617405456;15713823655,2.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KDKZMQCA
+石鼓村,gongyi_shigu,stay,郑州市·巩义浮戏山逍遥谷度假民宿,浮戏山雪花洞风景区内(东侧),6943m,住宿服务;宾馆酒店;宾馆酒店,0371-64188665,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IRCM50M0
+石鼓村,gongyi_shigu,stay,浮戏印象精品民宿(暂停营业),丹之青美术东北侧110米,7244m,住宿服务;旅馆招待所;旅馆招待所,,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDXMK5GA
+石鼓村,gongyi_shigu,parking,河南龙威耐火材料有限公司停车场,竹林镇河南龙威耐火材料有限公司,556m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MALR7N1K
+石鼓村,gongyi_shigu,parking,巩义市竹林卫生院停车场,310国道与竹林大道交叉口东80米,589m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MUURYBZ9
+石鼓村,gongyi_shigu,parking,地上停车场(竹林大道),竹林大道与310国道交叉口西北240米,801m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B017316KM7
+石鼓村,gongyi_shigu,parking,竹林镇北山公园停车点,竹林大道与310国道交叉口西北240米,807m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I6NHCUF2
+石鼓村,gongyi_shigu,parking,河南庆州电缆有限公司北侧停车场,310国道与智云路交叉口西60米,899m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDPXMWYO
+石鼓村,gongyi_shigu,parking,熊孩子长寿山综合实践基地停车场,熊孩子长寿山综合实践基地,1153m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HR04OSB6
+石鼓村,gongyi_shigu,parking,河南长寿山美德源实业有限公司停车场,河南长寿山美德源实业有限公司,1193m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HRVL5WS4
+石鼓村,gongyi_shigu,parking,文旅集团停车场,文旅集团,1233m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HRV7W97S
+石鼓村,gongyi_shigu,parking,竹林集贸市场停车场,竹林集贸市场,1340m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKUHYRGO
+石鼓村,gongyi_shigu,parking,地面停车场,,1603m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKUUY8SI
+孙庄村,huiji_sunzhuang,activity,名剪艺人,孙庄村百汇艺术街西区581-74,394m,生活服务;美容美发店;美容美发店,13598825159,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0G1MHW0RP
+孙庄村,huiji_sunzhuang,activity,卧云谿园艺术馆,孙庄百汇地艺术区,569m,科教文化服务;科教文化场所;科教文化场所,18614950722,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KAHHW0XV
+孙庄村,huiji_sunzhuang,activity,西禾高品质草莓采摘园(郑州园),古荥镇孙庄村西禾农场1号园,1662m,体育休闲服务;休闲场所;采摘园,15515977230;15515977930;4006009616,4.7,人均约 ¥114.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0I3ZHSXFF
+孙庄村,huiji_sunzhuang,food,农家地锅柴鸡(郑州总店),江山北路孙庄社区西门,197m,餐饮服务;餐饮相关场所;餐饮相关,15838117536,4.1,人均约 ¥44.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFH1CR8V
+孙庄村,huiji_sunzhuang,food,武陟永盛砂锅(长兴苑店),古荥镇西山路99号长兴苑,437m,餐饮服务;中餐厅;中餐厅,15617777456,4.5,人均约 ¥15.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JU49ETRW
+孙庄村,huiji_sunzhuang,food,杨记农家院(沿黄快速通道店),江山路与黄河大堤交叉口路西,696m,餐饮服务;中餐厅;中餐厅,13623864513,4.4,人均约 ¥85.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H61SP0PM
+孙庄村,huiji_sunzhuang,food,东方酒家农家扣碗炖菜(江山路店),枯河桥,817m,餐饮服务;中餐厅;中餐厅,15639250827,4.6,人均约 ¥19.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B017316H9Q
+孙庄村,huiji_sunzhuang,food,大年农庄,民生路与西山路交叉口西340米,1235m,餐饮服务;餐饮相关场所;餐饮相关,,3.6,人均约 ¥132.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB94TXRQ
+孙庄村,huiji_sunzhuang,food,思念果岭大年农庄餐厅,岸86号黄河大观四季温泉度假区内,2710m,餐饮服务;中餐厅;中餐厅,0371-63626626;0371-63626636,4.4,人均约 ¥76.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B01730JI8F
+孙庄村,huiji_sunzhuang,food,豫龙农庄,绿源路6号,3047m,餐饮服务;中餐厅;中餐厅,15538238090,3.5,人均约 ¥51.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA9UWU78
+孙庄村,huiji_sunzhuang,food,增泉农家菜,正商玉兰谷达园生活广场17号,3070m,餐饮服务;餐饮相关场所;餐饮相关,13783480927,3.7,人均约 ¥25.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0OCJBB2
+孙庄村,huiji_sunzhuang,food,信阳渔家(十一店),牛宋线与069村道交叉口北440米,3292m,餐饮服务;中餐厅;综合酒楼,13949044411,4.5,人均约 ¥36.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDU71IER
+孙庄村,huiji_sunzhuang,food,信阳农家菜,河南凯隆工程机械有限公司东门南70米,4258m,餐饮服务;中餐厅;中餐厅,,3.1,人均约 ¥56.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBGM3C3D
+孙庄村,huiji_sunzhuang,stay,果岭名宿公寓(西山路7号分店),西山路西山社区思念果岭内瓦库北门对面10米,2114m,住宿服务;住宿服务相关;住宿服务相关,"+861056320612,16165657;010-56320606,16165657",4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I37PPHM3
+孙庄村,huiji_sunzhuang,stay,思念果岭民宿(草坪广场店),古荥镇黄河南岸86号湖光山色10号楼1单元2层3号,2224m,住宿服务;旅馆招待所;旅馆招待所,18503861903,4.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HGTZ8I0O
+孙庄村,huiji_sunzhuang,stay,慕松酒店(郑州中原水产物流港店),绿源路惠源商务A座9楼,3539m,住宿服务;住宿服务相关;住宿服务相关,13838267538,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K0TSX18E
+孙庄村,huiji_sunzhuang,stay,郑州驻家民宿(中原水产物流港店),丰业街酒店幼儿园西北10米,3801m,住宿服务;旅馆招待所;旅馆招待所,15638132610,4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KKU7IGH8
+孙庄村,huiji_sunzhuang,stay,红合院民宿(忆江南旅游度假区店),江山路与S312交叉口向西5000米,5206m,住宿服务;住宿服务相关;住宿服务相关,0371-85218881;15238023581,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I6K5C6MS
+孙庄村,huiji_sunzhuang,stay,忆江南江语花苑民宿,广武镇融信江语花苑26号楼2单元404室,5287m,住宿服务;旅馆招待所;旅馆招待所,13700870787,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KB4HZLAJ
+孙庄村,huiji_sunzhuang,stay,兔叽头民宿(黄河游览区店),索须河北路融创瀚海大河宸院2号楼2单元701,7090m,住宿服务;住宿服务相关;住宿服务相关,"+861056320612,16153102;010-56320606,16153102",4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HR11H5ZS
+孙庄村,huiji_sunzhuang,stay,禾庭民宿(郑州惠济万达店),新城街道金光路弓寨运和宸院5号楼2单元1102室,7540m,住宿服务;旅馆招待所;旅馆招待所,13598029842;19100696599,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L19HFUY5
+孙庄村,huiji_sunzhuang,stay,屹禾民宿(北大学城店),开元路与清北路交叉口东北260米,7807m,住宿服务;住宿服务相关;住宿服务相关,15538375628,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKLP7OT7
+孙庄村,huiji_sunzhuang,stay,郑州爱之巢民宿,新城街道河湾村天河路与开元路交汇处,7904m,住宿服务;住宿服务相关;住宿服务相关,17739789318;18039106979,2.1,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJBOLFT
+孙庄村,huiji_sunzhuang,parking,江山雅居小区东侧停车场,江山雅居小区,133m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LKMO66NU
+孙庄村,huiji_sunzhuang,parking,森巴林海停车场,森巴·林海,204m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L1T74T8T
+孙庄村,huiji_sunzhuang,parking,城外驿酒店西南侧停车场,江山路与西山路交叉口北140米,277m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MA47V5VM
+孙庄村,huiji_sunzhuang,parking,停车场,江山路与西山路交叉口东北400米,367m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H6FB1YJI
+孙庄村,huiji_sunzhuang,parking,长兴苑停车场,古荥镇西山路99号长兴苑,409m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LKZPDTXL
+孙庄村,huiji_sunzhuang,parking,瀚海海棠苑停车场,江山路西山路西300米,437m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJZQ988
+孙庄村,huiji_sunzhuang,parking,郑州商业中等专业学校2号停车场,江山路596号,681m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JADS64WD
+孙庄村,huiji_sunzhuang,parking,郑州商业中等专业学校1号停车场,西山路北700米郑太铁路旁,724m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HG4ASIQP
+孙庄村,huiji_sunzhuang,parking,慧源温泉假日农庄停车场,江山路与师南路交汇处,769m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H23RSIUW
+孙庄村,huiji_sunzhuang,parking,停车场,安澜小学西侧100米,777m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B01731871A
+泰山村,zhengzhou_taishan,activity,泰山村文化大院,龙湖镇西泰山旅游风景区,24m,科教文化服务;科教文化场所;科教文化场所,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B017318ZO7
+泰山村,zhengzhou_taishan,activity,泰山村龙翔千稼集旅游风景区,泰山路与圣母路交叉口东南200米,223m,风景名胜;风景名胜;风景名胜,0371-85901919,4.1,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0LK4CWR95
+泰山村,zhengzhou_taishan,activity,西泰山千稼集-大汉地宫,会盟大道与泰山路交汇处西泰山村千稼集内,277m,风景名胜;风景名胜相关;旅游景点,0371-85901919,3.9,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFKDW4B3
+泰山村,zhengzhou_taishan,activity,西泰山人文景观园,泰山村龙翔千稼集旅游风景区内(东侧),324m,风景名胜;风景名胜;风景名胜,,4.0,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0G24XERV6
+泰山村,zhengzhou_taishan,activity,泰山村龙翔千稼集旅游风景区,龙湖街道,437m,风景名胜;风景名胜;风景名胜,0371-85901919,4.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFGY047S
+泰山村,zhengzhou_taishan,activity,石榴花园团建露营基地,泰山村萌宠园东门对门,455m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,13439998830;16638026899,4.5,人均约 ¥72.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KUBMUT8E
+泰山村,zhengzhou_taishan,activity,泰山村教育培训基地,泰山路与圣母路交叉口西340米,488m,科教文化服务;科教文化场所;科教文化场所,0371-85907999;15637168706,4.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0J3GS3X3V
+泰山村,zhengzhou_taishan,activity,西泰山研学基地生活区,龙湖镇会盟大道与泰山路交汇处西泰山村千稼集内,544m,商务住宅;商务住宅相关;商务住宅相关,15639278626,[],人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0JDD5OTTK
+泰山村,zhengzhou_taishan,activity,泰山村康养体验基地,溱水路与076乡道交叉口东北400米,548m,体育休闲服务;休闲场所;休闲场所,,3.5,人均约 ¥102.00,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0MBFS4O1W
+泰山村,zhengzhou_taishan,activity,桔子音乐露营地,龙湖镇泰山村溱水路6号,729m,体育休闲服务;休闲场所;露营地,0371-88887858;18503811666,4.2,人均约 ¥48.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0M6OSLL9G
+泰山村,zhengzhou_taishan,activity,盈盈樱桃园,新郑市龙湖街西泰山村泰山路23号,1090m,体育休闲服务;休闲场所;采摘园,15225191567,3.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KDPM3G4R
+泰山村,zhengzhou_taishan,activity,龙湖镇泰山村生态农业采摘园,泰山路23号,1507m,体育休闲服务;休闲场所;采摘园,18595838587,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0IA1CW0YH
+泰山村,zhengzhou_taishan,food,A牛肉胡辣汤,泰山路与圣母路交叉口东40米,110m,餐饮服务;中餐厅;中餐厅|餐饮服务;快餐厅;快餐厅,,3.9,人均约 ¥17.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBD6FBF3
+泰山村,zhengzhou_taishan,food,泰山卤肉,长寿居东南门旁,117m,餐饮服务;餐饮相关场所;餐饮相关,,1.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M63C9QQB
+泰山村,zhengzhou_taishan,food,龙福驿站翡翠手工菠菜面,黄帝会盟祠东北门东北300米,133m,餐饮服务;中餐厅;清真菜馆,,3.4,人均约 ¥14.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFK2CLYR
+泰山村,zhengzhou_taishan,food,激情岁月主题餐厅(千稼集店),龙湖镇泰山村26号,252m,餐饮服务;中餐厅;中餐厅,0371-66709777,4.4,人均约 ¥27.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKSANQX
+泰山村,zhengzhou_taishan,food,农家院秘制大盘鸡,龙湖镇山西乔完全小学东南侧190米,2033m,餐饮服务;中餐厅;中餐厅,15981990312,3.0,人均约 ¥19.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HU1KBKQO
+泰山村,zhengzhou_taishan,food,农家小灶,龙祥路30号,3542m,餐饮服务;中餐厅;中餐厅,17584719994,2.4,人均约 ¥33.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K3NSKVIA
+泰山村,zhengzhou_taishan,food,聚贤庄农家菜,郑州源信仓库西侧100米,3643m,餐饮服务;中餐厅;中餐厅,,3.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3MCLKMY
+泰山村,zhengzhou_taishan,food,聚苑农庄,龙湖镇于寨村8号(310国道北),3797m,餐饮服务;中餐厅;中餐厅,,4.1,人均约 ¥47.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA2DHLAZ
+泰山村,zhengzhou_taishan,food,信阳土菜园(Y062店),062乡道联大汽车维修服务旁,4583m,餐饮服务;中餐厅;中餐厅,13733845980;15237155135,3.9,人均约 ¥37.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKMQWT3
+泰山村,zhengzhou_taishan,food,玖涧源生态农庄(樱花路分店),樱桃沟黄沟村310国道桥底下南侧,4819m,餐饮服务;中餐厅;中餐厅,13213203506,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0ID2SJK4X
+泰山村,zhengzhou_taishan,stay,朴业·溱源洞穴民宿,曲梁镇牛角湾村,4276m,住宿服务;住宿服务相关;住宿服务相关,"19139739388;19913828936;+862126137886,17202082",4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFM7S3Y5
+泰山村,zhengzhou_taishan,stay,夜神电竞民宿(升达经贸管理学院宝相寺步行街店),文昌路9-119号3楼,4350m,住宿服务;住宿服务相关;住宿服务相关,15538000893,5.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L1C95YP7
+泰山村,zhengzhou_taishan,stay,竞悦电竞民宿(新郑龙湖小乔地铁站店),龙湖镇文昌路与泰山路交叉口南一排,4558m,住宿服务;住宿服务相关;住宿服务相关,15981847933,5.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MGARFCHN
+泰山村,zhengzhou_taishan,stay,新郑西溪里ins风民宿(河南检察职业学院店),龙湖镇河南检察职业学院对面康桥溪公馆19楼42号,6231m,住宿服务;住宿服务相关;住宿服务相关,17788115951,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0GD3P2UBB
+泰山村,zhengzhou_taishan,stay,月栖小筑酒店(新郑河南工贸学院沙窝李地铁站店),龙湖大道祥云路交叉口向东150米路南,6342m,住宿服务;住宿服务相关;住宿服务相关,13073765594,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J0XUHG87
+泰山村,zhengzhou_taishan,stay,新密万宜民宿,曲梁镇人和路东、平安街南侧、兴业路西侧、天安街北侧龙栖湾三期4号楼一单元815室,6781m,住宿服务;住宿服务相关;住宿服务相关,17320115816,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K0SR4JUQ
+泰山村,zhengzhou_taishan,stay,银城主题酒店(高坡岩步行街经贸学院店),龙湖镇高坡岩市场西一街2-105号,7072m,住宿服务;住宿服务相关;住宿服务相关,15639073187,4.0,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I1VYU39Z
+泰山村,zhengzhou_taishan,stay,君雅民宿(双湖大道高坡岩店),龙湖镇高坡岩二街2排203,7108m,住宿服务;住宿服务相关;住宿服务相关,17638123012,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L6U7T6WL
+泰山村,zhengzhou_taishan,stay,布谷鸟时尚酒店(河南检察职业学院店),双湖大道高坡岩村西三街3-605号,7169m,住宿服务;宾馆酒店;宾馆酒店,0371-55883001;18638573660,2.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFIV5RNP
+泰山村,zhengzhou_taishan,stay,新郑云舒主题酒店(郑州经贸学院高坡岩店),双湖大道高坡岩村西三街与南一街交叉口向东20米路南,7227m,住宿服务;住宿服务相关;住宿服务相关,18538729855,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HGNZMYE6
+泰山村,zhengzhou_taishan,parking,泰山村委会停车场,泰山路与会盟大道交叉口西80米,18m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MAYC2MU3
+泰山村,zhengzhou_taishan,parking,泰山村文化大院地上停车场,泰山路与会盟大道交叉口西北40米,42m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MUCR2IEX
+泰山村,zhengzhou_taishan,parking,黄帝会盟祠停车场,会盟大道郑州龙湖镇西泰山旅游风景区(东北角),92m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFF00RPH
+泰山村,zhengzhou_taishan,parking,泰山村龙翔千稼集景区-北门停车场,龙湖街道泰山村龙翔千稼集旅游风景区(东北角),221m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HBLUAW4P
+泰山村,zhengzhou_taishan,parking,路侧停车场,泰山路与圣母路交叉口南160米,230m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L0T1B8UK
+泰山村,zhengzhou_taishan,parking,龙湖镇西泰山旅游风景区东侧停车场,龙腾路与会盟大道交叉口东南280米,324m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LR5DB7FO
+泰山村,zhengzhou_taishan,parking,泰山村潮商教育基地停车场,会盟大道河南西泰山村千稼集,427m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I6UCGDGE
+泰山村,zhengzhou_taishan,parking,泰山村龙翔千稼集景区南门停车场,会盟大道河南西泰山村千稼集,451m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HBLUD35O
+泰山村,zhengzhou_taishan,parking,龙裕山庄停车场,泰山路17号,467m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IRJZM7UN
+泰山村,zhengzhou_taishan,parking,桃花源森林公园停车场,龙湖镇西泰山桃花源森林公园,502m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JGDCGWDQ
+玄天庙村,dengfeng_xuantianmiao,activity,老耿民宿农家院,少林街道玄天庙村委会东北方向400米,626m,住宿服务;住宿服务相关;住宿服务相关,13663010523;13838228512,4.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0J12UZFEJ
+玄天庙村,dengfeng_xuantianmiao,activity,登封畅居民宿(嵩山少林风景区接驳中心店),少林街道玄天庙村犁面沟12号,803m,住宿服务;旅馆招待所;旅馆招待所,15617978608;18695806158,4.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KGJZUIR1
+玄天庙村,dengfeng_xuantianmiao,activity,画家村犁面沟垂钓园,玄天庙画家村犁面沟,1008m,体育休闲服务;休闲场所;垂钓园,,4.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0HRBZWBUD
+玄天庙村,dengfeng_xuantianmiao,activity,数峰楼农家院,少林街道玄天庙村李家门26号,1273m,体育休闲服务;休闲场所;休闲场所,13733193673;17513261118,4.3,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LR4DPLSR
+玄天庙村,dengfeng_xuantianmiao,activity,登封市乐轩民宿,玄天庙村第11组4号,1440m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,15238026398,4.5,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFGA2FEV
+玄天庙村,dengfeng_xuantianmiao,food,百味轩山庄,少林街道办事处玄天庙村耿家门6号,430m,餐饮服务;餐饮相关场所;餐饮相关,16637127789,4.0,人均约 ¥33.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JA3MU26P
+玄天庙村,dengfeng_xuantianmiao,food,农家饭庄,少林办事处西十里村国家电网隔壁,1013m,餐饮服务;中餐厅;综合酒楼|体育休闲服务;体育休闲服务场所;体育休闲服务场所,13103833666;13838167890,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFIEN893
+玄天庙村,dengfeng_xuantianmiao,food,登封山村农家院,少林街道西十里铺村住宿民餐饮美食附近好的宾馆,1114m,餐饮服务;中餐厅;中餐厅|体育休闲服务;休闲场所;休闲场所,15838237268,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFF6FM54
+玄天庙村,dengfeng_xuantianmiao,food,遇见山间地锅农家院,少林街道登封玄天庙村杨家门2号,1146m,餐饮服务;中餐厅;中餐厅,13603980345,4.2,人均约 ¥41.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J2AU4CPE
+玄天庙村,dengfeng_xuantianmiao,food,观岚居农家菜,207国道160号,1280m,餐饮服务;中餐厅;中餐厅,15036035089,3.4,人均约 ¥22.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LG5538PM
+玄天庙村,dengfeng_xuantianmiao,food,环山路竹林小院,嵩山池塘小院南侧,1363m,餐饮服务;餐饮相关场所;餐饮相关,,2.8,人均约 ¥69.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3H7A58E
+玄天庙村,dengfeng_xuantianmiao,food,禾居民宿餐饮部,玄天庙村11组,1413m,餐饮服务;中餐厅;中餐厅,13683810558;13783400832,3.8,人均约 ¥44.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFG8SW9B
+玄天庙村,dengfeng_xuantianmiao,food,富贵山居农家菜,少林街道办事处玄天庙三王庄4号,1528m,餐饮服务;中餐厅;中餐厅,15838088862,4.5,人均约 ¥78.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JR3CFIWS
+玄天庙村,dengfeng_xuantianmiao,food,山水人家(玉皇沟农家菜),三皇寨(东北角),1619m,餐饮服务;餐饮相关场所;餐饮相关,18903853669,3.8,人均约 ¥24.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGALU7S
+玄天庙村,dengfeng_xuantianmiao,food,农家院,照见山居禅修主题酒店南门对面,2225m,餐饮服务;中餐厅;中餐厅,15238343234,3.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IUPR53S4
+玄天庙村,dengfeng_xuantianmiao,stay,登封畅居民宿(嵩山少林风景区接驳中心店),少林街道玄天庙村犁面沟12号,803m,住宿服务;旅馆招待所;旅馆招待所,15617978608;18695806158,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KGJZUIR1
+玄天庙村,dengfeng_xuantianmiao,stay,登封山舍小院(登封禅宗少林音乐大典店),玄天庙10组31号,1255m,住宿服务;住宿服务相关;住宿服务相关,15803997080,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JROYUC1G
+玄天庙村,dengfeng_xuantianmiao,stay,登封少林假日精品民宿,少林寺景区售票处东600路南,3106m,住宿服务;旅馆招待所;旅馆招待所,15617967888,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJCR7A4
+玄天庙村,dengfeng_xuantianmiao,stay,登封舒心民宿,西郭店15号,3134m,住宿服务;住宿服务相关;住宿服务相关,15837159110,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J1DCWR53
+玄天庙村,dengfeng_xuantianmiao,stay,登封千雨千寻民宿(嵩山少林风景区店),少林办事处郭店村三组26号,3161m,住宿服务;住宿服务相关;住宿服务相关,18237159123,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MB7DP045
+玄天庙村,dengfeng_xuantianmiao,stay,金牌民宿(登封嵩山少林寺景区店),少林办郭店村3组102号,3236m,住宿服务;旅馆招待所;旅馆招待所,13838006002,4.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LBTA5SS0
+玄天庙村,dengfeng_xuantianmiao,stay,登封山那边民宿,嵩阳街道少室路30号,3423m,住宿服务;旅馆招待所;旅馆招待所,15517523658,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K14D37V4
+玄天庙村,dengfeng_xuantianmiao,stay,枣园精品民宿(登封中岳嵩山店),少室路北段2号,4443m,住宿服务;住宿服务相关;住宿服务相关,16696200968,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KGJZY4PO
+玄天庙村,dengfeng_xuantianmiao,stay,丽晶酒店(嵩山路店),嵩山路与太室路交叉口南60米,5253m,住宿服务;宾馆酒店;宾馆酒店,18538033022,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MGYU6O1T
+玄天庙村,dengfeng_xuantianmiao,stay,登封嵩山里民宿(登封嵩山风景区店),大禹路18号,6607m,住宿服务;住宿服务相关;住宿服务相关,15617751781,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JGZ7E116
+玄天庙村,dengfeng_xuantianmiao,parking,地面停车场,环山路与乌海线交叉口西南80米,261m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LK1CDGTV
+玄天庙村,dengfeng_xuantianmiao,parking,少室阙停车场,乌海线嵩山国家风景名胜区,269m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0173164QD
+玄天庙村,dengfeng_xuantianmiao,parking,地面停车场,环山路与乌海线交叉口西南140米,276m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JG65MFKP
+玄天庙村,dengfeng_xuantianmiao,parking,嵩山国家风景名胜区南侧地上停车场,环山路与乌海线交叉口西南300米,403m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M6J6B3N0
+玄天庙村,dengfeng_xuantianmiao,parking,嵩山国家风景名胜区-南侧地上停车场,中岳大街146号嵩山风景名胜区,417m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBMY6H8Y
+玄天庙村,dengfeng_xuantianmiao,parking,路侧停车场,乌海线与环山路交叉口西南260米,419m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MU6RW78C
+玄天庙村,dengfeng_xuantianmiao,parking,少林景区2号B区停车场,环山路,458m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JATZU18J
+玄天庙村,dengfeng_xuantianmiao,parking,少林景区接驳中心地面停车场,环山路,494m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDHRTE8H
+玄天庙村,dengfeng_xuantianmiao,parking,少林景区2号A区停车场,乌海线与环山路交叉口西南420米,541m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB36EM3N
+玄天庙村,dengfeng_xuantianmiao,parking,嵩山国家重点风景名胜区停车点,乌海线与环山路交叉口西南360米,546m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JA37TBY0
+杨林村,dengfeng_yanglin,activity,杨林村军政大学(红色记忆主题展馆),,476m,风景名胜;风景名胜;风景名胜|科教文化服务;科教文化场所;科教文化场所,,3.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LBC58EA6
+杨林村,dengfeng_yanglin,activity,登封源溪农家,徐庄乡杨林村下地门123号,716m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,13938567585,3.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKHRFGM
+杨林村,dengfeng_yanglin,food,大雄山食府,052乡道与马汝线交叉口西北60米,433m,餐饮服务;中餐厅;中餐厅,,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHW7W6S
+杨林村,dengfeng_yanglin,food,凤凰饭庄,徐庄镇安沟村退役军人服务站东侧130米,1146m,餐饮服务;中餐厅;中餐厅,,3.4,人均约 ¥39.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUDXQKQU
+杨林村,dengfeng_yanglin,food,禾木居餐饮,禾木居民宿东侧80米,1159m,餐饮服务;中餐厅;中餐厅,,3.5,人均约 ¥30.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAKSF4S6
+杨林村,dengfeng_yanglin,food,天成磨坊,徐庄镇孙桥村11组,2214m,餐饮服务;中餐厅;中餐厅,19939912356;19939930386;19939960136,2.4,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L2JA5JOK
+杨林村,dengfeng_yanglin,food,登封市天福康食品厂,徐庄镇孙桥村,2257m,餐饮服务;餐饮相关场所;餐饮相关,0371-62926168,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMDQDZA
+杨林村,dengfeng_yanglin,food,百福居农家乐,马汝线附近,3692m,餐饮服务;中餐厅;综合酒楼,13938558206,3.2,人均约 ¥52.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJQTRXH
+杨林村,dengfeng_yanglin,food,老友记烧烤大排档,登徐线,4341m,餐饮服务;中餐厅;特色/地方风味餐厅,,3.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MGOCVX0J
+杨林村,dengfeng_yanglin,food,圪垯,利达加油站东北侧230米,4428m,餐饮服务;餐饮相关场所;餐饮相关,,1.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3M1P73J
+杨林村,dengfeng_yanglin,food,赵记卤肉,星光KTV东北侧,4656m,餐饮服务;中餐厅;中餐厅,,2.0,人均约 ¥18.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB4C01U7
+杨林村,dengfeng_yanglin,food,鸿福鲜汤饸络面,马汝线,4983m,餐饮服务;餐饮相关场所;餐饮相关,13838216612;15036028781,3.6,人均约 ¥14.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G3FUKQDM
+杨林村,dengfeng_yanglin,stay,源溪农家酒店(仙人谷西门店),052乡道东50米,715m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKHT0D2
+杨林村,dengfeng_yanglin,stay,登封源溪农家,徐庄乡杨林村下地门123号,716m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,13938567585,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHRFGM
+杨林村,dengfeng_yanglin,stay,禾木居民宿,052乡道,1208m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,45530755",[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDB7UP77
+杨林村,dengfeng_yanglin,stay,登封大熊山假日酒店,徐庄镇杨林村,1515m,住宿服务;宾馆酒店;宾馆酒店,0371-56588888,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJE9X5V
+杨林村,dengfeng_yanglin,stay,大熊山景秀·山间露营地,徐庄镇大熊山摘星楼景区中州景秀度假村旁,1644m,住宿服务;住宿服务相关;住宿服务相关,13683832766,3.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G1PUMRFR
+杨林村,dengfeng_yanglin,stay,登封中州悦隐槐夏院子民宿,徐庄镇王保庄村46号,2104m,住宿服务;住宿服务相关;住宿服务相关,18736004133,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKVM07C
+杨林村,dengfeng_yanglin,stay,星途民宿(摘星楼景区店),徐庄镇王保庄63号,2137m,住宿服务;住宿服务相关;住宿服务相关,"15188330055;+861056320612,53565754",4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K0T5ORSU
+杨林村,dengfeng_yanglin,stay,陌野原舍瑞轩居民宿,徐庄镇杨林村王保庄53号,2173m,住宿服务;旅馆招待所;旅馆招待所,13838279009,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IUJYIPR0
+杨林村,dengfeng_yanglin,stay,星悦居,徐庄镇王保庄42号,2181m,住宿服务;旅馆招待所;青年旅舍,0371-62720666;18538033393,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMHH7U7
+杨林村,dengfeng_yanglin,stay,民宿,登徐线与迎宾大道交叉口东北120米,7701m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LUYCV0MV
+杨林村,dengfeng_yanglin,parking,登封大熊山仙人谷景区西门停车场,徐庄镇013乡道大熊山仙人谷景区,894m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HD0U08CQ
+杨林村,dengfeng_yanglin,parking,大熊山仙人谷景区西售票处地上停车场,大熊山仙人谷景区西门游客服务中心西侧,932m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MDAO5LNE
+杨林村,dengfeng_yanglin,parking,摘星楼风景区停车场,徐庄镇摘星楼风景区(东北角),1323m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKWLZ34
+杨林村,dengfeng_yanglin,parking,地面停车场,052乡道东南40米,1470m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IR9SOYC4
+杨林村,dengfeng_yanglin,parking,登封大熊山仙人谷景区东门停车场,徐庄镇013乡道登封大熊山仙人谷景区(东北角),2082m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFIPQ169
+杨林村,dengfeng_yanglin,parking,大熊山仙人谷景区-东停车场,大熊山情人谷东北(013乡道南),2089m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL27XT0
+杨林村,dengfeng_yanglin,parking,登封大熊山仙人谷景区情人谷停车点,大熊山仙人谷景区情人谷,2093m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HUMMT322
+杨林村,dengfeng_yanglin,parking,南王山突围战旧址地上停车场,徐庄镇王保庄村南王山突围战遗址,2122m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MB2609ZM
+杨林村,dengfeng_yanglin,parking,地面停车场,,2176m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J3DUBWBJ
+樱桃沟社区,zhengzhou_yingtaogou,activity,灯光跷跷板,侯寨乡上李河社区牛王庙嘴村001号建业中原文化小镇樱桃沟足球小镇(东南角),402m,体育休闲服务;休闲场所;游乐场,,2.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFLK7ZMU
+樱桃沟社区,zhengzhou_yingtaogou,activity,郑州樱桃沟神农庄园,侯寨乡大路西社区,461m,科教文化服务;培训机构;培训机构|餐饮服务;休闲餐饮场所;休闲餐饮场所|住宿服务;宾馆酒店;宾馆酒店,15038157897,4.4,人均约 ¥61.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFHVSZF3
+樱桃沟社区,zhengzhou_yingtaogou,activity,建业中原文化小镇樱桃沟足球小镇足球公园,侯寨乡上李河社区牛王庙嘴村001号建业中原文化小镇樱桃沟足球小镇(东南角),477m,风景名胜;公园广场;公园,,3.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFJMQ5MW
+樱桃沟社区,zhengzhou_yingtaogou,activity,建业中原文化小镇樱桃沟足球小镇,侯寨乡上李河社区牛王庙嘴村001号,678m,风景名胜;风景名胜相关;旅游景点,,4.3,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0FFJMON1B
+樱桃沟社区,zhengzhou_yingtaogou,activity,文博樱桃桑椹采摘园,樱桃沟社区曹庙村27号,816m,体育休闲服务;休闲场所;采摘园,15837182852;15838057115,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKMMAFH
+樱桃沟社区,zhengzhou_yingtaogou,activity,特兰斯童话世界(暂停开放),樱桃沟社区樱花大道,824m,风景名胜;风景名胜相关;旅游景点,,3.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0I2OAPW5Y
+樱桃沟社区,zhengzhou_yingtaogou,activity,丛林穿越,侯寨乡上李河社区牛王庙嘴村001号建业中原文化小镇樱桃沟足球小镇,860m,体育休闲服务;休闲场所;休闲场所,,3.6,人均约 ¥50.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFM0SDOY
+樱桃沟社区,zhengzhou_yingtaogou,activity,永红樱桃园(暂停营业),樱桃沟景区管委会大路西社区,1604m,体育休闲服务;休闲场所;采摘园,15803840095;15936223041,4.2,人均约 ¥20.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFL9B75C
+樱桃沟社区,zhengzhou_yingtaogou,activity,曦园农荘,樱桃沟管委会黄龙岗社区刘家沟村,2168m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,13607680287,3.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0LB2SQDWM
+樱桃沟社区,zhengzhou_yingtaogou,activity,李姐樱桃果采摘基地,侯寨乡西胡垌社区居委会办公楼向西100米,2525m,体育休闲服务;休闲场所;休闲场所,13838269200,3.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0JA25A6L6
+樱桃沟社区,zhengzhou_yingtaogou,activity,樱桃树下体育公园,侯寨乡樱桃沟郭小寨社区160号,3754m,风景名胜;公园广场;公园,,4.1,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0HA4HRX78
+樱桃沟社区,zhengzhou_yingtaogou,activity,捉鸡摸渔森林院子农家乐,樱桃沟管委会三李社区东沟小组32号,3930m,住宿服务;住宿服务相关;住宿服务相关,18639019690,4.4,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0J1Z7Q0VK
+樱桃沟社区,zhengzhou_yingtaogou,food,郑州樱栖·悦涧山庄,樱花路西200米,673m,餐饮服务;中餐厅;综合酒楼|体育休闲服务;度假疗养场所;度假村|体育休闲服务;休闲场所;休闲场所|住宿服务;住宿服务相关;住宿服务相关|商务住宅;商务住宅相关;商务住宅相关,0371-68680026;18848822323,4.5,人均约 ¥208.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IRP57AI0
+樱桃沟社区,zhengzhou_yingtaogou,food,玖涧源生态农庄(樱花路分店),樱桃沟黄沟村310国道桥底下南侧,1563m,餐饮服务;中餐厅;中餐厅,13213203506,4.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0ID2SJK4X
+樱桃沟社区,zhengzhou_yingtaogou,food,郭家嘴农家院,樱桃沟郭家嘴农家院,1669m,餐饮服务;餐饮相关场所;餐饮相关,15225190170,4.3,人均约 ¥37.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K6NH45YU
+樱桃沟社区,zhengzhou_yingtaogou,food,刘鹏扣碗手擀面,桐树洼社区刘家沟村,2172m,餐饮服务;中餐厅;中餐厅,13849180705,4.1,人均约 ¥28.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL6JTDQ
+樱桃沟社区,zhengzhou_yingtaogou,food,樱桃沟烤鱼村,樱桃沟街道桐树洼社区陈顶村烤鱼沟20号,2265m,餐饮服务;中餐厅;特色/地方风味餐厅,15238600733;15838359685,4.4,人均约 ¥50.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JBRHRWYV
+樱桃沟社区,zhengzhou_yingtaogou,food,农家小灶,龙祥路30号,3209m,餐饮服务;中餐厅;中餐厅,17584719994,2.4,人均约 ¥33.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0K3NSKVIA
+樱桃沟社区,zhengzhou_yingtaogou,food,聚苑农庄,龙湖镇于寨村8号(310国道北),3254m,餐饮服务;中餐厅;中餐厅,,4.1,人均约 ¥47.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA2DHLAZ
+樱桃沟社区,zhengzhou_yingtaogou,food,鳄鱼部落鳄鱼美食庄园,228省道与宏兴路交叉口东340米,4120m,餐饮服务;中餐厅;中餐厅,,3.9,人均约 ¥132.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LAV76PDR
+樱桃沟社区,zhengzhou_yingtaogou,food,农家院秘制大盘鸡,龙湖镇山西乔完全小学东南侧190米,4325m,餐饮服务;中餐厅;中餐厅,15981990312,3.0,人均约 ¥19.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HU1KBKQO
+樱桃沟社区,zhengzhou_yingtaogou,food,东阳土菜馆,樱桃沟侯寨乡前时庄6号,4422m,餐饮服务;餐饮相关场所;餐饮相关,13803835244,4.1,人均约 ¥55.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J2C9ZKS1
+樱桃沟社区,zhengzhou_yingtaogou,stay,柚蜜民宿(河南轻工职业学院嵩山南路店),金水源街道嵩山南路鑫苑名城2号院1号楼809,6761m,住宿服务;住宿服务相关;住宿服务相关,"13603997614;15639789802;+861056320612,17800768",4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I60A9S2H
+樱桃沟社区,zhengzhou_yingtaogou,stay,梦之镜精品酒店(二七万达客运总站店),鼎盛大道南嵩山南路东鑫苑名城2号楼2栋15层1522,6774m,住宿服务;住宿服务相关;住宿服务相关,13592318252,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H27HVLGT
+樱桃沟社区,zhengzhou_yingtaogou,stay,玖瑶酒店(鑫苑名城店),嵩山南路东鑫苑名城2号院2号楼24层,6775m,住宿服务;宾馆酒店;宾馆酒店,18538263878,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KK75PNDL
+樱桃沟社区,zhengzhou_yingtaogou,stay,慕乔酒店(百荣世贸城店),金水源街道大学南路与右江路交汇处东南250米万科百荣万商国际荣寓2座2236室,6792m,住宿服务;宾馆酒店;宾馆酒店,17596512279,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LD35K6EV
+樱桃沟社区,zhengzhou_yingtaogou,stay,美如佳民宿(万科百荣万商国际荣寓店),大学路与南四环交汇处万科百荣万商荣寓2座2236室,6827m,住宿服务;住宿服务相关;住宿服务相关,18697309897,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JAN7I7OJ
+樱桃沟社区,zhengzhou_yingtaogou,stay,愉栖·小筑(郑州万科大都会百荣世贸商城店),大学路南四环万科国际荣寓二座十楼1026号,6851m,住宿服务;住宿服务相关;住宿服务相关,"17739365569;+861056320612,35346550",4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JKB7NW6T
+樱桃沟社区,zhengzhou_yingtaogou,stay,郑州惜悦民宿,侯寨乡大学南路万商国际荣寓1B座1楼137房间,6852m,住宿服务;住宿服务相关;住宿服务相关,16692195688,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HUBAE9JR
+樱桃沟社区,zhengzhou_yingtaogou,stay,百荣樱桃民宿(万科荣寓店),东万科百荣万商国际荣寓B座一楼127室,6874m,住宿服务;住宿服务相关;住宿服务相关,13803892601,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KB4KR0GO
+樱桃沟社区,zhengzhou_yingtaogou,stay,郑州爱尚公寓,大学路南四环向南300米路东万科百荣国际荣寓1B座1楼132室,6881m,住宿服务;住宿服务相关;住宿服务相关,19139988132,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G19OD33I
+樱桃沟社区,zhengzhou_yingtaogou,stay,季净民宿(万科大都汇店),大学南路南四环东南角万科荣寓1B526房间,6891m,住宿服务;宾馆酒店;宾馆酒店,15713850536,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFM4R7QK
+樱桃沟社区,zhengzhou_yingtaogou,parking,樱桃沟景区第1停车场,樱桃沟旅游景区游客服务中心南,61m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G17700UV
+樱桃沟社区,zhengzhou_yingtaogou,parking,窦桃狨沟豌樱旅游景区停车场,樱花路,85m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HKLSR44S
+樱桃沟社区,zhengzhou_yingtaogou,parking,凤阳楼生态驴肉村停车场,郑密路凤阳楼生态驴肉村,256m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HGVRQCE0
+樱桃沟社区,zhengzhou_yingtaogou,parking,樱桃沟欢乐王国停车点,樱桃沟欢乐王国,260m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L1SHQ5Z1
+樱桃沟社区,zhengzhou_yingtaogou,parking,地面停车场,郑密路与樱花路交叉口西80米,275m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IAH74W4O
+樱桃沟社区,zhengzhou_yingtaogou,parking,樱桃广场-第二地上停车场,樱花路与侯张线交叉口南260米,289m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUHCOTXY
+樱桃沟社区,zhengzhou_yingtaogou,parking,樱桃沟景区第2停车场,樱桃沟旅游景区(樱花路东),396m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G25YR703
+樱桃沟社区,zhengzhou_yingtaogou,parking,郑州樱桃沟神农庄园地面停车场,侯寨乡大路西社区郑州樱桃沟神农庄园,469m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HAU7SKR5
+樱桃沟社区,zhengzhou_yingtaogou,parking,建业中原文化小镇樱桃沟足球小镇3号停车场,侯寨乡上李河社区牛王庙嘴村001号建业中原文化小镇樱桃沟足球小镇(东南角),489m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFK8PTHQ
+樱桃沟社区,zhengzhou_yingtaogou,parking,郑州新速卡丁车公园停车场,樱桃沟樱花大道2号新速卡丁车公园,499m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JAF7LYQK
+袁桥村,dengfeng_yuanqiao,activity,烽火真人CS基地,袁桥古村景区,16m,体育休闲服务;娱乐场所;娱乐场所,15236879929;16696611444;18595779251,3.8,人均约 ¥45.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0M6F5YXME
+袁桥村,dengfeng_yuanqiao,activity,游园,河南袁桥古村旅游景区,65m,风景名胜;公园广场;公园,,2.7,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0J0R7FF9K
+袁桥村,dengfeng_yuanqiao,activity,河南袁桥古村旅游景区-文化活动中心,南朱线与343国道交叉口北300米,75m,科教文化服务;科教文化场所;科教文化场所,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0MA9OCSXB
+袁桥村,dengfeng_yuanqiao,activity,袁桥古村欢乐谷游乐园,大金店镇G343与南朱线交叉路口往北约230米,105m,风景名胜;风景名胜相关;旅游景点,18939681913,3.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0I64SVNZI
+袁桥村,dengfeng_yuanqiao,activity,河南袁桥古村旅游景区,南朱线,112m,风景名胜;风景名胜;风景名胜,15713831113,4.5,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0G1HDIMNQ
+袁桥村,dengfeng_yuanqiao,activity,袁桥古村文化陈列馆,南朱线与343国道交叉口北300米,113m,风景名胜;风景名胜;风景名胜,,1.0,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0MD6G9M2Y
+袁桥村,dengfeng_yuanqiao,activity,袁桥古村景区导览讲解处,南朱线与343国道交叉口北260米,114m,生活服务;生活服务场所;生活服务场所,,2.8,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0LRLKLDWI
+袁桥村,dengfeng_yuanqiao,activity,袁桥古村水世界,南朱线与343国道交叉口北220米,119m,体育休闲服务;休闲场所;水上活动中心,,4.0,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0IR6ZN98J
+袁桥村,dengfeng_yuanqiao,activity,袁桥村大礼堂,南朱线与343国道交叉口北380米,146m,科教文化服务;科教文化场所;科教文化场所,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0L2SR6HHZ
+袁桥村,dengfeng_yuanqiao,activity,河南袁桥古村旅游景区售票处,南朱线与343国道交叉口北280米,187m,生活服务;售票处;公园景点售票处,,[],人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0I1M5B16M
+袁桥村,dengfeng_yuanqiao,food,小吃巷,南朱线与343国道交叉口北360米,171m,餐饮服务;中餐厅;中餐厅,,3.3,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MBFS40D8
+袁桥村,dengfeng_yuanqiao,food,袁桥梨园,大金店镇袁桥村,942m,餐饮服务;中餐厅;特色/地方风味餐厅,13103866555,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JRZZ31NX
+袁桥村,dengfeng_yuanqiao,food,嵩颖饭店,大金店朱家坪村,1448m,餐饮服务;中餐厅;中餐厅,0371-62768925;0371-62768958,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFF4S0WI
+袁桥村,dengfeng_yuanqiao,food,金东饭店,大金店桥向南500米,2073m,餐饮服务;中餐厅;中餐厅,18737176227,3.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L3ASSHOL
+袁桥村,dengfeng_yuanqiao,food,乡村大食堂,金东村村委会东侧240米,2124m,餐饮服务;中餐厅;中餐厅,,1.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MG2N0I3Z
+袁桥村,dengfeng_yuanqiao,food,金店卤肉,大金店镇金东村卫生室北侧90米,2200m,餐饮服务;餐饮相关场所;餐饮相关,,3.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K2NBWWJ8
+袁桥村,dengfeng_yuanqiao,food,太阳红烤全羊火锅,南朱线西南侧,2260m,餐饮服务;中餐厅;火锅店,15515998258,3.7,人均约 ¥35.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2YUWWI3
+袁桥村,dengfeng_yuanqiao,food,李三卤肉店,金东村村委会东北侧,2265m,餐饮服务;中餐厅;中餐厅,,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J0LPR80Z
+袁桥村,dengfeng_yuanqiao,food,星翔冷饮速冻批发,乌海线西北侧,2443m,餐饮服务;冷饮店;冷饮店,,1.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HR0GQW6X
+袁桥村,dengfeng_yuanqiao,food,杨记传统宴席,东华镇郭村,3040m,餐饮服务;餐饮相关场所;餐饮相关,15649304888,2.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KRXSQAFR
+袁桥村,dengfeng_yuanqiao,stay,嵩阳居民宿(登封袁桥古村店),大金店镇袁桥古村001号,53m,住宿服务;旅馆招待所;旅馆招待所,13673625938,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KUP76SAG
+袁桥村,dengfeng_yuanqiao,stay,花筑·德润居民宿(登封袁桥古村店),袁桥古村039号,203m,住宿服务;旅馆招待所;旅馆招待所,15617689359,4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JROM0FWM
+袁桥村,dengfeng_yuanqiao,stay,登封嵩瓷苑民宿(登封窑陶瓷博物馆店),王村登封窑苑6号,3276m,住宿服务;住宿服务相关;住宿服务相关,16668096788,5.0,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MGGS3QVJ
+袁桥村,dengfeng_yuanqiao,stay,好当家芳芳民宿,颍上路嵩阳街道办事处通达路社区嵩玉花园-12号楼东单元,6979m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,52284085",4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L39KQHZ1
+袁桥村,dengfeng_yuanqiao,stay,吾家小院77民宿,御寨大道少林德武文化武术学校西南270米,7017m,住宿服务;旅馆招待所;旅馆招待所,19913875355,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LA95WE6Q
+袁桥村,dengfeng_yuanqiao,stay,漫居民宿,嵩阳街道嵩阳路南段1160号,7485m,住宿服务;住宿服务相关;住宿服务相关,13014541078,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JGLACKXS
+袁桥村,dengfeng_yuanqiao,stay,登封王府壹号客栈,望城岗二巷五号,7830m,住宿服务;旅馆招待所;旅馆招待所,0371-62821866,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KK41TUZ2
+袁桥村,dengfeng_yuanqiao,stay,乐嘉宾馆(嵩山店),颍河路80号,7865m,住宿服务;宾馆酒店;宾馆酒店,0371-88136999;13938231691,4.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFFGS8F5
+袁桥村,dengfeng_yuanqiao,stay,云染民宿(大禹城店),少林大道尚城国际二期三号楼一单元二楼206号,7892m,住宿服务;住宿服务相关;住宿服务相关,0371-62922168;16696103789,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KB4HT7O9
+袁桥村,dengfeng_yuanqiao,stay,棋盘山民宿(登封客运总站店),守敬路805号,7947m,住宿服务;旅馆招待所;旅馆招待所,13298168068,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KD2OS8O1
+袁桥村,dengfeng_yuanqiao,parking,河南袁桥古村旅游景区东停车场,袁桥村,145m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KBOS781G
+袁桥村,dengfeng_yuanqiao,parking,河南袁桥古村旅游景区东南停车场,河南袁桥古村旅游景区,209m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HUMZTAT2
+袁桥村,dengfeng_yuanqiao,parking,大金店停车区停车场,大金店停车区北侧,767m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGKAJZJ4
+袁桥村,dengfeng_yuanqiao,parking,大金店停车区停车场,大金店停车区南侧,805m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MGKAJTNA
+袁桥村,dengfeng_yuanqiao,parking,郑州翱翔医药科技股份有限公司停车场,大金店镇三里庄高新技术园区郑州市翱翔医药科技股份有限公司,1455m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0M6HD9ERF
+袁桥村,dengfeng_yuanqiao,parking,地上停车场(207国道),207国道西50米,1474m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFY3PDB
+袁桥村,dengfeng_yuanqiao,parking,登封市诚信混凝土有限公司停车场,Y016(西十线)登封市诚信混凝土有限公司,2431m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3A1XWCU
+袁桥村,dengfeng_yuanqiao,parking,地面停车场,乌海线与文颍路交叉口东北100米,2954m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I1MS9IYU
+枣树沟村,xingyang_zaoshugou,activity,洋洋家的软籽石榴园,高村乡枣树沟村,627m,体育休闲服务;休闲场所;采摘园,,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFLBCCMV
+枣树沟村,xingyang_zaoshugou,food,兄弟饭庄,兴榴大道与河阴大道交叉口西北120米,1915m,餐饮服务;中餐厅;中餐厅,,3.0,人均约 ¥27.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MBMY6II0
+枣树沟村,xingyang_zaoshugou,food,信阳渔民渔家,沿黄快速通道北侧,2660m,餐饮服务;中餐厅;中餐厅,,3.7,人均约 ¥31.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3VRJF1Y
+枣树沟村,xingyang_zaoshugou,food,田园饭店,312沿黄快速通道,2785m,餐饮服务;中餐厅;中餐厅,18236936626,3.8,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0H6VYEBMA
+枣树沟村,xingyang_zaoshugou,food,国栋饭店,高村乡流动超限检测点西侧180米,2869m,餐饮服务;中餐厅;中餐厅,,3.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GUARBII3
+枣树沟村,xingyang_zaoshugou,food,荥阳市何老三渔家餐饮服务农家院,停车区与沿黄快速通道交叉口西340米,2954m,餐饮服务;餐饮相关场所;餐饮相关,18039276791,4.5,人均约 ¥41.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K23URXD0
+枣树沟村,xingyang_zaoshugou,food,国胜饭店,兴榴大道与234国道交叉口西北20米,3041m,餐饮服务;中餐厅;中餐厅,,3.8,人均约 ¥22.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0IRB6U724
+枣树沟村,xingyang_zaoshugou,food,老三饭店,远尘大道南侧,3322m,餐饮服务;中餐厅;中餐厅,,3.9,人均约 ¥35.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0GUKHE5SM
+枣树沟村,xingyang_zaoshugou,food,利梅饭店,兴榴大道与001乡道交叉口西南500米,3457m,餐饮服务;中餐厅;中餐厅,,3.3,人均约 ¥31.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0L3A7VAH8
+枣树沟村,xingyang_zaoshugou,food,老陈烧饼,092乡道与兴榴大道交叉口西320米,3847m,餐饮服务;快餐厅;快餐厅,,2.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LARL63Q7
+枣树沟村,xingyang_zaoshugou,food,兰州拉面,高村乡北邙卫生院前行五十米,3907m,餐饮服务;中餐厅;中餐厅,,3.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFK1NJOS
+枣树沟村,xingyang_zaoshugou,stay,黄河谣康养民宿,黄河纪念公园东侧320米,126m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LAYAYB1P
+枣树沟村,xingyang_zaoshugou,stay,榴客小院,官峪村村民委员会南侧80米,1207m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LDTX6B5W
+枣树沟村,xingyang_zaoshugou,stay,郑州红石榴民宿,北陈沟九龙庙向西150米红石榴民宿,3749m,住宿服务;住宿服务相关;住宿服务相关,15238349851,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0J0DHS2U6
+枣树沟村,xingyang_zaoshugou,stay,豫大旅馆,瑞龙集团东南门旁,4054m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKX1KR9
+枣树沟村,xingyang_zaoshugou,stay,石榴驿站,兴榴大道127号,5190m,住宿服务;旅馆招待所;旅馆招待所,15738850041,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3K1BXWK
+枣树沟村,xingyang_zaoshugou,stay,荥阳红宝石宾馆,高村乡高村街高北加油站斜对面,6126m,住宿服务;宾馆酒店;宾馆酒店,0371-66122589,4.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL9KXWI
+枣树沟村,xingyang_zaoshugou,stay,大哈旅社,234国道与314省道交叉口东南40米,6370m,住宿服务;旅馆招待所;旅馆招待所,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HDYZRO2H
+枣树沟村,xingyang_zaoshugou,stay,康乐宾馆,高村乡高村超人·节能厨房(高村店)斜对面,6394m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFL77EMR
+枣树沟村,xingyang_zaoshugou,stay,宜佳宾馆,市场街与兴高路交叉口西80米,6606m,住宿服务;宾馆酒店;宾馆酒店,0371-64900005;13592687055,4.6,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFI8QLL4
+枣树沟村,xingyang_zaoshugou,stay,河南国农拾光民宿,广武镇张庄村,7868m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDH5BSSA
+枣树沟村,xingyang_zaoshugou,parking,黄河纪念公园地面停车场,河阴大道127号黄河纪念公园,24m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I0C5FELN
+枣树沟村,xingyang_zaoshugou,parking,飞龙顶道观地面停车场,,1714m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0H2DACRH5
+枣树沟村,xingyang_zaoshugou,parking,飞龙顶道观停车点,北邙乡飞龙顶道观,1857m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JGAADBJI
+枣树沟村,xingyang_zaoshugou,parking,昌明奶牛科普乐园停车场,沿黄快速通道昌明奶牛科普乐园(东南角),2637m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JDXHK6ZL
+枣树沟村,xingyang_zaoshugou,parking,郑州兴泽建材有限公司停车场,高村乡沿黄快速路与远尘大道向东500米郑州兴泽建材有限公司,2819m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MA11GQFU
+枣树沟村,xingyang_zaoshugou,parking,高村服务区停车场,停车区与沿黄快速通道交叉口西360米,2978m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LUNU39XZ
+寨东村,dengfeng_zhaidong,activity,小红寨农家院,白坪乡寨东村1组,2999m,体育休闲服务;休闲场所;休闲场所,15343822279;18003820931,3.8,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0H3MU94Y4
+寨东村,dengfeng_zhaidong,activity,河南马峪川红色旅游度假区,登徐线东50米,3121m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,,3.7,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFK2LYHH
+寨东村,dengfeng_zhaidong,activity,袁窑村小游园,鹿方线与学生路交叉口东南280米,9042m,风景名胜;风景名胜相关;旅游景点,,2.6,人均约 ¥,needs_review,false,高德周边搜索 activity 候选结果，需人工核验,amap,B0L3DL6V7H
+寨东村,dengfeng_zhaidong,activity,高马文化广场,东华镇石桥村,9085m,风景名胜;公园广场;城市广场,,4.1,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B017316N4E
+寨东村,dengfeng_zhaidong,activity,石桥垂钓园,东华镇石桥村,9125m,体育休闲服务;休闲场所;垂钓园,15138465503,3.9,人均约 ¥80.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0KA554UTJ
+寨东村,dengfeng_zhaidong,activity,张张桃园,东华镇少阳寨陈庄村,9624m,体育休闲服务;休闲场所;采摘园,,3.6,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0IUZC5XCN
+寨东村,dengfeng_zhaidong,activity,嵩山樱桃岭,东华镇陈庄村,9998m,体育休闲服务;休闲场所;采摘园,18137805595,3.9,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFM9MYYU
+寨东村,dengfeng_zhaidong,food,御美味削面馆,白江北路与天雄路交叉口东北140米,1761m,餐饮服务;中餐厅;中餐厅,,3.2,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LKX6H9QD
+寨东村,dengfeng_zhaidong,food,缘来自助餐,白坪大街与天雄路交叉口西南40米,1808m,餐饮服务;中餐厅;中餐厅,,2.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JK0UTDJE
+寨东村,dengfeng_zhaidong,food,烧饼店,白坪乡白坪街中段(剧院门口),1846m,餐饮服务;餐饮相关场所;餐饮相关,15981822602,2.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFL6QV0O
+寨东村,dengfeng_zhaidong,food,玫宜羊肉冲汤,白坪大街与天雄路交叉口东北100米,1852m,餐饮服务;中餐厅;中餐厅,18236960567,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0HR99AXRY
+寨东村,dengfeng_zhaidong,food,凤霞手工凉皮店,白坪大街与天雄路交叉口东北60米,1856m,餐饮服务;快餐厅;快餐厅,18860388796,3.5,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHD2MUQ
+寨东村,dengfeng_zhaidong,food,幸福小吃店,白坪大街与天雄路交叉口东北100米,1866m,餐饮服务;中餐厅;中餐厅,,2.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0LK0U8HPL
+寨东村,dengfeng_zhaidong,food,香溢酒楼(白坪市场店),白坪乡,1867m,餐饮服务;中餐厅;综合酒楼,13592480696,3.6,人均约 ¥61.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFGA94HM
+寨东村,dengfeng_zhaidong,food,金玲烘焙食品店,胜利路与011乡道交叉口南40米,1971m,餐饮服务;糕饼店;糕饼店,,2.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0JK05ROG6
+寨东村,dengfeng_zhaidong,food,迎宾饭店(登徐线店),011乡道与胜利路交叉口西南40米,1973m,餐饮服务;中餐厅;中餐厅,15238652739,2.7,人均约 ¥31.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFGAFI10
+寨东村,dengfeng_zhaidong,food,国营饭店(白坪店),登徐线(白坪乡政府东侧约150米),1978m,餐饮服务;中餐厅;中餐厅,13653826858;13783672386,3.8,人均约 ¥12.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFFE4LNS
+寨东村,dengfeng_zhaidong,stay,禾木居民宿,052乡道,4291m,住宿服务;旅馆招待所;旅馆招待所,"+861056320612,45530755",[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDB7UP77
+寨东村,dengfeng_zhaidong,stay,大熊山景秀·山间露营地,徐庄镇大熊山摘星楼景区中州景秀度假村旁,4381m,住宿服务;住宿服务相关;住宿服务相关,13683832766,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0G1PUMRFR
+寨东村,dengfeng_zhaidong,stay,登封源溪农家,徐庄乡杨林村下地门123号,4446m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,13938567585,3.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHRFGM
+寨东村,dengfeng_zhaidong,stay,源溪农家酒店(仙人谷西门店),052乡道东50米,4451m,住宿服务;住宿服务相关;住宿服务相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKHT0D2
+寨东村,dengfeng_zhaidong,stay,登封大熊山假日酒店,徐庄镇杨林村,4528m,住宿服务;宾馆酒店;宾馆酒店,0371-56588888,4.1,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFJE9X5V
+寨东村,dengfeng_zhaidong,stay,星途民宿(摘星楼景区店),徐庄镇王保庄63号,4544m,住宿服务;住宿服务相关;住宿服务相关,"15188330055;+861056320612,53565754",4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K0T5ORSU
+寨东村,dengfeng_zhaidong,stay,登封中州悦隐槐夏院子民宿,徐庄镇王保庄村46号,4578m,住宿服务;住宿服务相关;住宿服务相关,18736004133,4.2,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKVM07C
+寨东村,dengfeng_zhaidong,stay,星悦居,徐庄镇王保庄42号,4583m,住宿服务;旅馆招待所;青年旅舍,0371-62720666;18538033393,4.3,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFMHH7U7
+寨东村,dengfeng_zhaidong,stay,陌野原舍瑞轩居民宿,徐庄镇杨林村王保庄53号,4590m,住宿服务;旅馆招待所;旅馆招待所,13838279009,4.6,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IUJYIPR0
+寨东村,dengfeng_zhaidong,stay,民宿,登徐线与迎宾大道交叉口东北120米,5166m,住宿服务;宾馆酒店;宾馆酒店,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0LUYCV0MV
+寨东村,dengfeng_zhaidong,parking,011乡道-道路停车位,登徐线与011乡道交叉口西260米,1899m,交通设施服务;停车场;路边停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JG1MF12R
+朱家庵村,xinmi_zhujiaan,activity,桂兰农家院,朱家庵村六组,412m,体育休闲服务;体育休闲服务场所;体育休闲服务场所,15290824375,4.5,人均约 ¥56.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0FFKCO8V2
+朱家庵村,xinmi_zhujiaan,activity,伟花农家院,朱家庵村6组,529m,体育休闲服务;休闲场所;休闲场所,15238623312,3.2,人均约 ¥36.00,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0GUOH4I6W
+朱家庵村,xinmi_zhujiaan,activity,问道书院,米村镇朱家庵村26号,808m,科教文化服务;培训机构;培训机构,17596552646;18538063919,4.2,人均约 ¥,needs_review,true,高德周边搜索 activity 候选结果，需人工核验；auto_ranked,amap,B0LKRH6AWH
+朱家庵村,xinmi_zhujiaan,food,食在人家农家院,米村镇朱家庵村朱家庵8号,272m,餐饮服务;餐饮相关场所;餐饮相关,13849082130,4.0,人均约 ¥52.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0KDAZF9I0
+朱家庵村,xinmi_zhujiaan,food,望山农庄,米村镇贾寨村幸福路,1532m,餐饮服务;中餐厅;中餐厅,18003713555,4.5,人均约 ¥42.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0G1BL9LOY
+朱家庵村,xinmi_zhujiaan,food,金旺农家院,下寺沟村村委会东南侧210米,2326m,餐饮服务;中餐厅;中餐厅,13783486855;15036126008,3.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFHZGVQB
+朱家庵村,xinmi_zhujiaan,food,建峰农家院,米村镇凤凰山停车场东十米,2393m,餐饮服务;中餐厅;中餐厅,18237158562,4.4,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFH1K2DJ
+朱家庵村,xinmi_zhujiaan,food,畔山院子里,伏羲山旅游区停车场对面,2409m,餐饮服务;餐饮相关场所;餐饮相关,13073732802,4.4,人均约 ¥50.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K1HCU8LH
+朱家庵村,xinmi_zhujiaan,food,兴旺农家,米村镇月寨村四组伏羲山内(南侧),2446m,餐饮服务;餐饮相关场所;餐饮相关,18625513826,4.5,人均约 ¥43.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFI3IL9P
+朱家庵村,xinmi_zhujiaan,food,杨治国农家院,下寺沟村杨家门110号,2582m,体育休闲服务;休闲场所;休闲场所|餐饮服务;餐饮相关场所;餐饮相关,13623855662,4.6,人均约 ¥40.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFGJPCH6
+朱家庵村,xinmi_zhujiaan,food,杨国民农家院,尖山管委下寺沟村一组,2600m,体育休闲服务;休闲场所;休闲场所|餐饮服务;中餐厅;中餐厅,13598435894;18625597879,4.5,人均约 ¥59.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFIZLCK3
+朱家庵村,xinmi_zhujiaan,food,老张炒鸡农家乐,米村镇月寨村六组红食林农庄东侧200米,2624m,餐饮服务;中餐厅;中餐厅,,3.7,人均约 ¥23.00,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFKS7DZ3
+朱家庵村,xinmi_zhujiaan,food,鞠香园农家院,尖山伏羲山景区紫藤长廊入口东北100米,2664m,餐饮服务;餐饮相关场所;餐饮相关,15617839117,4.0,人均约 ¥41.00,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKP36IG
+朱家庵村,xinmi_zhujiaan,stay,凤凰山千百度农家院,Y020(巩米线),2266m,住宿服务;住宿服务相关;住宿服务相关|体育休闲服务;休闲场所;休闲场所,15093170610,4.4,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0FFGAG54L
+朱家庵村,xinmi_zhujiaan,stay,云上居森林木屋民宿(新密伏羲山店),尖山风景区伏羲大道南500米,4188m,住宿服务;住宿服务相关;住宿服务相关,15893831417;18538579866,4.4,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IKOC54FH
+朱家庵村,xinmi_zhujiaan,stay,一鸣书居民宿(新密伏羲山店),尖山风景管委会黄龙庙025号,4520m,住宿服务;住宿服务相关;住宿服务相关,15038286636;18768855856;95685,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0J60NBEML
+朱家庵村,xinmi_zhujiaan,stay,山与不舍民宿(伏羲山云上牧场店),伏羲山管委尖山村安置区三排4号,4587m,住宿服务;旅馆招待所;旅馆招待所,19838163716,4.8,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KAX5BL2N
+朱家庵村,xinmi_zhujiaan,stay,北辰云舍民宿(新密伏羲山店),石尖路尖山敬老院西600米,4758m,住宿服务;住宿服务相关;住宿服务相关,18595900222,4.9,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I1PZMVFB
+朱家庵村,xinmi_zhujiaan,stay,怀石地民宿酒店(新密伏羲山店),伏羲山风景区管委尖山村北沟村10号,4910m,住宿服务;旅馆招待所;旅馆招待所,"13283817129;17265844126;+861056320612,53334625",4.7,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0I2HU4QUN
+朱家庵村,xinmi_zhujiaan,stay,新密你好山居,尖山乡尖山村后坡,5198m,住宿服务;住宿服务相关;住宿服务相关,13849073860,4.7,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFKCOF9O
+朱家庵村,xinmi_zhujiaan,stay,伏羲山云羲湖居度假民宿,米村镇白槐村五组,6021m,住宿服务;住宿服务相关;住宿服务相关,17516203888,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0M63S7EYV
+朱家庵村,xinmi_zhujiaan,stay,山好庭院民宿,伏羲山管委会神仙洞村30号,6388m,住宿服务;住宿服务相关;住宿服务相关,0371-69999666;15838088099,4.5,人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0KR5MRUQS
+朱家庵村,xinmi_zhujiaan,stay,云漫山居民宿(新密伏羲山神仙洞店),尖山风景区管委会神仙洞村云漫山居民宿,7273m,住宿服务;住宿服务相关;住宿服务相关,18595638555,4.9,人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0JGBUABYN
+朱家庵村,xinmi_zhujiaan,parking,桂兰农家院停车场,朱家庵村六组桂兰农家院,431m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MAGCZGC4
+朱家庵村,xinmi_zhujiaan,parking,凤凰山人文纪念园停车场,米村镇贾寨村北地凤凰山人文纪念园,1212m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,true,高德周边搜索候选结果，需人工核验；auto_ranked,amap,B0MA4UUDPM
+朱家庵村,xinmi_zhujiaan,parking,天龙寺停车场,米村镇拐峪村天龙寺,1943m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0IBF705XH
+朱家庵村,xinmi_zhujiaan,parking,春秋苑农家院地面停车场,春秋苑农家院,2285m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0K1FSE9N0
+朱家庵村,xinmi_zhujiaan,parking,伏羲山游客中心停车场,红石林景区(东南角),2371m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0HDNUF8HQ
+朱家庵村,xinmi_zhujiaan,parking,地面停车场,,2388m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0I2V785AZ
+朱家庵村,xinmi_zhujiaan,parking,凤凰山景区停车场,凤凰山景区,2421m,交通设施服务;停车场;停车场相关,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0FFJ16O2R
+朱家庵村,xinmi_zhujiaan,parking,红石林景区-南侧地上停车场,红石林景区(东南角),2528m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MD777FR7
+朱家庵村,xinmi_zhujiaan,parking,美麓山居餐饮农家院地上停车场,伏羲山综合楼东南侧150米,2530m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0MUC93CQL
+朱家庵村,xinmi_zhujiaan,parking,伏羲山红石林景区-门前停车场,红石林景区(东南角),2540m,交通设施服务;停车场;公共停车场,,[],人均约 ¥,needs_review,false,高德周边搜索候选结果，需人工核验,amap,B0L3M1PF4R

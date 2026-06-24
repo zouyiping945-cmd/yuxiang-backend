@@ -1,6 +1,6 @@
 import "server-only";
 import type { BuildPlanInput } from "@/lib/ai/types";
-import type { PlanResult, PlayHighlight, PlayPlace, RealVillageData } from "@/lib/types";
+import type { PlanResult, PlayHighlight, PlayPlace, RealVillageData, RecommendedPoisByCategory } from "@/lib/types";
 
 export type DeepSeekPlanEnhancement = {
   summary: string;
@@ -16,6 +16,11 @@ export type AgentPolishResult = {
   providerUsed: "deepseek" | "fallback";
   fallbackUsed: boolean;
   changed: boolean;
+};
+
+export type AgentPolishContext = {
+  selectedTags?: string[];
+  preference?: unknown;
 };
 
 type DeepSeekResponse = {
@@ -235,7 +240,39 @@ async function requestDeepSeekJson(
   }
 }
 
-function buildKnowledgePayload(plan: PlanResult, knowledgeContext?: RealVillageData, amapPlayPois: PlayPlace[] = []) {
+function buildRecommendedPoiPayload(recommendedPois?: RecommendedPoisByCategory) {
+  if (!recommendedPois) {
+    return {
+      activityNames: [],
+      foodNames: [],
+      stayNames: [],
+      parkingNames: [],
+      needsReviewNames: []
+    };
+  }
+
+  return {
+    activityNames: recommendedPois.activity.map((poi) => poi.name),
+    foodNames: recommendedPois.food.map((poi) => poi.name),
+    stayNames: recommendedPois.stay.map((poi) => poi.name),
+    parkingNames: recommendedPois.parking.map((poi) => poi.name),
+    needsReviewNames: [
+      ...recommendedPois.activity,
+      ...recommendedPois.food,
+      ...recommendedPois.stay,
+      ...recommendedPois.parking
+    ]
+      .filter((poi) => poi.dataReviewStatus === "needs_review")
+      .map((poi) => poi.name)
+  };
+}
+
+function buildKnowledgePayload(
+  plan: PlanResult,
+  knowledgeContext?: RealVillageData,
+  amapPlayPois: PlayPlace[] = [],
+  recommendedPois?: RecommendedPoisByCategory
+) {
   return {
     recommended: {
       id: plan.recommended.id,
@@ -294,6 +331,7 @@ function buildKnowledgePayload(plan: PlanResult, knowledgeContext?: RealVillageD
       distanceText: item.distanceText,
       source: item.source
     })),
+    recommendedPois: buildRecommendedPoiPayload(recommendedPois),
     existingPlayHighlights: plan.playHighlights ?? []
   };
 }
@@ -302,7 +340,8 @@ function buildMessages(
   input: BuildPlanInput,
   plan: PlanResult,
   knowledgeContext?: RealVillageData,
-  amapPlayPois: PlayPlace[] = []
+  amapPlayPois: PlayPlace[] = [],
+  recommendedPois?: RecommendedPoisByCategory
 ): ChatMessage[] {
   return [
     {
@@ -324,7 +363,12 @@ function buildMessages(
           inputText: plan.inputText,
           companions: input.preference.companions,
           demands: input.preference.demands,
-          knowledge: buildKnowledgePayload(plan, knowledgeContext, amapPlayPois),
+          knowledge: buildKnowledgePayload(plan, knowledgeContext, amapPlayPois, recommendedPois),
+          poiSafetyRules: [
+            "只能基于 recommendedPois.activityNames / foodNames / stayNames / parkingNames 解释真实 POI，不得新增未提供的景点、餐厅、民宿、停车点名称。",
+            "如果引用 recommendedPois.needsReviewNames 中的 POI，请称为候选，并提醒出发前确认营业、开放、位置或车位情况。",
+            "foods 和 stays 已由后端根据 recommendedPois 白名单确定，不要在 summary / reasonSummary / travelTips 中编造新的店铺或住宿名称。"
+          ],
           constraints: [
             "playPlaces 最多输出 4-6 条",
             "playPlaces.name 必须从 amapPlayPois.name 中选择，不能改名、扩写或新增",
@@ -344,13 +388,14 @@ export async function generateDeepSeekPlanEnhancement(
   input: BuildPlanInput,
   plan: PlanResult,
   knowledgeContext?: RealVillageData,
-  amapPlayPois: PlayPlace[] = []
+  amapPlayPois: PlayPlace[] = [],
+  recommendedPois?: RecommendedPoisByCategory
 ): Promise<DeepSeekPlanEnhancement | null> {
   if (!isDeepSeekEnabled()) {
     return null;
   }
 
-  const parsed = await requestDeepSeekJson(buildMessages(input, plan, knowledgeContext, amapPlayPois), {
+  const parsed = await requestDeepSeekJson(buildMessages(input, plan, knowledgeContext, amapPlayPois, recommendedPois), {
     timeoutMs: DEEPSEEK_TIMEOUT_MS,
     temperature: 0.32,
     maxTokens: 1000,
@@ -367,13 +412,25 @@ export async function generateDeepSeekPlanEnhancement(
   return enhancement;
 }
 
-function buildPolishMessages(inputText: string): ChatMessage[] {
+function buildPolishMessages(inputText: string, context: AgentPolishContext = {}): ChatMessage[] {
+  const selectedTags = Array.isArray(context.selectedTags)
+    ? context.selectedTags.filter((tag): tag is string => typeof tag === "string" && tag.trim().length > 0)
+    : [];
+
   return [
     {
       role: "system",
       content: [
         "你是乡村旅行 AI Agent 的需求润色器。",
         "你的任务是把用户的口语化需求整理成更适合乡村旅游规划 Agent 理解的输入，不是营销文案。",
+        "selectedTags 是硬约束，不是参考。不得删除、反转或弱化 selectedTags 的含义。",
+        "如果 selectedTags 包含“带父母”，输出必须包含“带父母”或“长辈同行”，且禁止写成个人、独自、单人、个人或小团体。",
+        "如果 selectedTags 包含“亲子短途”，输出必须包含“亲子”或“孩子”。",
+        "如果 selectedTags 包含“不想太累”，输出必须体现轻松、低强度、不赶行程等含义。",
+        "如果 selectedTags 包含“农家菜”，输出必须保留“农家菜”。",
+        "如果 selectedTags 包含“拍照出片”，输出必须保留“拍照”或“出片”。",
+        "如果 selectedTags 包含“住一晚”，输出必须体现住一晚或过夜。",
+        "如果 selectedTags 包含“周末近郊”，输出必须体现周末或近郊。",
         "必须保留用户原始意图，并尽量明确：出行对象、出行节奏、餐饮偏好、体力约束、目的地偏好。",
         "如果原文已经清楚，也要稍微整理为更完整的规划输入，不要原样返回。",
         "不要新增用户没有表达的硬性要求。",
@@ -387,7 +444,7 @@ function buildPolishMessages(inputText: string): ChatMessage[] {
     },
     {
       role: "user",
-      content: JSON.stringify({ inputText }, null, 2)
+      content: JSON.stringify({ inputText, selectedTags, preference: context.preference ?? null }, null, 2)
     }
   ];
 }
@@ -463,7 +520,7 @@ function buildStructuredPolishFromOriginal(original: string): string {
   return `${clauses.join("，")}。`;
 }
 
-export async function polishAgentInput(inputText: string): Promise<AgentPolishResult> {
+export async function polishAgentInput(inputText: string, context: AgentPolishContext = {}): Promise<AgentPolishResult> {
   const original = inputText.trim();
   if (!original) {
     return {
@@ -484,7 +541,7 @@ export async function polishAgentInput(inputText: string): Promise<AgentPolishRe
     };
   }
 
-  const parsed = await requestDeepSeekJson(buildPolishMessages(original), {
+  const parsed = await requestDeepSeekJson(buildPolishMessages(original, context), {
     timeoutMs: POLISH_TIMEOUT_MS,
     temperature: 0.2,
     maxTokens: 420,

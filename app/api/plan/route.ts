@@ -75,6 +75,9 @@ export async function POST(request: Request) {
     const repairedBody = repairMojibakeValue(rawBody ?? {}) as PlanRequestPayload;
     const preference = normalizePreference(repairedBody ?? {});
     const inputText = typeof repairedBody.inputText === "string" ? repairedBody.inputText.trim() : "";
+    const preferredVillageId = typeof repairedBody.preferredVillageId === "string" ? repairedBody.preferredVillageId.trim() : "";
+    const preferredVillageName = typeof repairedBody.preferredVillageName === "string" ? repairedBody.preferredVillageName.trim() : "";
+    const preferredVillageCode = typeof repairedBody.preferredVillageCode === "string" ? repairedBody.preferredVillageCode.trim() : "";
     const excludeVillageIds = Array.isArray(repairedBody.excludeVillageIds)
       ? repairedBody.excludeVillageIds.filter((item): item is string => typeof item === "string")
       : [];
@@ -97,7 +100,10 @@ export async function POST(request: Request) {
       {
         inputText,
         providerUsed: "mock",
-        fallbackUsed: false
+        fallbackUsed: false,
+        preferredVillageId,
+        preferredVillageName,
+        preferredVillageCode
       }
     );
 
